@@ -1,0 +1,180 @@
+[
+  {
+    "id": "anulom-vilom",
+    "name": "Alternate Nostril Breathing",
+    "sanskrit_name": "Anulom Vilom",
+    "description": "A balancing breathing technique that harmonizes the left and right hemispheres of the brain.",
+    "benefits": [
+      "Balances nervous system",
+      "Reduces stress and anxiety",
+      "Improves concentration",
+      "Purifies energy channels",
+      "Promotes mental clarity"
+    ],
+    "instructions": [
+      "Sit comfortably with spine straight",
+      "Close right nostril with right thumb",
+      "Inhale through left nostril for 4 counts",
+      "Close left nostril with ring finger",
+      "Exhale through right nostril for 4 counts",
+      "Inhale through right nostril for 4 counts",
+      "Close right nostril, exhale through left for 4 counts",
+      "Repeat for 5-10 rounds"
+    ],
+    "duration": "5-15 minutes",
+    "breathing_pattern": "4:4:4:4 (inhale:hold:exhale:hold)",
+    "precautions": [
+      "Avoid if you have severe nasal congestion",
+      "Don't force the breath",
+      "Stop if you feel dizzy"
+    ],
+    "conditions": ["Anxiety", "Stress", "Poor Concentration", "Insomnia"]
+  },
+  {
+    "id": "kapalbhati",
+    "name": "Skull Shining Breath",
+    "sanskrit_name": "Kapalbhati",
+    "description": "An energizing breathing technique that cleanses the respiratory system and invigorates the mind.",
+    "benefits": [
+      "Cleanses respiratory system",
+      "Improves lung capacity",
+      "Boosts energy levels",
+      "Strengthens abdominal muscles",
+      "Improves digestion"
+    ],
+    "instructions": [
+      "Sit comfortably with spine straight",
+      "Take a deep breath in",
+      "Exhale forcefully through nose, contracting abdomen",
+      "Let inhalation happen naturally",
+      "Start with 20-30 rounds",
+      "Gradually increase to 100 rounds"
+    ],
+    "duration": "5-10 minutes",
+    "breathing_pattern": "Forceful exhalation, natural inhalation",
+    "precautions": [
+      "Avoid during pregnancy",
+      "Don't practice on full stomach",
+      "Stop if you feel dizzy or nauseous",
+      "Avoid if you have high blood pressure"
+    ],
+    "conditions": ["Low Energy", "Poor Digestion", "Respiratory Issues", "Obesity"]
+  },
+  {
+    "id": "bhramari",
+    "name": "Bee Breath",
+    "sanskrit_name": "Bhramari",
+    "description": "A calming breathing technique that produces a humming sound like a bee, promoting relaxation.",
+    "benefits": [
+      "Calms the mind",
+      "Reduces stress and anxiety",
+      "Relieves headaches",
+      "Improves concentration",
+      "Promotes better sleep"
+    ],
+    "instructions": [
+      "Sit comfortably with spine straight",
+      "Close ears with index fingers",
+      "Close eyes and take deep breath",
+      "Exhale slowly while making humming sound",
+      "Feel the vibration in head and chest",
+      "Repeat 5-10 times"
+    ],
+    "duration": "5-10 minutes",
+    "breathing_pattern": "Slow, deep breathing with humming",
+    "precautions": [
+      "Avoid if you have severe ear problems",
+      "Don't force the sound",
+      "Stop if you feel uncomfortable"
+    ],
+    "conditions": ["Anxiety", "Stress", "Headaches", "Insomnia", "Anger"]
+  },
+  {
+    "id": "ujjayi",
+    "name": "Victorious Breath",
+    "sanskrit_name": "Ujjayi",
+    "description": "A gentle breathing technique that creates a soft ocean-like sound, promoting focus and calm.",
+    "benefits": [
+      "Increases focus and concentration",
+      "Calms the nervous system",
+      "Builds internal heat",
+      "Improves lung capacity",
+      "Reduces stress"
+    ],
+    "instructions": [
+      "Sit or stand comfortably",
+      "Slightly constrict throat (like fogging glasses)",
+      "Inhale slowly through nose",
+      "Exhale slowly through nose with same throat constriction",
+      "Create soft ocean-like sound",
+      "Maintain steady rhythm"
+    ],
+    "duration": "5-20 minutes",
+    "breathing_pattern": "Slow, deep breathing with throat constriction",
+    "precautions": [
+      "Don't force the throat constriction",
+      "Keep breathing smooth and steady",
+      "Stop if throat becomes sore"
+    ],
+    "conditions": ["Poor Focus", "Stress", "Anxiety", "Yoga Practice"]
+  },
+  {
+    "id": "sheetali",
+    "name": "Cooling Breath",
+    "sanskrit_name": "Sheetali",
+    "description": "A cooling breathing technique that helps reduce body heat and calms the nervous system.",
+    "benefits": [
+      "Cools the body",
+      "Reduces body heat",
+      "Calms the mind",
+      "Reduces stress and anger",
+      "Improves digestion"
+    ],
+    "instructions": [
+      "Sit comfortably with spine straight",
+      "Roll tongue into tube shape",
+      "Inhale slowly through rolled tongue",
+      "Close mouth and exhale through nose",
+      "If you can't roll tongue, use teeth breathing",
+      "Repeat 10-15 times"
+    ],
+    "duration": "5-10 minutes",
+    "breathing_pattern": "Slow inhalation through mouth, exhalation through nose",
+    "precautions": [
+      "Avoid in cold weather",
+      "Don't practice if you have respiratory issues",
+      "Stop if you feel uncomfortable"
+    ],
+    "conditions": ["Excess Heat", "Anger", "Stress", "Digestive Issues", "Fever"]
+  },
+  {
+    "id": "bhastrika",
+    "name": "Bellows Breath",
+    "sanskrit_name": "Bhastrika",
+    "description": "An energizing breathing technique that mimics the action of bellows, increasing energy and warmth.",
+    "benefits": [
+      "Increases energy levels",
+      "Improves lung capacity",
+      "Strengthens respiratory system",
+      "Boosts metabolism",
+      "Cleanses energy channels"
+    ],
+    "instructions": [
+      "Sit comfortably with spine straight",
+      "Take deep breath in",
+      "Exhale forcefully through nose",
+      "Inhale forcefully through nose",
+      "Continue rapid breathing",
+      "Start with 20-30 rounds, rest, repeat"
+    ],
+    "duration": "5-10 minutes",
+    "breathing_pattern": "Rapid, forceful breathing",
+    "precautions": [
+      "Avoid during pregnancy",
+      "Don't practice on full stomach",
+      "Stop if you feel dizzy",
+      "Avoid if you have high blood pressure"
+    ],
+    "conditions": ["Low Energy", "Poor Lung Capacity", "Depression", "Cold"]
+  }
+]

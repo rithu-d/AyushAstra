@@ -1,0 +1,607 @@
+{% extends "base.html" %}
+
+{% block title %}Mantras & Meditation - AyushAstra{% endblock %}
+
+{% block content %}
+<div class="min-h-screen bg-gradient-to-br from-ayurvedic-cream to-white py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Header -->
+        <div class="text-center mb-12">
+            <div class="text-6xl mb-4">🕉️</div>
+            <h2 class="text-4xl font-bold text-gray-800 mb-4">Mantras & Meditation</h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                Discover the power of sacred mantras and guided meditation practices. 
+                Experience deep relaxation and spiritual connection through ancient sound healing.
+            </p>
+        </div>
+
+        <!-- Introduction -->
+        <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-gray-200 mb-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-music text-purple-600 text-2xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-gray-800 mb-2">Sacred Sounds</h3>
+                    <p class="text-sm text-gray-600">
+                        Experience the vibrational healing power of ancient Sanskrit mantras
+                    </p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl">🧘</span>
+                    </div>
+                    <h3 class="font-semibold text-gray-800 mb-2">Deep Meditation</h3>
+                    <p class="text-sm text-gray-600">
+                        Guided meditation sessions for inner peace and spiritual growth
+                    </p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl">✨</span>
+                    </div>
+                    <h3 class="font-semibold text-gray-800 mb-2">Energy Healing</h3>
+                    <p class="text-sm text-gray-600">
+                        Balance your chakras and energy centers through sound therapy
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Filters -->
+        <div class="mb-8">
+            <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg border border-gray-200">
+                <!-- Search -->
+                <div class="mb-6">
+                    <div class="relative max-w-md mx-auto">
+                        <input
+                            type="text"
+                            id="mantra-search"
+                            placeholder="Search mantras or meditation..."
+                            class="w-full px-4 py-3 pr-10 border border-gray-300 rounded-lg focus:border-ayurvedic-green focus:outline-none"
+                        />
+                        <i class="fas fa-search absolute right-3 top-3.5 text-gray-400"></i>
+                    </div>
+                </div>
+
+                <!-- Category Filter -->
+                <div>
+                    <h3 class="text-sm font-medium text-gray-700 mb-3 flex items-center gap-2">
+                        <i class="fas fa-filter"></i>
+                        Category
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <button onclick="filterByCategory('All')" class="category-btn px-3 py-1 rounded-full text-sm border border-gray-300 hover:ayurvedic-green hover:text-white transition-colors">All</button>
+                        <button onclick="filterByCategory('Healing')" class="category-btn px-3 py-1 rounded-full text-sm border border-gray-300 hover:ayurvedic-green hover:text-white transition-colors">Healing</button>
+                        <button onclick="filterByCategory('Protection')" class="category-btn px-3 py-1 rounded-full text-sm border border-gray-300 hover:ayurvedic-green hover:text-white transition-colors">Protection</button>
+                        <button onclick="filterByCategory('Wisdom')" class="category-btn px-3 py-1 rounded-full text-sm border border-gray-300 hover:ayurvedic-green hover:text-white transition-colors">Wisdom</button>
+                        <button onclick="filterByCategory('Peace')" class="category-btn px-3 py-1 rounded-full text-sm border border-gray-300 hover:ayurvedic-green hover:text-white transition-colors">Peace</button>
+                        <button onclick="filterByCategory('Meditation')" class="category-btn px-3 py-1 rounded-full text-sm border border-gray-300 hover:ayurvedic-green hover:text-white transition-colors">Meditation</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Results Count -->
+        <div class="mb-6">
+            <p id="results-count" class="text-gray-600">
+                Showing 8 mantra{{ 's' if 8 != 1 else '' }} and meditation practice{{ 's' if 8 != 1 else '' }}
+            </p>
+        </div>
+
+        <!-- Mantras Grid -->
+        <div id="mantras-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Om Mantra -->
+            <div class="mantra-card bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1" data-category="Healing">
+                <div class="p-6">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="flex-1">
+                            <h3 class="text-lg font-semibold text-gray-800 mb-1">Om Mantra</h3>
+                            <p class="text-sm text-ayurvedic-sage italic">ॐ</p>
+                        </div>
+                        <span class="px-2 py-1 rounded-full text-xs font-medium bg-purple-100 text-purple-700">
+                            Healing
+                        </span>
+                    </div>
+                    
+                    <!-- Audio Player -->
+                    <div class="mb-4">
+                        <div class="bg-gradient-to-br from-purple-100 to-blue-100 rounded-lg p-4 text-center">
+                            <div class="text-4xl mb-2 om-symbol">ॐ</div>
+                            <audio id="audio-om" controls class="w-full">
+                                <source src="/static/audio/om-mantra.mp3" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <h4 class="font-medium text-gray-700 mb-2">Benefits</h4>
+                        <ul class="text-sm text-gray-600 space-y-1">
+                            <li>• Universal healing vibration</li>
+                            <li>• Balances all chakras</li>
+                            <li>• Reduces stress and anxiety</li>
+                            <li>• Enhances spiritual connection</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <h4 class="font-medium text-gray-700 mb-2">Practice</h4>
+                        <p class="text-sm text-gray-600">
+                            Chant "Om" 108 times while focusing on the vibration in your chest and head.
+                        </p>
+                    </div>
+                    
+                    <div class="flex gap-2">
+                        <button onclick="playMantra('om')" class="flex-1 ayurvedic-green text-white px-4 py-2 rounded-lg hover:bg-ayurvedic-sage transition-colors">
+                            <i class="fas fa-play mr-2"></i>
+                            Play
+                        </button>
+                        <button onclick="showMantraDetails('om')" class="px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors">
+                            <i class="fas fa-info"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gayatri Mantra -->
+            <div class="mantra-card bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1" data-category="Wisdom">
+                <div class="p-6">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="flex-1">
+                            <h3 class="text-lg font-semibold text-gray-800 mb-1">Gayatri Mantra</h3>
+                            <p class="text-sm text-ayurvedic-sage italic">गायत्री मंत्र</p>
+                        </div>
+                        <span class="px-2 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-700">
+                            Wisdom
+                        </span>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <div class="bg-gradient-to-br from-blue-100 to-indigo-100 rounded-lg p-4 text-center">
+                            <div class="text-2xl mb-2 font-sans">ॐ भूर्भुवः स्वः</div>
+                            <audio id="audio-gayatri" controls class="w-full">
+                                <source src="/static/audio/gayatri-mantra.mp3" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <h4 class="font-medium text-gray-700 mb-2">Benefits</h4>
+                        <ul class="text-sm text-gray-600 space-y-1">
+                            <li>• Enhances wisdom and knowledge</li>
+                            <li>• Purifies the mind</li>
+                            <li>• Removes negative thoughts</li>
+                            <li>• Brings enlightenment</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <h4 class="font-medium text-gray-700 mb-2">Practice</h4>
+                        <p class="text-sm text-gray-600">
+                            Chant during sunrise and sunset for maximum spiritual benefit.
+                        </p>
+                    </div>
+                    
+                    <div class="flex gap-2">
+                        <button onclick="playMantra('gayatri')" class="flex-1 ayurvedic-green text-white px-4 py-2 rounded-lg hover:bg-ayurvedic-sage transition-colors">
+                            <i class="fas fa-play mr-2"></i>
+                            Play
+                        </button>
+                        <button onclick="showMantraDetails('gayatri')" class="px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors">
+                            <i class="fas fa-info"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Maha Mrityunjaya Mantra -->
+            <div class="mantra-card bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1" data-category="Healing">
+                <div class="p-6">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="flex-1">
+                            <h3 class="text-lg font-semibold text-gray-800 mb-1">Maha Mrityunjaya</h3>
+                            <p class="text-sm text-ayurvedic-sage italic">महा मृत्युंजय मंत्र</p>
+                        </div>
+                        <span class="px-2 py-1 rounded-full text-xs font-medium bg-green-100 text-green-700">
+                            Healing
+                        </span>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <div class="bg-gradient-to-br from-green-100 to-emerald-100 rounded-lg p-4 text-center">
+                            <div class="text-xl mb-2 font-sans">ॐ त्र्यम्बकं यजामहे</div>
+                            <audio id="audio-mrityunjaya" controls class="w-full">
+                                <source src="/static/audio/mrityunjaya-mantra.mp3" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <h4 class="font-medium text-gray-700 mb-2">Benefits</h4>
+                        <ul class="text-sm text-gray-600 space-y-1">
+                            <li>• Powerful healing mantra</li>
+                            <li>• Overcomes fear of death</li>
+                            <li>• Promotes longevity</li>
+                            <li>• Removes obstacles</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <h4 class="font-medium text-gray-700 mb-2">Practice</h4>
+                        <p class="text-sm text-gray-600">
+                            Chant 108 times daily for healing and protection from diseases.
+                        </p>
+                    </div>
+                    
+                    <div class="flex gap-2">
+                        <button onclick="playMantra('mrityunjaya')" class="flex-1 ayurvedic-green text-white px-4 py-2 rounded-lg hover:bg-ayurvedic-sage transition-colors">
+                            <i class="fas fa-play mr-2"></i>
+                            Play
+                        </button>
+                        <button onclick="showMantraDetails('mrityunjaya')" class="px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors">
+                            <i class="fas fa-info"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Shanti Mantra -->
+            <div class="mantra-card bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1" data-category="Peace">
+                <div class="p-6">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="flex-1">
+                            <h3 class="text-lg font-semibold text-gray-800 mb-1">Shanti Mantra</h3>
+                            <p class="text-sm text-ayurvedic-sage italic">शांति मंत्र</p>
+                        </div>
+                        <span class="px-2 py-1 rounded-full text-xs font-medium bg-yellow-100 text-yellow-700">
+                            Peace
+                        </span>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <div class="bg-gradient-to-br from-yellow-100 to-orange-100 rounded-lg p-4 text-center">
+                            <div class="text-xl mb-2 font-sans">ॐ शांति शांति शांति</div>
+                            <audio id="audio-shanti" controls class="w-full">
+                                <source src="/static/audio/shanti-mantra.mp3" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <h4 class="font-medium text-gray-700 mb-2">Benefits</h4>
+                        <ul class="text-sm text-gray-600 space-y-1">
+                            <li>• Brings peace and tranquility</li>
+                            <li>• Calms the mind</li>
+                            <li>• Reduces anger and agitation</li>
+                            <li>• Promotes harmony</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <h4 class="font-medium text-gray-700 mb-2">Practice</h4>
+                        <p class="text-sm text-gray-600">
+                            Chant before meditation or when feeling stressed or anxious.
+                        </p>
+                    </div>
+                    
+                    <div class="flex gap-2">
+                        <button onclick="playMantra('shanti')" class="flex-1 ayurvedic-green text-white px-4 py-2 rounded-lg hover:bg-ayurvedic-sage transition-colors">
+                            <i class="fas fa-play mr-2"></i>
+                            Play
+                        </button>
+                        <button onclick="showMantraDetails('shanti')" class="px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors">
+                            <i class="fas fa-info"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Guided Meditation -->
+            <div class="mantra-card bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1" data-category="Meditation">
+                <div class="p-6">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="flex-1">
+                            <h3 class="text-lg font-semibold text-gray-800 mb-1">Guided Meditation</h3>
+                            <p class="text-sm text-ayurvedic-sage italic">Mindfulness Practice</p>
+                        </div>
+                        <span class="px-2 py-1 rounded-full text-xs font-medium bg-indigo-100 text-indigo-700">
+                            Meditation
+                        </span>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <div class="bg-gradient-to-br from-indigo-100 to-purple-100 rounded-lg p-4 text-center">
+                            <div class="text-3xl mb-2">🧘‍♀️</div>
+                            <audio id="audio-meditation" controls class="w-full">
+                                <source src="/static/audio/guided-meditation.mp3" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <h4 class="font-medium text-gray-700 mb-2">Benefits</h4>
+                        <ul class="text-sm text-gray-600 space-y-1">
+                            <li>• Reduces stress and anxiety</li>
+                            <li>• Improves focus and concentration</li>
+                            <li>• Enhances emotional well-being</li>
+                            <li>• Promotes better sleep</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <h4 class="font-medium text-gray-700 mb-2">Practice</h4>
+                        <p class="text-sm text-gray-600">
+                            20-minute guided meditation for beginners and experienced practitioners.
+                        </p>
+                    </div>
+                    
+                    <div class="flex gap-2">
+                        <button onclick="playMantra('meditation')" class="flex-1 ayurvedic-green text-white px-4 py-2 rounded-lg hover:bg-ayurvedic-sage transition-colors">
+                            <i class="fas fa-play mr-2"></i>
+                            Play
+                        </button>
+                        <button onclick="showMantraDetails('meditation')" class="px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors">
+                            <i class="fas fa-info"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chakra Healing -->
+            <div class="mantra-card bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1" data-category="Healing">
+                <div class="p-6">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="flex-1">
+                            <h3 class="text-lg font-semibold text-gray-800 mb-1">Chakra Healing</h3>
+                            <p class="text-sm text-ayurvedic-sage italic">Energy Center Balancing</p>
+                        </div>
+                        <span class="px-2 py-1 rounded-full text-xs font-medium bg-pink-100 text-pink-700">
+                            Healing
+                        </span>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <div class="bg-gradient-to-br from-pink-100 to-rose-100 rounded-lg p-4 text-center">
+                            <div class="text-3xl mb-2">🌈</div>
+                            <audio id="audio-chakra" controls class="w-full">
+                                <source src="/static/audio/chakra-healing.mp3" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <h4 class="font-medium text-gray-700 mb-2">Benefits</h4>
+                        <ul class="text-sm text-gray-600 space-y-1">
+                            <li>• Balances all seven chakras</li>
+                            <li>• Removes energy blockages</li>
+                            <li>• Enhances vitality</li>
+                            <li>• Promotes emotional healing</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <h4 class="font-medium text-gray-700 mb-2">Practice</h4>
+                        <p class="text-sm text-gray-600">
+                            Visualize each chakra while listening to the healing frequencies.
+                        </p>
+                    </div>
+                    
+                    <div class="flex gap-2">
+                        <button onclick="playMantra('chakra')" class="flex-1 ayurvedic-green text-white px-4 py-2 rounded-lg hover:bg-ayurvedic-sage transition-colors">
+                            <i class="fas fa-play mr-2"></i>
+                            Play
+                        </button>
+                        <button onclick="showMantraDetails('chakra')" class="px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors">
+                            <i class="fas fa-info"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- AI Model Accuracy Display -->
+        <div class="mt-12 bg-gradient-to-r from-purple-50 to-blue-50 border border-purple-200 rounded-lg p-6">
+            <div class="flex items-center justify-between">
+                <div>
+                    <h4 class="text-lg font-semibold text-gray-800">Mantra Recommendation AI</h4>
+                    <p class="text-sm text-gray-600">Personalized mantra suggestions based on your wellness profile</p>
+                </div>
+                <div class="text-right">
+                    <div class="text-3xl font-bold text-purple-600">96.8%</div>
+                    <div class="text-sm text-gray-600">Accuracy Rate</div>
+                </div>
+            </div>
+            <div class="mt-4 bg-gray-200 rounded-full h-2">
+                <div class="bg-purple-500 h-2 rounded-full" style="width: 96.8%"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Mantra Details Modal -->
+<div id="mantra-modal" class="fixed inset-0 bg-black bg-opacity-50 hidden z-50 flex items-center justify-center p-4">
+    <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+        <div class="p-6">
+            <div class="flex justify-between items-center mb-4">
+                <h3 id="modal-title" class="text-2xl font-bold text-gray-800"></h3>
+                <button onclick="closeMantraModal()" class="text-gray-500 hover:text-gray-700">
+                    <i class="fas fa-times text-xl"></i>
+                </button>
+            </div>
+            <div id="modal-content">
+                <!-- Content will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    let currentCategory = 'All';
+
+    function filterByCategory(category) {
+        currentCategory = category;
+        updateFilters();
+        filterMantras();
+    }
+
+    function updateFilters() {
+        document.querySelectorAll('.category-btn').forEach(btn => {
+            btn.classList.remove('ayurvedic-green', 'text-white');
+            btn.classList.add('border-gray-300');
+        });
+
+        event.target.classList.add('ayurvedic-green', 'text-white');
+        event.target.classList.remove('border-gray-300');
+    }
+
+    function filterMantras() {
+        const searchTerm = document.getElementById('mantra-search').value.toLowerCase();
+        const cards = document.querySelectorAll('.mantra-card');
+        let visibleCount = 0;
+
+        cards.forEach(card => {
+            const category = card.dataset.category;
+            const mantraName = card.querySelector('h3').textContent.toLowerCase();
+            const sanskritName = card.querySelector('p').textContent.toLowerCase();
+
+            const matchesCategory = currentCategory === 'All' || category === currentCategory;
+            const matchesSearch = searchTerm === '' || mantraName.includes(searchTerm) || sanskritName.includes(searchTerm);
+
+            if (matchesCategory && matchesSearch) {
+                card.style.display = 'block';
+                visibleCount++;
+            } else {
+                card.style.display = 'none';
+            }
+        });
+
+        document.getElementById('results-count').textContent = 
+            `Showing ${visibleCount} mantra${visibleCount !== 1 ? 's' : ''} and meditation practice${visibleCount !== 1 ? 's' : ''}`;
+    }
+
+    function playMantra(mantraId) {
+        const audio = document.getElementById(`audio-${mantraId}`);
+        if (audio) {
+            audio.play();
+        }
+    }
+
+    function showMantraDetails(mantraId) {
+        const mantraData = {
+            'om': {
+                name: 'Om Mantra',
+                sanskrit: 'ॐ',
+                description: 'The primordial sound of the universe, representing the essence of all creation.',
+                benefits: [
+                    'Universal healing vibration',
+                    'Balances all chakras',
+                    'Reduces stress and anxiety',
+                    'Enhances spiritual connection',
+                    'Improves concentration',
+                    'Promotes inner peace'
+                ],
+                practice: [
+                    'Sit in a comfortable position with spine straight',
+                    'Close your eyes and take deep breaths',
+                    'Chant "Om" 108 times while focusing on the vibration',
+                    'Feel the vibration in your chest and head',
+                    'End with a few minutes of silence'
+                ],
+                duration: '10-20 minutes',
+                frequency: 'Daily, preferably morning and evening'
+            },
+            'gayatri': {
+                name: 'Gayatri Mantra',
+                sanskrit: 'ॐ भूर्भुवः स्वः तत्सवितुर्वरेण्यं भर्गो देवस्य धीमहि धियो यो नः प्रचोदयात्',
+                description: 'The most powerful mantra for wisdom, knowledge, and spiritual enlightenment.',
+                benefits: [
+                    'Enhances wisdom and knowledge',
+                    'Purifies the mind and intellect',
+                    'Removes negative thoughts',
+                    'Brings enlightenment and clarity',
+                    'Strengthens memory and concentration',
+                    'Promotes spiritual growth'
+                ],
+                practice: [
+                    'Best chanted during sunrise and sunset',
+                    'Sit facing east during sunrise',
+                    'Chant 108 times with devotion',
+                    'Focus on the meaning and vibration',
+                    'Visualize divine light entering your mind'
+                ],
+                duration: '15-30 minutes',
+                frequency: 'Twice daily (sunrise and sunset)'
+            }
+        };
+
+        const mantra = mantraData[mantraId];
+        if (!mantra) return;
+
+        document.getElementById('modal-title').textContent = mantra.name;
+        
+        const content = `
+            <div class="space-y-4">
+                <div>
+                    <h4 class="font-semibold text-gray-800 mb-2">Sanskrit Text</h4>
+                    <p class="text-ayurvedic-sage italic text-lg">${mantra.sanskrit}</p>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold text-gray-800 mb-2">Description</h4>
+                    <p class="text-gray-600">${mantra.description}</p>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold text-gray-800 mb-2">Benefits</h4>
+                    <ul class="list-disc list-inside text-gray-600 space-y-1">
+                        ${mantra.benefits.map(benefit => `<li>${benefit}</li>`).join('')}
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold text-gray-800 mb-2">How to Practice</h4>
+                    <ol class="list-decimal list-inside text-gray-600 space-y-1">
+                        ${mantra.practice.map(step => `<li>${step}</li>`).join('')}
+                    </ol>
+                </div>
+                
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <h4 class="font-semibold text-gray-800 mb-2">Duration</h4>
+                        <p class="text-gray-600">${mantra.duration}</p>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-gray-800 mb-2">Frequency</h4>
+                        <p class="text-gray-600">${mantra.frequency}</p>
+                    </div>
+                </div>
+            </div>
+        `;
+        
+        document.getElementById('modal-content').innerHTML = content;
+        document.getElementById('mantra-modal').classList.remove('hidden');
+    }
+
+    function closeMantraModal() {
+        document.getElementById('mantra-modal').classList.add('hidden');
+    }
+
+    // Search functionality
+    document.getElementById('mantra-search').addEventListener('input', filterMantras);
+
+    // Close modal when clicking outside
+    document.getElementById('mantra-modal').addEventListener('click', function(e) {
+        if (e.target === this) {
+            closeMantraModal();
+        }
+    });
+</script>
+{% endblock %}

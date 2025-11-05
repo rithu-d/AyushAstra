@@ -1,0 +1,314 @@
+{% extends "base.html" %}
+
+{% block title %}Yoga for Health - AyushAstra{% endblock %}
+
+{% block content %}
+<div class="min-h-screen bg-gradient-to-br from-ayurvedic-cream to-white py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Header -->
+        <div class="text-center mb-12">
+            <h2 class="text-4xl font-bold text-gray-800 mb-4">Yoga for Health</h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                Discover yoga poses specifically designed to address various health conditions and body pains. 
+                Each pose is carefully selected for its therapeutic benefits.
+            </p>
+        </div>
+
+        <!-- Filters -->
+        <div class="mb-8">
+            <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg border border-gray-200">
+                <!-- Search -->
+                <div class="mb-6">
+                    <div class="relative max-w-md mx-auto">
+                        <input
+                            type="text"
+                            id="yoga-search"
+                            placeholder="Search yoga poses..."
+                            class="w-full px-4 py-3 pr-10 border border-gray-300 rounded-lg focus:border-ayurvedic-green focus:outline-none"
+                        />
+                        <i class="fas fa-search absolute right-3 top-3.5 text-gray-400"></i>
+                    </div>
+                </div>
+
+                <!-- Category Filter -->
+                <div class="mb-4">
+                    <h3 class="text-sm font-medium text-gray-700 mb-3 flex items-center gap-2">
+                        <i class="fas fa-filter"></i>
+                        Category
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <button onclick="filterByCategory('All')" class="category-btn px-3 py-1 rounded-full text-sm border border-gray-300 hover:ayurvedic-green hover:text-white transition-colors">All</button>
+                        <button onclick="filterByCategory('Pain Relief')" class="category-btn px-3 py-1 rounded-full text-sm border border-gray-300 hover:ayurvedic-green hover:text-white transition-colors">Pain Relief</button>
+                        <button onclick="filterByCategory('Stress Relief')" class="category-btn px-3 py-1 rounded-full text-sm border border-gray-300 hover:ayurvedic-green hover:text-white transition-colors">Stress Relief</button>
+                        <button onclick="filterByCategory('Strength Building')" class="category-btn px-3 py-1 rounded-full text-sm border border-gray-300 hover:ayurvedic-green hover:text-white transition-colors">Strength Building</button>
+                    </div>
+                </div>
+
+                <!-- Condition Filter -->
+                <div>
+                    <h3 class="text-sm font-medium text-gray-700 mb-3">Health Condition</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <button onclick="filterByCondition('All')" class="condition-btn px-3 py-1 rounded-full text-sm border border-gray-300 hover:ayurvedic-green hover:text-white transition-colors">All</button>
+                        <button onclick="filterByCondition('Back Pain')" class="condition-btn px-3 py-1 rounded-full text-sm border border-gray-300 hover:ayurvedic-green hover:text-white transition-colors">Back Pain</button>
+                        <button onclick="filterByCondition('Anxiety')" class="condition-btn px-3 py-1 rounded-full text-sm border border-gray-300 hover:ayurvedic-green hover:text-white transition-colors">Anxiety</button>
+                        <button onclick="filterByCondition('Stress')" class="condition-btn px-3 py-1 rounded-full text-sm border border-gray-300 hover:ayurvedic-green hover:text-white transition-colors">Stress</button>
+                        <button onclick="filterByCondition('Headache')" class="condition-btn px-3 py-1 rounded-full text-sm border border-gray-300 hover:ayurvedic-green hover:text-white transition-colors">Headache</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Results Count -->
+        <div class="mb-6">
+            <p id="results-count" class="text-gray-600">
+                Showing {{ yoga_poses|length }} yoga pose{{ 's' if yoga_poses|length != 1 else '' }}
+            </p>
+        </div>
+
+        <!-- Yoga Poses Grid -->
+        <div id="yoga-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {% for pose in yoga_poses %}
+            <div class="yoga-card bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1" data-category="{{ pose.category }}" data-conditions="{{ pose.conditions|join(',') }}">
+                <div class="p-6">
+                    <!-- Header -->
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="flex-1">
+                            <h3 class="text-lg font-semibold text-gray-800 mb-1">{{ pose.name }}</h3>
+                            <p class="text-sm text-ayurvedic-sage italic">{{ pose.sanskrit_name }}</p>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="px-2 py-1 rounded-full text-xs font-medium {% if pose.difficulty == 'Beginner' %}bg-green-100 text-green-700{% elif pose.difficulty == 'Intermediate' %}bg-yellow-100 text-yellow-700{% else %}bg-red-100 text-red-700{% endif %}">
+                                {{ pose.difficulty }}
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <!-- Image placeholder -->
+                    <div class="w-full h-48 bg-gradient-to-br from-ayurvedic-green to-ayurvedic-sage rounded-lg flex items-center justify-center mb-4">
+                        <div class="text-white text-6xl opacity-50">🧘‍♀️</div>
+                    </div>
+                    
+                    <!-- Benefits -->
+                    <div class="mb-4">
+                        <h4 class="font-medium text-gray-700 mb-2 flex items-center gap-2">
+                            <i class="fas fa-heart text-red-500"></i>
+                            Benefits
+                        </h4>
+                        <ul class="text-sm text-gray-600 space-y-1">
+                            {% for benefit in pose.benefits[:3] %}
+                            <li class="flex items-start gap-2">
+                                <span class="text-ayurvedic-green mt-1">•</span>
+                                {{ benefit }}
+                            </li>
+                            {% endfor %}
+                            {% if pose.benefits|length > 3 %}
+                            <li class="text-xs text-gray-500 italic">
+                                +{{ pose.benefits|length - 3 }} more benefits
+                            </li>
+                            {% endif %}
+                        </ul>
+                    </div>
+                    
+                    <!-- Duration -->
+                    <div class="flex items-center gap-2 text-sm text-gray-600 mb-4">
+                        <i class="fas fa-clock text-blue-500"></i>
+                        <span>{{ pose.duration }}</span>
+                    </div>
+                    
+                    <!-- Instructions preview -->
+                    <div class="mb-4">
+                        <h4 class="font-medium text-gray-700 mb-2">Quick Start</h4>
+                        <p class="text-sm text-gray-600 line-clamp-2">
+                            {{ pose.instructions[0] }}
+                        </p>
+                    </div>
+                    
+                    <!-- Actions -->
+                    <div class="flex gap-2">
+                        <button onclick="showPoseDetails('{{ pose.id }}')" class="flex-1 ayurvedic-green text-white px-4 py-2 rounded-lg hover:bg-ayurvedic-sage transition-colors">
+                            Learn More
+                        </button>
+                        <button onclick="addToFavorites('{{ pose.id }}')" class="px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                    </div>
+                    
+                    <!-- Precautions -->
+                    {% if pose.precautions %}
+                    <div class="pt-2 border-t border-gray-100 mt-4">
+                        <div class="flex items-center gap-2 text-xs text-amber-600">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <span>Check precautions before practicing</span>
+                        </div>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+
+        <!-- No Results -->
+        <div id="no-results" class="text-center py-12 hidden">
+            <div class="text-6xl mb-4">🧘‍♀️</div>
+            <h3 class="text-xl font-semibold text-gray-700 mb-2">No poses found</h3>
+            <p class="text-gray-500">
+                Try adjusting your filters or search terms to find the perfect yoga pose for you.
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- Pose Details Modal -->
+<div id="pose-modal" class="fixed inset-0 bg-black bg-opacity-50 hidden z-50 flex items-center justify-center p-4">
+    <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+        <div class="p-6">
+            <div class="flex justify-between items-center mb-4">
+                <h3 id="modal-title" class="text-2xl font-bold text-gray-800"></h3>
+                <button onclick="closePoseModal()" class="text-gray-500 hover:text-gray-700">
+                    <i class="fas fa-times text-xl"></i>
+                </button>
+            </div>
+            <div id="modal-content">
+                <!-- Content will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    const yogaPoses = {{ yoga_poses|tojson }};
+    let currentCategory = 'All';
+    let currentCondition = 'All';
+
+    function filterByCategory(category) {
+        currentCategory = category;
+        updateFilters();
+        filterPoses();
+    }
+
+    function filterByCondition(condition) {
+        currentCondition = condition;
+        updateFilters();
+        filterPoses();
+    }
+
+    function updateFilters() {
+        // Update button styles
+        document.querySelectorAll('.category-btn').forEach(btn => {
+            btn.classList.remove('ayurvedic-green', 'text-white');
+            btn.classList.add('border-gray-300');
+        });
+        document.querySelectorAll('.condition-btn').forEach(btn => {
+            btn.classList.remove('ayurvedic-green', 'text-white');
+            btn.classList.add('border-gray-300');
+        });
+
+        // Highlight active buttons
+        event.target.classList.add('ayurvedic-green', 'text-white');
+        event.target.classList.remove('border-gray-300');
+    }
+
+    function filterPoses() {
+        const searchTerm = document.getElementById('yoga-search').value.toLowerCase();
+        const cards = document.querySelectorAll('.yoga-card');
+        let visibleCount = 0;
+
+        cards.forEach(card => {
+            const category = card.dataset.category;
+            const conditions = card.dataset.conditions.toLowerCase();
+            const poseName = card.querySelector('h3').textContent.toLowerCase();
+            const sanskritName = card.querySelector('p').textContent.toLowerCase();
+
+            const matchesCategory = currentCategory === 'All' || category === currentCategory;
+            const matchesCondition = currentCondition === 'All' || conditions.includes(currentCondition.toLowerCase());
+            const matchesSearch = searchTerm === '' || poseName.includes(searchTerm) || sanskritName.includes(searchTerm);
+
+            if (matchesCategory && matchesCondition && matchesSearch) {
+                card.style.display = 'block';
+                visibleCount++;
+            } else {
+                card.style.display = 'none';
+            }
+        });
+
+        // Update results count
+        document.getElementById('results-count').textContent = 
+            `Showing ${visibleCount} yoga pose${visibleCount !== 1 ? 's' : ''}`;
+
+        // Show/hide no results message
+        const noResults = document.getElementById('no-results');
+        if (visibleCount === 0) {
+            noResults.classList.remove('hidden');
+        } else {
+            noResults.classList.add('hidden');
+        }
+    }
+
+    function showPoseDetails(poseId) {
+        const pose = yogaPoses.find(p => p.id === poseId);
+        if (!pose) return;
+
+        document.getElementById('modal-title').textContent = pose.name;
+        
+        const content = `
+            <div class="space-y-4">
+                <div>
+                    <h4 class="font-semibold text-gray-800 mb-2">Sanskrit Name</h4>
+                    <p class="text-ayurvedic-sage italic">${pose.sanskrit_name}</p>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold text-gray-800 mb-2">Benefits</h4>
+                    <ul class="list-disc list-inside text-gray-600 space-y-1">
+                        ${pose.benefits.map(benefit => `<li>${benefit}</li>`).join('')}
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold text-gray-800 mb-2">Instructions</h4>
+                    <ol class="list-decimal list-inside text-gray-600 space-y-1">
+                        ${pose.instructions.map(instruction => `<li>${instruction}</li>`).join('')}
+                    </ol>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold text-gray-800 mb-2">Duration</h4>
+                    <p class="text-gray-600">${pose.duration}</p>
+                </div>
+                
+                ${pose.precautions.length > 0 ? `
+                <div>
+                    <h4 class="font-semibold text-gray-800 mb-2">Precautions</h4>
+                    <ul class="list-disc list-inside text-amber-600 space-y-1">
+                        ${pose.precautions.map(precaution => `<li>${precaution}</li>`).join('')}
+                    </ul>
+                </div>
+                ` : ''}
+            </div>
+        `;
+        
+        document.getElementById('modal-content').innerHTML = content;
+        document.getElementById('pose-modal').classList.remove('hidden');
+    }
+
+    function closePoseModal() {
+        document.getElementById('pose-modal').classList.add('hidden');
+    }
+
+    function addToFavorites(poseId) {
+        alert('Added to favorites! (Feature coming soon)');
+    }
+
+    // Search functionality
+    document.getElementById('yoga-search').addEventListener('input', filterPoses);
+
+    // Close modal when clicking outside
+    document.getElementById('pose-modal').addEventListener('click', function(e) {
+        if (e.target === this) {
+            closePoseModal();
+        }
+    });
+</script>
+{% endblock %}

@@ -1,0 +1,747 @@
+{
+  "Rithud": [
+    {
+      "mantras": [],
+      "model_metrics": {
+        "accuracy": 94.2,
+        "confidence_score": 0.9113637836289803,
+        "prediction_time": 0.43266675960280954,
+        "training_samples": 10000
+      },
+      "pranayama": [
+        {
+          "benefits": [
+            "Balances nervous system",
+            "Reduces stress and anxiety",
+            "Improves concentration",
+            "Purifies energy channels",
+            "Promotes mental clarity"
+          ],
+          "breathing_pattern": "4:4:4:4 (inhale:hold:exhale:hold)",
+          "conditions": [
+            "Anxiety",
+            "Stress",
+            "Poor Concentration",
+            "Insomnia"
+          ],
+          "confidence_score": 0.1111111111111111,
+          "description": "A balancing breathing technique that harmonizes the left and right hemispheres of the brain.",
+          "duration": "5-15 minutes",
+          "id": "anulom-vilom",
+          "instructions": [
+            "Sit comfortably with spine straight",
+            "Close right nostril with right thumb",
+            "Inhale through left nostril for 4 counts",
+            "Close left nostril with ring finger",
+            "Exhale through right nostril for 4 counts",
+            "Inhale through right nostril for 4 counts",
+            "Close right nostril, exhale through left for 4 counts",
+            "Repeat for 5-10 rounds"
+          ],
+          "name": "Alternate Nostril Breathing",
+          "precautions": [
+            "Avoid if you have severe nasal congestion",
+            "Don't force the breath",
+            "Stop if you feel dizzy"
+          ],
+          "sanskrit_name": "Anulom Vilom"
+        },
+        {
+          "benefits": [
+            "Cleanses respiratory system",
+            "Improves lung capacity",
+            "Boosts energy levels",
+            "Strengthens abdominal muscles",
+            "Improves digestion"
+          ],
+          "breathing_pattern": "Forceful exhalation, natural inhalation",
+          "conditions": [
+            "Low Energy",
+            "Poor Digestion",
+            "Respiratory Issues",
+            "Obesity"
+          ],
+          "confidence_score": 0.1111111111111111,
+          "description": "An energizing breathing technique that cleanses the respiratory system and invigorates the mind.",
+          "duration": "5-10 minutes",
+          "id": "kapalbhati",
+          "instructions": [
+            "Sit comfortably with spine straight",
+            "Take a deep breath in",
+            "Exhale forcefully through nose, contracting abdomen",
+            "Let inhalation happen naturally",
+            "Start with 20-30 rounds",
+            "Gradually increase to 100 rounds"
+          ],
+          "name": "Skull Shining Breath",
+          "precautions": [
+            "Avoid during pregnancy",
+            "Don't practice on full stomach",
+            "Stop if you feel dizzy or nauseous",
+            "Avoid if you have high blood pressure"
+          ],
+          "sanskrit_name": "Kapalbhati"
+        },
+        {
+          "benefits": [
+            "Calms the mind",
+            "Reduces stress and anxiety",
+            "Relieves headaches",
+            "Improves concentration",
+            "Promotes better sleep"
+          ],
+          "breathing_pattern": "Slow, deep breathing with humming",
+          "conditions": [
+            "Anxiety",
+            "Stress",
+            "Headaches",
+            "Insomnia",
+            "Anger"
+          ],
+          "confidence_score": 0.1111111111111111,
+          "description": "A calming breathing technique that produces a humming sound like a bee, promoting relaxation.",
+          "duration": "5-10 minutes",
+          "id": "bhramari",
+          "instructions": [
+            "Sit comfortably with spine straight",
+            "Close ears with index fingers",
+            "Close eyes and take deep breath",
+            "Exhale slowly while making humming sound",
+            "Feel the vibration in head and chest",
+            "Repeat 5-10 times"
+          ],
+          "name": "Bee Breath",
+          "precautions": [
+            "Avoid if you have severe ear problems",
+            "Don't force the sound",
+            "Stop if you feel uncomfortable"
+          ],
+          "sanskrit_name": "Bhramari"
+        }
+      ],
+      "remedies": [
+        {
+          "benefits": [
+            "Reduces inflammation",
+            "Boosts immunity",
+            "Aids digestion",
+            "Promotes better sleep",
+            "Supports joint health"
+          ],
+          "category": "Anti-inflammatory",
+          "conditions": [
+            "Arthritis",
+            "Digestive Issues",
+            "Insomnia",
+            "Inflammation"
+          ],
+          "confidence_score": 0,
+          "description": "A traditional Ayurvedic drink combining turmeric with warm milk and spices for healing and wellness.",
+          "dosage": "1 cup daily, preferably at bedtime",
+          "herb_name": "Turmeric (Curcuma longa)",
+          "id": "turmeric-golden-milk",
+          "image": "/static/images/remedies/golden-milk.png",
+          "name": "Golden Milk",
+          "precautions": [
+            "Avoid if allergic to turmeric",
+            "Consult doctor if on blood thinners",
+            "May cause stomach upset in excess"
+          ],
+          "preparation": [
+            "Heat 1 cup of milk (dairy or plant-based)",
+            "Add 1/2 teaspoon turmeric powder",
+            "Add pinch of black pepper and ginger",
+            "Add 1/2 teaspoon honey or jaggery",
+            "Stir well and drink warm"
+          ],
+          "related_yoga": [
+            "Child's Pose",
+            "Legs Up the Wall"
+          ]
+        },
+        {
+          "benefits": [
+            "Reduces stress and anxiety",
+            "Improves sleep quality",
+            "Boosts energy and stamina",
+            "Supports adrenal health",
+            "Enhances mental clarity"
+          ],
+          "category": "Adaptogen",
+          "conditions": [
+            "Anxiety",
+            "Stress",
+            "Insomnia",
+            "Fatigue",
+            "Depression"
+          ],
+          "confidence_score": 0,
+          "description": "A powerful adaptogenic herb known as \"Indian ginseng\" for its stress-relieving and energy-boosting properties.",
+          "dosage": "1 cup daily, preferably in morning",
+          "herb_name": "Ashwagandha (Withania somnifera)",
+          "id": "ashwagandha-tea",
+          "image": "/static/images/remedies/ashwagandha-tea.png",
+          "name": "Ashwagandha Tea",
+          "precautions": [
+            "Avoid during pregnancy",
+            "May interact with thyroid medications",
+            "Start with small doses"
+          ],
+          "preparation": [
+            "Boil 1 cup water",
+            "Add 1/2 teaspoon ashwagandha powder",
+            "Add pinch of cardamom and cinnamon",
+            "Steep for 5-10 minutes",
+            "Strain and add honey to taste"
+          ],
+          "related_yoga": [
+            "Child's Pose",
+            "Corpse Pose",
+            "Meditation"
+          ]
+        },
+        {
+          "benefits": [
+            "Improves digestion",
+            "Detoxifies the body",
+            "Boosts immunity",
+            "Supports liver health",
+            "Promotes regular bowel movements"
+          ],
+          "category": "Digestive",
+          "conditions": [
+            "Digestive Issues",
+            "Constipation",
+            "Poor Immunity",
+            "Toxins"
+          ],
+          "confidence_score": 0,
+          "description": "A traditional Ayurvedic formula combining three fruits: Amalaki, Bibhitaki, and Haritaki for digestive health.",
+          "dosage": "1/2 teaspoon daily with warm water",
+          "herb_name": "Triphala (Three Fruits)",
+          "id": "triphala-churna",
+          "image": "/static/images/remedies/triphala-powder.svg",
+          "name": "Triphala Powder",
+          "precautions": [
+            "Start with small doses",
+            "May cause loose stools initially",
+            "Avoid if you have severe diarrhea"
+          ],
+          "preparation": [
+            "Mix 1/2 teaspoon triphala powder with warm water",
+            "Add honey or jaggery for taste",
+            "Stir well and drink",
+            "Best taken on empty stomach"
+          ],
+          "related_yoga": [
+            "Cat-Cow Pose",
+            "Seated Forward Bend"
+          ]
+        }
+      ],
+      "yoga": [
+        {
+          "benefits": [
+            "Stretches hamstrings, spine, and shoulders",
+            "Soothes the nervous system",
+            "Stimulates abdominal organs",
+            "Helps relieve mild depression and anxiety"
+          ],
+          "category": "Pain Relief",
+          "conditions": [
+            "Hamstring Tightness",
+            "Stress",
+            "Digestive Issues",
+            "Gas pain",
+            "Bloating",
+            "Digestive cramps",
+            "Constipation-related abdominal pain"
+          ],
+          "confidence_score": 0.4,
+          "difficulty": "Intermediate",
+          "duration": "1-3 minutes",
+          "id": "seated-forward-bend",
+          "image": "/static/images/poses/Seated_Forward_Bend_Paschimottanasana.png",
+          "instructions": [
+            "Sit with legs extended and feet flexed",
+            "Inhale to lengthen the spine",
+            "Exhale and hinge at the hips, reaching toward the feet",
+            "Keep spine long, resting hands on legs or feet",
+            "Hold for 1-3 minutes with steady breathing"
+          ],
+          "name": "Seated Forward Bend",
+          "precautions": [
+            "Use a strap if hamstrings are tight",
+            "Avoid rounding the spine excessively",
+            "Bend knees slightly if needed"
+          ],
+          "sanskrit_name": "Paschimottanasana",
+          "subcategory": "Hamstring Stretch"
+        },
+        {
+          "benefits": [
+            "Opens hips and glutes",
+            "Relieves sciatic discomfort",
+            "Releases stored tension and stress",
+            "Improves lower body mobility"
+          ],
+          "category": "Pain Relief",
+          "conditions": [
+            "Hip Tightness",
+            "Sciatica",
+            "Lower Back Pain",
+            "Hip tightness",
+            "Hip flexor strain",
+            "Piriformis syndrome",
+            "Pelvic floor tension",
+            "Sciatic nerve compression"
+          ],
+          "confidence_score": 0.4,
+          "difficulty": "Intermediate",
+          "duration": "1-2 minutes per side",
+          "id": "pigeon-pose",
+          "image": "/static/images/poses/Pigeon_Supta_Kapotasana.png",
+          "instructions": [
+            "From Downward Dog, bring right knee toward right wrist",
+            "Slide left leg back, keeping hips square",
+            "Keep chest lifted or fold forward over front leg",
+            "Hold for 1-2 minutes, then switch sides"
+          ],
+          "name": "Pigeon Pose",
+          "precautions": [
+            "Place blanket under hips for support",
+            "Avoid if you have acute knee injury",
+            "Keep front foot flexed to protect the knee"
+          ],
+          "sanskrit_name": "Eka Pada Rajakapotasana",
+          "subcategory": "Hip Release"
+        },
+        {
+          "benefits": [
+            "Strengthens shoulders and upper back",
+            "Stretches hamstrings and calves",
+            "Prepares the body for inversions"
+          ],
+          "category": "Strength Building",
+          "conditions": [
+            "Shoulder Weakness",
+            "Upper Back Tension",
+            "Neck stiffness",
+            "Cervical pain",
+            "Shoulder tightness",
+            "Frozen shoulder",
+            "Rotator cuff pain",
+            "Upper shoulder blade pain"
+          ],
+          "confidence_score": 0.4,
+          "difficulty": "Intermediate",
+          "duration": "5-10 breaths",
+          "id": "dolphin-pose",
+          "image": "/static/images/poses/Dolphin_Ardha_Pincha_Mayurasana.png",
+          "instructions": [
+            "Start on hands and knees, then lower forearms to the floor",
+            "Tuck toes and lift hips up like Downward Dog",
+            "Press forearms firmly into the mat",
+            "Hold for 5\u201310 breaths"
+          ],
+          "name": "Dolphin Pose",
+          "precautions": [
+            "Avoid if you have acute shoulder injuries",
+            "Keep neck relaxed and gaze between feet"
+          ],
+          "sanskrit_name": "Ardha Pincha Mayurasana",
+          "subcategory": "Shoulders & Upper Back"
+        }
+      ],
+      "saved_at": "2025-12-07T22:22:47.834568"
+    },
+    {
+      "mantras": [],
+      "model_metrics": {
+        "accuracy": 94.2,
+        "confidence_score": 0.8740813190475305,
+        "prediction_time": 0.4248126229123681,
+        "training_samples": 10000
+      },
+      "pranayama": [
+        {
+          "benefits": [
+            "Balances nervous system",
+            "Reduces stress and anxiety",
+            "Improves concentration",
+            "Purifies energy channels",
+            "Promotes mental clarity"
+          ],
+          "breathing_pattern": "4:4:4:4 (inhale:hold:exhale:hold)",
+          "conditions": [
+            "Anxiety",
+            "Stress",
+            "Poor Concentration",
+            "Insomnia"
+          ],
+          "confidence_score": 0.1111111111111111,
+          "description": "A balancing breathing technique that harmonizes the left and right hemispheres of the brain.",
+          "duration": "5-15 minutes",
+          "id": "anulom-vilom",
+          "instructions": [
+            "Sit comfortably with spine straight",
+            "Close right nostril with right thumb",
+            "Inhale through left nostril for 4 counts",
+            "Close left nostril with ring finger",
+            "Exhale through right nostril for 4 counts",
+            "Inhale through right nostril for 4 counts",
+            "Close right nostril, exhale through left for 4 counts",
+            "Repeat for 5-10 rounds"
+          ],
+          "name": "Alternate Nostril Breathing",
+          "precautions": [
+            "Avoid if you have severe nasal congestion",
+            "Don't force the breath",
+            "Stop if you feel dizzy"
+          ],
+          "sanskrit_name": "Anulom Vilom"
+        },
+        {
+          "benefits": [
+            "Cleanses respiratory system",
+            "Improves lung capacity",
+            "Boosts energy levels",
+            "Strengthens abdominal muscles",
+            "Improves digestion"
+          ],
+          "breathing_pattern": "Forceful exhalation, natural inhalation",
+          "conditions": [
+            "Low Energy",
+            "Poor Digestion",
+            "Respiratory Issues",
+            "Obesity"
+          ],
+          "confidence_score": 0.1111111111111111,
+          "description": "An energizing breathing technique that cleanses the respiratory system and invigorates the mind.",
+          "duration": "5-10 minutes",
+          "id": "kapalbhati",
+          "instructions": [
+            "Sit comfortably with spine straight",
+            "Take a deep breath in",
+            "Exhale forcefully through nose, contracting abdomen",
+            "Let inhalation happen naturally",
+            "Start with 20-30 rounds",
+            "Gradually increase to 100 rounds"
+          ],
+          "name": "Skull Shining Breath",
+          "precautions": [
+            "Avoid during pregnancy",
+            "Don't practice on full stomach",
+            "Stop if you feel dizzy or nauseous",
+            "Avoid if you have high blood pressure"
+          ],
+          "sanskrit_name": "Kapalbhati"
+        },
+        {
+          "benefits": [
+            "Calms the mind",
+            "Reduces stress and anxiety",
+            "Relieves headaches",
+            "Improves concentration",
+            "Promotes better sleep"
+          ],
+          "breathing_pattern": "Slow, deep breathing with humming",
+          "conditions": [
+            "Anxiety",
+            "Stress",
+            "Headaches",
+            "Insomnia",
+            "Anger"
+          ],
+          "confidence_score": 0.1111111111111111,
+          "description": "A calming breathing technique that produces a humming sound like a bee, promoting relaxation.",
+          "duration": "5-10 minutes",
+          "id": "bhramari",
+          "instructions": [
+            "Sit comfortably with spine straight",
+            "Close ears with index fingers",
+            "Close eyes and take deep breath",
+            "Exhale slowly while making humming sound",
+            "Feel the vibration in head and chest",
+            "Repeat 5-10 times"
+          ],
+          "name": "Bee Breath",
+          "precautions": [
+            "Avoid if you have severe ear problems",
+            "Don't force the sound",
+            "Stop if you feel uncomfortable"
+          ],
+          "sanskrit_name": "Bhramari"
+        }
+      ],
+      "remedies": [
+        {
+          "benefits": [
+            "Reduces inflammation",
+            "Boosts immunity",
+            "Aids digestion",
+            "Promotes better sleep",
+            "Supports joint health"
+          ],
+          "category": "Anti-inflammatory",
+          "conditions": [
+            "Arthritis",
+            "Digestive Issues",
+            "Insomnia",
+            "Inflammation"
+          ],
+          "confidence_score": 0,
+          "description": "A traditional Ayurvedic drink combining turmeric with warm milk and spices for healing and wellness.",
+          "dosage": "1 cup daily, preferably at bedtime",
+          "herb_name": "Turmeric (Curcuma longa)",
+          "id": "turmeric-golden-milk",
+          "image": "/static/images/remedies/golden-milk.png",
+          "name": "Golden Milk",
+          "precautions": [
+            "Avoid if allergic to turmeric",
+            "Consult doctor if on blood thinners",
+            "May cause stomach upset in excess"
+          ],
+          "preparation": [
+            "Heat 1 cup of milk (dairy or plant-based)",
+            "Add 1/2 teaspoon turmeric powder",
+            "Add pinch of black pepper and ginger",
+            "Add 1/2 teaspoon honey or jaggery",
+            "Stir well and drink warm"
+          ],
+          "related_yoga": [
+            "Child's Pose",
+            "Legs Up the Wall"
+          ]
+        },
+        {
+          "benefits": [
+            "Reduces stress and anxiety",
+            "Improves sleep quality",
+            "Boosts energy and stamina",
+            "Supports adrenal health",
+            "Enhances mental clarity"
+          ],
+          "category": "Adaptogen",
+          "conditions": [
+            "Anxiety",
+            "Stress",
+            "Insomnia",
+            "Fatigue",
+            "Depression"
+          ],
+          "confidence_score": 0,
+          "description": "A powerful adaptogenic herb known as \"Indian ginseng\" for its stress-relieving and energy-boosting properties.",
+          "dosage": "1 cup daily, preferably in morning",
+          "herb_name": "Ashwagandha (Withania somnifera)",
+          "id": "ashwagandha-tea",
+          "image": "/static/images/remedies/ashwagandha-tea.png",
+          "name": "Ashwagandha Tea",
+          "precautions": [
+            "Avoid during pregnancy",
+            "May interact with thyroid medications",
+            "Start with small doses"
+          ],
+          "preparation": [
+            "Boil 1 cup water",
+            "Add 1/2 teaspoon ashwagandha powder",
+            "Add pinch of cardamom and cinnamon",
+            "Steep for 5-10 minutes",
+            "Strain and add honey to taste"
+          ],
+          "related_yoga": [
+            "Child's Pose",
+            "Corpse Pose",
+            "Meditation"
+          ]
+        },
+        {
+          "benefits": [
+            "Improves digestion",
+            "Detoxifies the body",
+            "Boosts immunity",
+            "Supports liver health",
+            "Promotes regular bowel movements"
+          ],
+          "category": "Digestive",
+          "conditions": [
+            "Digestive Issues",
+            "Constipation",
+            "Poor Immunity",
+            "Toxins"
+          ],
+          "confidence_score": 0,
+          "description": "A traditional Ayurvedic formula combining three fruits: Amalaki, Bibhitaki, and Haritaki for digestive health.",
+          "dosage": "1/2 teaspoon daily with warm water",
+          "herb_name": "Triphala (Three Fruits)",
+          "id": "triphala-churna",
+          "image": "/static/images/remedies/triphala-powder.svg",
+          "name": "Triphala Powder",
+          "precautions": [
+            "Start with small doses",
+            "May cause loose stools initially",
+            "Avoid if you have severe diarrhea"
+          ],
+          "preparation": [
+            "Mix 1/2 teaspoon triphala powder with warm water",
+            "Add honey or jaggery for taste",
+            "Stir well and drink",
+            "Best taken on empty stomach"
+          ],
+          "related_yoga": [
+            "Cat-Cow Pose",
+            "Seated Forward Bend"
+          ]
+        }
+      ],
+      "yoga": [
+        {
+          "benefits": [
+            "Improves spinal flexibility",
+            "Relieves back tension",
+            "Stretches neck and torso",
+            "Massages spine and belly organs"
+          ],
+          "category": "Pain Relief",
+          "conditions": [
+            "Back Pain",
+            "Spinal Stiffness",
+            "Stress",
+            "Lower back pain",
+            "Upper back pain",
+            "Middle back stiffness",
+            "Sciatica pain",
+            "Slipped disc-related discomfort",
+            "Spinal stiffness",
+            "Tailbone (coccyx) pain",
+            "Neck stiffness",
+            "Cervical pain",
+            "Shoulder tightness",
+            "Frozen shoulder",
+            "Rotator cuff pain",
+            "Upper shoulder blade pain",
+            "Gas pain",
+            "Bloating",
+            "Digestive cramps",
+            "Constipation-related abdominal pain",
+            "Menstrual cramps",
+            "Lower abdominal pain",
+            "PMS discomfort",
+            "Lower back period pain"
+          ],
+          "confidence_score": 0.55,
+          "difficulty": "Beginner",
+          "duration": "5-10 minutes",
+          "id": "cat-cow",
+          "image": "/static/images/poses/Cat_Marjaryasana.png",
+          "instructions": [
+            "Start on hands and knees in tabletop position",
+            "Inhale and arch your back, lifting chest and tailbone (Cow)",
+            "Exhale and round your spine, tucking chin to chest (Cat)",
+            "Repeat 10-15 times, flowing with breath"
+          ],
+          "name": "Cat-Cow Pose",
+          "precautions": [
+            "Avoid if you have severe back injury",
+            "Keep movements gentle and controlled",
+            "Stop if you feel sharp pain"
+          ],
+          "sanskrit_name": "Marjaryasana-Bitilasana",
+          "subcategory": "Back Pain"
+        },
+        {
+          "benefits": [
+            "Strengthens back muscles",
+            "Stretches chest, neck, and spine",
+            "Calms the brain",
+            "Reduces anxiety and fatigue"
+          ],
+          "category": "Pain Relief",
+          "conditions": [
+            "Back Pain",
+            "Anxiety",
+            "Fatigue",
+            "Poor Sleep",
+            "Lower back pain",
+            "Upper back pain",
+            "Middle back stiffness",
+            "Sciatica pain",
+            "Slipped disc-related discomfort",
+            "Spinal stiffness",
+            "Tailbone (coccyx) pain",
+            "Neck stiffness",
+            "Cervical pain",
+            "Shoulder tightness",
+            "Frozen shoulder",
+            "Rotator cuff pain",
+            "Upper shoulder blade pain",
+            "Headache",
+            "Migraine",
+            "Sinus congestion pain",
+            "Jaw tension (TMJ)",
+            "Chest tightness",
+            "Respiratory weakness",
+            "Stress-induced chest tension"
+          ],
+          "confidence_score": 0.55,
+          "difficulty": "Beginner",
+          "duration": "30 seconds - 1 minute",
+          "id": "bridge-pose",
+          "image": "/static/images/poses/Bridge_Setu_Bandha_Sarvangasana.png",
+          "instructions": [
+            "Lie on back with knees bent",
+            "Place feet hip-width apart",
+            "Press feet into floor and lift hips",
+            "Interlace fingers under body",
+            "Hold for 30 seconds to 1 minute"
+          ],
+          "name": "Bridge Pose",
+          "precautions": [
+            "Avoid if you have severe neck injury",
+            "Don't turn head while in pose",
+            "Keep knees aligned over ankles"
+          ],
+          "sanskrit_name": "Setu Bandhasana",
+          "subcategory": "Back Pain"
+        },
+        {
+          "benefits": [
+            "Strengthens shoulders and upper back",
+            "Stretches hamstrings and calves",
+            "Prepares the body for inversions"
+          ],
+          "category": "Strength Building",
+          "conditions": [
+            "Shoulder Weakness",
+            "Upper Back Tension",
+            "Neck stiffness",
+            "Cervical pain",
+            "Shoulder tightness",
+            "Frozen shoulder",
+            "Rotator cuff pain",
+            "Upper shoulder blade pain"
+          ],
+          "confidence_score": 0.55,
+          "difficulty": "Intermediate",
+          "duration": "5-10 breaths",
+          "id": "dolphin-pose",
+          "image": "/static/images/poses/Dolphin_Ardha_Pincha_Mayurasana.png",
+          "instructions": [
+            "Start on hands and knees, then lower forearms to the floor",
+            "Tuck toes and lift hips up like Downward Dog",
+            "Press forearms firmly into the mat",
+            "Hold for 5\u201310 breaths"
+          ],
+          "name": "Dolphin Pose",
+          "precautions": [
+            "Avoid if you have acute shoulder injuries",
+            "Keep neck relaxed and gaze between feet"
+          ],
+          "sanskrit_name": "Ardha Pincha Mayurasana",
+          "subcategory": "Shoulders & Upper Back"
+        }
+      ],
+      "saved_at": "2025-12-07T22:30:34.681517"
+    }
+  ]
+}

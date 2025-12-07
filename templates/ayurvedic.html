@@ -9,7 +9,7 @@
         <div class="text-center mb-12">
             <h2 class="text-4xl font-bold text-gray-800 mb-4">Ayurvedic Remedies</h2>
             <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                Explore ancient Ayurvedic herbs and natural remedies for holistic healing. 
+                Explore ancient Ayurvedic herbs and natural remedies for holistic healing.
                 Each remedy is backed by centuries of traditional wisdom and modern research.
             </p>
         </div>
@@ -20,12 +20,8 @@
                 <!-- Search -->
                 <div class="mb-6">
                     <div class="relative max-w-md mx-auto">
-                        <input
-                            type="text"
-                            id="remedy-search"
-                            placeholder="Search remedies or herbs..."
-                            class="w-full px-4 py-3 pr-10 border border-gray-300 rounded-lg focus:border-ayurvedic-green focus:outline-none"
-                        />
+                        <input type="text" id="remedy-search" placeholder="Search remedies or herbs..."
+                            class="w-full px-4 py-3 pr-10 border border-gray-300 rounded-lg focus:border-ayurvedic-green focus:outline-none" />
                         <i class="fas fa-search absolute right-3 top-3.5 text-gray-400"></i>
                     </div>
                 </div>
@@ -37,11 +33,16 @@
                         Category
                     </h3>
                     <div class="flex flex-wrap gap-2">
-                        <button onclick="filterByCategory('All')" class="category-btn px-3 py-1 rounded-full text-sm border border-gray-300 hover:ayurvedic-green hover:text-white transition-colors">All</button>
-                        <button onclick="filterByCategory('Anti-inflammatory')" class="category-btn px-3 py-1 rounded-full text-sm border border-gray-300 hover:ayurvedic-green hover:text-white transition-colors">Anti-inflammatory</button>
-                        <button onclick="filterByCategory('Adaptogen')" class="category-btn px-3 py-1 rounded-full text-sm border border-gray-300 hover:ayurvedic-green hover:text-white transition-colors">Adaptogen</button>
-                        <button onclick="filterByCategory('Digestive')" class="category-btn px-3 py-1 rounded-full text-sm border border-gray-300 hover:ayurvedic-green hover:text-white transition-colors">Digestive</button>
-                        <button onclick="filterByCategory('Nervine')" class="category-btn px-3 py-1 rounded-full text-sm border border-gray-300 hover:ayurvedic-green hover:text-white transition-colors">Nervine</button>
+                        <button onclick="filterByCategory('All')"
+                            class="category-btn px-3 py-1 rounded-full text-sm border border-gray-300 hover:ayurvedic-green hover:text-white transition-colors ayurvedic-green text-white">All</button>
+                        <button onclick="filterByCategory('Anti-inflammatory')"
+                            class="category-btn px-3 py-1 rounded-full text-sm border border-gray-300 hover:ayurvedic-green hover:text-white transition-colors">Anti-inflammatory</button>
+                        <button onclick="filterByCategory('Adaptogen')"
+                            class="category-btn px-3 py-1 rounded-full text-sm border border-gray-300 hover:ayurvedic-green hover:text-white transition-colors">Adaptogen</button>
+                        <button onclick="filterByCategory('Digestive')"
+                            class="category-btn px-3 py-1 rounded-full text-sm border border-gray-300 hover:ayurvedic-green hover:text-white transition-colors">Digestive</button>
+                        <button onclick="filterByCategory('Nervine')"
+                            class="category-btn px-3 py-1 rounded-full text-sm border border-gray-300 hover:ayurvedic-green hover:text-white transition-colors">Nervine</button>
                     </div>
                 </div>
 
@@ -49,11 +50,36 @@
                 <div>
                     <h3 class="text-sm font-medium text-gray-700 mb-3">Health Condition</h3>
                     <div class="flex flex-wrap gap-2">
-                        <button onclick="filterByCondition('All')" class="condition-btn px-3 py-1 rounded-full text-sm border border-gray-300 hover:ayurvedic-green hover:text-white transition-colors">All</button>
-                        <button onclick="filterByCondition('Arthritis')" class="condition-btn px-3 py-1 rounded-full text-sm border border-gray-300 hover:ayurvedic-green hover:text-white transition-colors">Arthritis</button>
-                        <button onclick="filterByCondition('Anxiety')" class="condition-btn px-3 py-1 rounded-full text-sm border border-gray-300 hover:ayurvedic-green hover:text-white transition-colors">Anxiety</button>
-                        <button onclick="filterByCondition('Digestive Issues')" class="condition-btn px-3 py-1 rounded-full text-sm border border-gray-300 hover:ayurvedic-green hover:text-white transition-colors">Digestive Issues</button>
-                        <button onclick="filterByCondition('Insomnia')" class="condition-btn px-3 py-1 rounded-full text-sm border border-gray-300 hover:ayurvedic-green hover:text-white transition-colors">Insomnia</button>
+                        <button onclick="filterByCondition('All')"
+                            class="condition-btn px-3 py-1 rounded-full text-sm border border-gray-300 hover:ayurvedic-green hover:text-white transition-colors ayurvedic-green text-white">All</button>
+                        <button onclick="filterByCondition('Arthritis')"
+                            class="condition-btn px-3 py-1 rounded-full text-sm border border-gray-300 hover:ayurvedic-green hover:text-white transition-colors">Arthritis</button>
+                        <button onclick="filterByCondition('Digestive Issues')"
+                            class="condition-btn px-3 py-1 rounded-full text-sm border border-gray-300 hover:ayurvedic-green hover:text-white transition-colors">Digestive
+                            Issues</button>
+                        <button onclick="filterByCondition('Insomnia')"
+                            class="condition-btn px-3 py-1 rounded-full text-sm border border-gray-300 hover:ayurvedic-green hover:text-white transition-colors">Insomnia</button>
+                        <button onclick="filterByCondition('Stress')"
+                            class="condition-btn px-3 py-1 rounded-full text-sm border border-gray-300 hover:ayurvedic-green hover:text-white transition-colors">Stress</button>
+                        <button onclick="filterByCondition('Anxiety')"
+                            class="condition-btn px-3 py-1 rounded-full text-sm border border-gray-300 hover:ayurvedic-green hover:text-white transition-colors">Anxiety</button>
+                        <button onclick="filterByCondition('Inflammation')"
+                            class="condition-btn px-3 py-1 rounded-full text-sm border border-gray-300 hover:ayurvedic-green hover:text-white transition-colors">Inflammation</button>
+                        <button onclick="filterByCondition('Respiratory Issues')"
+                            class="condition-btn px-3 py-1 rounded-full text-sm border border-gray-300 hover:ayurvedic-green hover:text-white transition-colors">Respiratory
+                            Issues</button>
+                        <button onclick="filterByCondition('Cold')"
+                            class="condition-btn px-3 py-1 rounded-full text-sm border border-gray-300 hover:ayurvedic-green hover:text-white transition-colors">Cold
+                            &amp; Cough</button>
+                        <button onclick="filterByCondition('Poor Immunity')"
+                            class="condition-btn px-3 py-1 rounded-full text-sm border border-gray-300 hover:ayurvedic-green hover:text-white transition-colors">Poor
+                            Immunity</button>
+                        <button onclick="filterByCondition('Memory Issues')"
+                            class="condition-btn px-3 py-1 rounded-full text-sm border border-gray-300 hover:ayurvedic-green hover:text-white transition-colors">Memory
+                            Issues</button>
+                        <button onclick="filterByCondition('Hair Loss')"
+                            class="condition-btn px-3 py-1 rounded-full text-sm border border-gray-300 hover:ayurvedic-green hover:text-white transition-colors">Hair
+                            Loss</button>
                     </div>
                 </div>
             </div>
@@ -69,7 +95,8 @@
         <!-- Remedies Grid -->
         <div id="remedies-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {% for remedy in ayurvedic_remedies %}
-            <div class="remedy-card bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1" data-category="{{ remedy.category }}" data-conditions="{{ remedy.conditions|join(',') }}">
+            <div class="remedy-card bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+                data-category="{{ remedy.category }}" data-conditions="{{ remedy.conditions|join(',') }}">
                 <div class="p-6">
                     <!-- Header -->
                     <div class="flex items-start justify-between mb-4">
@@ -83,26 +110,38 @@
                             </span>
                         </div>
                     </div>
-                    
-                    <!-- Image placeholder -->
-                    <div class="w-full h-48 bg-gradient-to-br from-ayurvedic-earth to-ayurvedic-gold rounded-lg flex items-center justify-center mb-4">
-                        <div class="text-white text-6xl opacity-50">🌿</div>
+
+                    <!-- Remedy image -->
+                    <div
+                        class="w-full h-48 bg-gradient-to-br from-ayurvedic-earth to-ayurvedic-gold rounded-lg flex items-center justify-center mb-4 overflow-hidden">
+                        {% if remedy.image %}
+                        {% set image_file = remedy.image.replace('/static/', '') %}
+                        <img src="{{ url_for('static', filename=image_file) }}" alt="{{ remedy.name }} illustration"
+                            class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                            loading="lazy"
+                            onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'flex flex-col items-center justify-center h-full text-white\'><div class=\'text-6xl opacity-70 mb-2\'>🌿</div><div class=\'text-sm opacity-60 text-center px-2\'>{{ remedy.name }}</div></div>'" />
+                        {% else %}
+                        <div class="flex flex-col items-center justify-center h-full text-white">
+                            <div class="text-6xl opacity-70 mb-2">🌿</div>
+                            <div class="text-sm opacity-60 text-center px-2">{{ remedy.name }}</div>
+                        </div>
+                        {% endif %}
                     </div>
-                    
+
                     <!-- Description -->
                     <div class="mb-4">
-                        <p class="text-sm text-gray-600 line-clamp-3">
+                        <p class="description-text text-sm text-gray-600 line-clamp-3">
                             {{ remedy.description }}
                         </p>
                     </div>
-                    
+
                     <!-- Benefits -->
                     <div class="mb-4">
                         <h4 class="font-medium text-gray-700 mb-2 flex items-center gap-2">
                             <i class="fas fa-leaf text-green-500"></i>
                             Benefits
                         </h4>
-                        <ul class="text-sm text-gray-600 space-y-1">
+                        <ul class="benefits-list text-sm text-gray-600 space-y-1">
                             {% for benefit in remedy.benefits[:3] %}
                             <li class="flex items-start gap-2">
                                 <span class="text-ayurvedic-green mt-1">•</span>
@@ -116,13 +155,13 @@
                             {% endif %}
                         </ul>
                     </div>
-                    
+
                     <!-- Dosage -->
                     <div class="flex items-center gap-2 text-sm text-gray-600 mb-4">
                         <i class="fas fa-clock text-blue-500"></i>
                         <span>{{ remedy.dosage }}</span>
                     </div>
-                    
+
                     <!-- Preparation preview -->
                     <div class="mb-4">
                         <h4 class="font-medium text-gray-700 mb-2">Preparation</h4>
@@ -130,17 +169,19 @@
                             {{ remedy.preparation[0] }}
                         </p>
                     </div>
-                    
+
                     <!-- Actions -->
                     <div class="flex gap-2">
-                        <button onclick="showRemedyDetails('{{ remedy.id }}')" class="flex-1 ayurvedic-green text-white px-4 py-2 rounded-lg hover:bg-ayurvedic-sage transition-colors">
+                        <button onclick="showRemedyDetails('{{ remedy.id }}')"
+                            class="flex-1 ayurvedic-green text-white px-4 py-2 rounded-lg hover:bg-ayurvedic-sage transition-colors">
                             Learn More
                         </button>
-                        <button onclick="addToFavorites('{{ remedy.id }}')" class="px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors">
+                        <button onclick="addToFavorites('{{ remedy.id }}')"
+                            class="px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors">
                             <i class="fas fa-book"></i>
                         </button>
                     </div>
-                    
+
                     <!-- Precautions -->
                     {% if remedy.precautions %}
                     <div class="pt-2 border-t border-gray-100 mt-4">
@@ -168,8 +209,9 @@
         <div class="mt-12 bg-amber-50 border border-amber-200 rounded-lg p-6">
             <h3 class="text-lg font-semibold text-amber-800 mb-2">Important Disclaimer</h3>
             <p class="text-amber-700 text-sm leading-relaxed">
-                The information provided is for educational purposes only and should not be considered as medical advice. 
-                Always consult with a qualified healthcare professional before starting any new treatment or remedy, 
+                The information provided is for educational purposes only and should not be considered as medical
+                advice.
+                Always consult with a qualified healthcare professional before starting any new treatment or remedy,
                 especially if you have existing health conditions or are taking medications.
             </p>
         </div>
@@ -178,15 +220,21 @@
 
 <!-- Remedy Details Modal -->
 <div id="remedy-modal" class="fixed inset-0 bg-black bg-opacity-50 hidden z-50 flex items-center justify-center p-4">
-    <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto">
-        <div class="p-6">
-            <div class="flex justify-between items-center mb-4">
-                <h3 id="modal-title" class="text-2xl font-bold text-gray-800"></h3>
-                <button onclick="closeRemedyModal()" class="text-gray-500 hover:text-gray-700">
-                    <i class="fas fa-times text-xl"></i>
-                </button>
-            </div>
-            <div id="modal-content">
+    <!-- Modal Card -->
+    <div class="bg-white rounded-lg shadow-xl w-full max-w-2xl flex flex-col max-h-[85vh]">
+        <!-- Header (Fixed) -->
+        <div
+            class="flex-none px-6 py-4 border-b border-gray-100 flex justify-between items-center bg-white rounded-t-lg">
+            <h3 id="modal-title" class="text-2xl font-bold text-gray-800"></h3>
+            <button onclick="closeRemedyModal()"
+                class="text-gray-500 hover:text-gray-700 transition-colors p-2 rounded-full hover:bg-gray-100">
+                <i class="fas fa-times text-xl"></i>
+            </button>
+        </div>
+
+        <!-- Content (Scrollable) -->
+        <div class="flex-1 overflow-y-auto p-6 min-h-0">
+            <div id="modal-content" class="space-y-4">
                 <!-- Content will be populated by JavaScript -->
             </div>
         </div>
@@ -196,7 +244,7 @@
 
 {% block scripts %}
 <script>
-    const ayurvedicRemedies = {{ ayurvedic_remedies|tojson }};
+    const ayurvedicRemedies = {{ ayurvedic_remedies| tojson }};
     let currentCategory = 'All';
     let currentCondition = 'All';
 
@@ -213,23 +261,31 @@
     }
 
     function updateFilters() {
-        // Update button styles
+        // Update category buttons
         document.querySelectorAll('.category-btn').forEach(btn => {
-            btn.classList.remove('ayurvedic-green', 'text-white');
-            btn.classList.add('border-gray-300');
-        });
-        document.querySelectorAll('.condition-btn').forEach(btn => {
-            btn.classList.remove('ayurvedic-green', 'text-white');
-            btn.classList.add('border-gray-300');
+            if (btn.textContent.trim() === currentCategory) {
+                btn.classList.add('ayurvedic-green', 'text-white');
+                btn.classList.remove('border-gray-300');
+            } else {
+                btn.classList.remove('ayurvedic-green', 'text-white');
+                btn.classList.add('border-gray-300');
+            }
         });
 
-        // Highlight active buttons
-        event.target.classList.add('ayurvedic-green', 'text-white');
-        event.target.classList.remove('border-gray-300');
+        // Update condition buttons
+        document.querySelectorAll('.condition-btn').forEach(btn => {
+            if (btn.textContent.trim() === currentCondition) {
+                btn.classList.add('ayurvedic-green', 'text-white');
+                btn.classList.remove('border-gray-300');
+            } else {
+                btn.classList.remove('ayurvedic-green', 'text-white');
+                btn.classList.add('border-gray-300');
+            }
+        });
     }
 
     function filterRemedies() {
-        const searchTerm = document.getElementById('remedy-search').value.toLowerCase();
+        const searchTerm = document.getElementById('remedy-search').value.toLowerCase().trim();
         const cards = document.querySelectorAll('.remedy-card');
         let visibleCount = 0;
 
@@ -239,9 +295,29 @@
             const remedyName = card.querySelector('h3').textContent.toLowerCase();
             const herbName = card.querySelector('p').textContent.toLowerCase();
 
+            // Get benefits and description text from the card
+            const benefitsList = card.querySelector('.benefits-list');
+            const benefitsText = benefitsList ? benefitsList.textContent.toLowerCase() : '';
+            const descriptionText = card.querySelector('.description-text') ?
+                card.querySelector('.description-text').textContent.toLowerCase() : '';
+
             const matchesCategory = currentCategory === 'All' || category === currentCategory;
-            const matchesCondition = currentCondition === 'All' || conditions.includes(currentCondition.toLowerCase());
-            const matchesSearch = searchTerm === '' || remedyName.includes(searchTerm) || herbName.includes(searchTerm);
+            const matchesCondition = currentCondition === 'All' ||
+                conditions.includes(currentCondition.toLowerCase());
+
+            // Improved search: check name, herb name, conditions, benefits, and description
+            let matchesSearch = true;
+            if (searchTerm) {
+                const searchWords = searchTerm.split(/\s+/);
+                const searchableText = `${remedyName} ${herbName} ${conditions} ${benefitsText} ${descriptionText}`;
+
+                // Check if all words match (for multi-word queries like "common cold")
+                matchesSearch = searchWords.every(word => searchableText.includes(word)) ||
+                    searchableText.includes(searchTerm) ||
+                    // Also check if query matches any condition directly
+                    conditions.includes(searchTerm) ||
+                    conditions.split(',').some(cond => cond.trim().includes(searchTerm));
+            }
 
             if (matchesCategory && matchesCondition && matchesSearch) {
                 card.style.display = 'block';
@@ -252,7 +328,7 @@
         });
 
         // Update results count
-        document.getElementById('results-count').textContent = 
+        document.getElementById('results-count').textContent =
             `Showing ${visibleCount} remed${visibleCount !== 1 ? 'ies' : 'y'}`;
 
         // Show/hide no results message
@@ -269,38 +345,38 @@
         if (!remedy) return;
 
         document.getElementById('modal-title').textContent = remedy.name;
-        
+
         const content = `
             <div class="space-y-4">
                 <div>
                     <h4 class="font-semibold text-gray-800 mb-2">Herb Name</h4>
                     <p class="text-ayurvedic-sage italic">${remedy.herb_name}</p>
                 </div>
-                
+
                 <div>
                     <h4 class="font-semibold text-gray-800 mb-2">Description</h4>
                     <p class="text-gray-600">${remedy.description}</p>
                 </div>
-                
+
                 <div>
                     <h4 class="font-semibold text-gray-800 mb-2">Benefits</h4>
                     <ul class="list-disc list-inside text-gray-600 space-y-1">
                         ${remedy.benefits.map(benefit => `<li>${benefit}</li>`).join('')}
                     </ul>
                 </div>
-                
+
                 <div>
                     <h4 class="font-semibold text-gray-800 mb-2">Preparation</h4>
                     <ol class="list-decimal list-inside text-gray-600 space-y-1">
                         ${remedy.preparation.map(step => `<li>${step}</li>`).join('')}
                     </ol>
                 </div>
-                
+
                 <div>
                     <h4 class="font-semibold text-gray-800 mb-2">Dosage</h4>
                     <p class="text-gray-600">${remedy.dosage}</p>
                 </div>
-                
+
                 ${remedy.precautions.length > 0 ? `
                 <div>
                     <h4 class="font-semibold text-gray-800 mb-2">Precautions</h4>
@@ -310,14 +386,16 @@
                 </div>
                 ` : ''}
             </div>
-        `;
-        
+            `;
+
         document.getElementById('modal-content').innerHTML = content;
         document.getElementById('remedy-modal').classList.remove('hidden');
+        document.body.style.overflow = 'hidden'; // Prevent background scrolling
     }
 
     function closeRemedyModal() {
         document.getElementById('remedy-modal').classList.add('hidden');
+        document.body.style.overflow = ''; // Restore background scrolling
     }
 
     function addToFavorites(remedyId) {
@@ -328,7 +406,7 @@
     document.getElementById('remedy-search').addEventListener('input', filterRemedies);
 
     // Close modal when clicking outside
-    document.getElementById('remedy-modal').addEventListener('click', function(e) {
+    document.getElementById('remedy-modal').addEventListener('click', function (e) {
         if (e.target === this) {
             closeRemedyModal();
         }

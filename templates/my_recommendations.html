@@ -1,0 +1,148 @@
+{% extends "base.html" %}
+
+{% block title %}My Saved Recommendations - AyushAstra{% endblock %}
+
+{% block content %}
+<div class="min-h-screen bg-gradient-to-br from-amber-50 via-white to-orange-50 py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Header -->
+        <div class="text-center mb-12">
+            <div class="text-6xl mb-4">🧘</div>
+            <h2 class="text-4xl font-bold text-gray-800 mb-4">My Wellness Plans</h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                Your personal collection of holistic wellness recommendations.
+            </p>
+        </div>
+
+        {% if recommendations %}
+        <div class="space-y-8">
+            {% for plan in recommendations %}
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100">
+                <!-- Plan Header -->
+                <div class="bg-gradient-to-r from-ayurvedic-sage to-ayurvedic-green p-6 text-white cursor-pointer flex justify-between items-center"
+                    onclick="togglePlan('plan-{{ loop.index }}')">
+                    <div>
+                        <h3 class="text-xl font-bold flex items-center gap-2">
+                            <i class="fas fa-calendar-alt"></i>
+                            Plan saved on {{ plan.saved_at|default('Unknown Date')|replace('T', ' ')|truncate(16, True,
+                            '') }}
+                        </h3>
+                        <div class="mt-2 text-sm opacity-90 flex gap-4">
+                            <span><i class="fas fa-layer-group mr-1"></i> {{ plan.experience }} Level</span>
+                            <span><i class="fas fa-clock mr-1"></i> {{ plan.time_available }} min/day</span>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-down transform transition-transform duration-300"
+                        id="icon-plan-{{ loop.index }}"></i>
+                </div>
+
+                <!-- Plan Content (Collapsible) -->
+                <div id="plan-{{ loop.index }}" class="hidden transition-all duration-300">
+                    <div class="p-8">
+                        <!-- Symptoms & Focus Areas -->
+                        <div class="mb-8 bg-orange-50 rounded-xl p-6 border border-orange-100">
+                            <h4 class="text-lg font-semibold text-gray-800 mb-3">Focus Areas</h4>
+                            <div class="flex flex-wrap gap-2">
+                                {% for symptom in plan.symptoms %}
+                                <span
+                                    class="px-3 py-1 bg-white text-orange-600 rounded-full text-sm border border-orange-200 shadow-sm">
+                                    {{ symptom }}
+                                </span>
+                                {% endfor %}
+                                {% for part in plan.body_parts %}
+                                <span
+                                    class="px-3 py-1 bg-white text-blue-600 rounded-full text-sm border border-blue-200 shadow-sm">
+                                    {{ part }}
+                                </span>
+                                {% endfor %}
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                            <!-- Yoga -->
+                            <div>
+                                <div class="flex items-center gap-2 mb-4 text-red-500">
+                                    <i class="fas fa-heart text-xl"></i>
+                                    <h4 class="text-xl font-bold text-gray-800">Yoga Poses</h4>
+                                </div>
+                                <div class="space-y-4">
+                                    {% for pose in plan.yoga %}
+                                    <div class="bg-gray-50 rounded-lg p-4 border border-gray-100">
+                                        <h5 class="font-semibold text-gray-800">{{ pose.name }}</h5>
+                                        <p class="text-xs text-gray-500 italic mb-2">{{ pose.sanskrit_name }}</p>
+                                        <p class="text-sm text-gray-600">{{ pose.benefits[:2]|join(', ') }}</p>
+                                    </div>
+                                    {% endfor %}
+                                </div>
+                            </div>
+
+                            <!-- Remedies -->
+                            <div>
+                                <div class="flex items-center gap-2 mb-4 text-green-600">
+                                    <i class="fas fa-leaf text-xl"></i>
+                                    <h4 class="text-xl font-bold text-gray-800">Ayurvedic Remedies</h4>
+                                </div>
+                                <div class="space-y-4">
+                                    {% for remedy in plan.remedies %}
+                                    <div class="bg-gray-50 rounded-lg p-4 border border-gray-100">
+                                        <h5 class="font-semibold text-gray-800">{{ remedy.name }}</h5>
+                                        <p class="text-xs text-gray-500 italic mb-2">{{ remedy.herb_name }}</p>
+                                        <p class="text-sm text-gray-600">{{ remedy.dosage }}</p>
+                                    </div>
+                                    {% endfor %}
+                                </div>
+                            </div>
+
+                            <!-- Pranayama -->
+                            <div>
+                                <div class="flex items-center gap-2 mb-4 text-blue-500">
+                                    <i class="fas fa-wind text-xl"></i>
+                                    <h4 class="text-xl font-bold text-gray-800">Pranayama</h4>
+                                </div>
+                                <div class="space-y-4">
+                                    {% for exercise in plan.pranayama %}
+                                    <div class="bg-gray-50 rounded-lg p-4 border border-gray-100">
+                                        <h5 class="font-semibold text-gray-800">{{ exercise.name }}</h5>
+                                        <p class="text-xs text-gray-500 italic mb-2">{{ exercise.sanskrit_name }}</p>
+                                        <p class="text-sm text-gray-600">{{ exercise.breathing_pattern }}</p>
+                                    </div>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        {% else %}
+        <div class="text-center py-16 bg-white rounded-2xl shadow-sm border border-gray-100">
+            <div class="text-6xl mb-4 text-gray-300">📝</div>
+            <h3 class="text-2xl font-bold text-gray-800 mb-2">No Saved Plans Yet</h3>
+            <p class="text-gray-500 mb-8">Take our wellness assessment to get your personalized plan.</p>
+            <a href="/recommendations"
+                class="inline-flex items-center px-8 py-3 border border-transparent text-base font-medium rounded-full shadow-sm text-white bg-ayurvedic-green hover:bg-opacity-90 transition-all">
+                <i class="fas fa-plus mr-2"></i> Create New Plan
+            </a>
+        </div>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    function togglePlan(id) {
+        const content = document.getElementById(id);
+        const icon = document.getElementById('icon-' + id);
+
+        if (content.classList.contains('hidden')) {
+            content.classList.remove('hidden');
+            icon.classList.add('rotate-180');
+        } else {
+            content.classList.add('hidden');
+            icon.classList.remove('rotate-180');
+        }
+    }
+</script>
+{% endblock %}

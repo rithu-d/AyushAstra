@@ -5,7 +5,7 @@
     "sanskrit_name": "Marjaryasana-Bitilasana",
     "category": "Pain Relief",
     "subcategory": "Back Pain",
-    "image": "/static/images/cat-cow.jpg",
+    "image": "/static/images/poses/Cat_Marjaryasana.png",
     "benefits": [
       "Improves spinal flexibility",
       "Relieves back tension",
@@ -25,7 +25,32 @@
       "Stop if you feel sharp pain"
     ],
     "difficulty": "Beginner",
-    "conditions": ["Back Pain", "Spinal Stiffness", "Stress"]
+    "conditions": [
+      "Back Pain",
+      "Spinal Stiffness",
+      "Stress",
+      "Lower back pain",
+      "Upper back pain",
+      "Middle back stiffness",
+      "Sciatica pain",
+      "Slipped disc-related discomfort",
+      "Spinal stiffness",
+      "Tailbone (coccyx) pain",
+      "Neck stiffness",
+      "Cervical pain",
+      "Shoulder tightness",
+      "Frozen shoulder",
+      "Rotator cuff pain",
+      "Upper shoulder blade pain",
+      "Gas pain",
+      "Bloating",
+      "Digestive cramps",
+      "Constipation-related abdominal pain",
+      "Menstrual cramps",
+      "Lower abdominal pain",
+      "PMS discomfort",
+      "Lower back period pain"
+    ]
   },
   {
     "id": "child-pose",
@@ -33,7 +58,7 @@
     "sanskrit_name": "Balasana",
     "category": "Stress Relief",
     "subcategory": "Anxiety",
-    "image": "/static/images/child-pose.jpg",
+    "image": "/static/images/poses/Child_s_Pose_Balasana.png",
     "benefits": [
       "Calms the mind and nervous system",
       "Relieves stress and anxiety",
@@ -54,7 +79,31 @@
       "Don't force the stretch"
     ],
     "difficulty": "Beginner",
-    "conditions": ["Anxiety", "Stress", "Fatigue", "Back Pain"]
+    "conditions": [
+      "Anxiety",
+      "Stress",
+      "Fatigue",
+      "Back Pain",
+      "Lower back pain",
+      "Upper back pain",
+      "Middle back stiffness",
+      "Sciatica pain",
+      "Slipped disc-related discomfort",
+      "Spinal stiffness",
+      "Tailbone (coccyx) pain",
+      "Headache",
+      "Migraine",
+      "Sinus congestion pain",
+      "Jaw tension (TMJ)",
+      "Menstrual cramps",
+      "Lower abdominal pain",
+      "PMS discomfort",
+      "Lower back period pain",
+      "Fatigue/muscle soreness",
+      "Stress-induced body pain",
+      "Poor posture pain",
+      "Tension accumulation pain"
+    ]
   },
   {
     "id": "warrior-ii",
@@ -62,7 +111,7 @@
     "sanskrit_name": "Virabhadrasana II",
     "category": "Strength Building",
     "subcategory": "General Fitness",
-    "image": "/static/images/warrior-ii.jpg",
+    "image": "/static/images/poses/Warrior_Two_Virabhadrasana_Two.png",
     "benefits": [
       "Strengthens legs and arms",
       "Improves balance and concentration",
@@ -84,7 +133,18 @@
       "Avoid if you have severe knee problems"
     ],
     "difficulty": "Beginner",
-    "conditions": ["Weakness", "Poor Balance", "Hip Tightness"]
+    "conditions": [
+      "Weakness",
+      "Poor Balance",
+      "Hip Tightness",
+      "Knee pain (general)",
+      "Osteoarthritis knee pain",
+      "Hamstring tightness",
+      "Calf muscle strain",
+      "Ankle pain",
+      "Heel pain",
+      "Plantar fasciitis"
+    ]
   },
   {
     "id": "downward-dog",
@@ -92,7 +152,7 @@
     "sanskrit_name": "Adho Mukha Svanasana",
     "category": "Pain Relief",
     "subcategory": "Back Pain",
-    "image": "/static/images/downward-dog.jpg",
+    "image": "/static/images/poses/Downward-Facing_Dog_Adho_Mukha_Svanasana.png",
     "benefits": [
       "Strengthens arms and legs",
       "Stretches shoulders, hamstrings, calves",
@@ -114,7 +174,23 @@
       "Don't force the stretch"
     ],
     "difficulty": "Beginner",
-    "conditions": ["Back Pain", "Shoulder Tension", "Stress", "Fatigue"]
+    "conditions": [
+      "Back Pain",
+      "Shoulder Tension",
+      "Stress",
+      "Fatigue",
+      "Lower back pain",
+      "Upper back pain",
+      "Middle back stiffness",
+      "Sciatica pain",
+      "Slipped disc-related discomfort",
+      "Spinal stiffness",
+      "Tailbone (coccyx) pain",
+      "Headache",
+      "Migraine",
+      "Sinus congestion pain",
+      "Jaw tension (TMJ)"
+    ]
   },
   {
     "id": "cobra-pose",
@@ -122,7 +198,7 @@
     "sanskrit_name": "Bhujangasana",
     "category": "Pain Relief",
     "subcategory": "Back Pain",
-    "image": "/static/images/cobra-pose.jpg",
+    "image": "/static/images/poses/Sphinx_Salamba_Bhujangasana.png",
     "benefits": [
       "Strengthens the spine",
       "Stretches chest, shoulders, and abdomen",
@@ -144,7 +220,21 @@
       "Keep shoulders away from ears"
     ],
     "difficulty": "Beginner",
-    "conditions": ["Back Pain", "Poor Posture", "Spinal Stiffness"]
+    "conditions": [
+      "Back Pain",
+      "Poor Posture",
+      "Spinal Stiffness",
+      "Lower back pain",
+      "Upper back pain",
+      "Middle back stiffness",
+      "Sciatica pain",
+      "Slipped disc-related discomfort",
+      "Spinal stiffness",
+      "Tailbone (coccyx) pain",
+      "Chest tightness",
+      "Respiratory weakness",
+      "Stress-induced chest tension"
+    ]
   },
   {
     "id": "bridge-pose",
@@ -152,7 +242,7 @@
     "sanskrit_name": "Setu Bandhasana",
     "category": "Pain Relief",
     "subcategory": "Back Pain",
-    "image": "/static/images/bridge-pose.jpg",
+    "image": "/static/images/poses/Bridge_Setu_Bandha_Sarvangasana.png",
     "benefits": [
       "Strengthens back muscles",
       "Stretches chest, neck, and spine",
@@ -173,7 +263,32 @@
       "Keep knees aligned over ankles"
     ],
     "difficulty": "Beginner",
-    "conditions": ["Back Pain", "Anxiety", "Fatigue", "Poor Sleep"]
+    "conditions": [
+      "Back Pain",
+      "Anxiety",
+      "Fatigue",
+      "Poor Sleep",
+      "Lower back pain",
+      "Upper back pain",
+      "Middle back stiffness",
+      "Sciatica pain",
+      "Slipped disc-related discomfort",
+      "Spinal stiffness",
+      "Tailbone (coccyx) pain",
+      "Neck stiffness",
+      "Cervical pain",
+      "Shoulder tightness",
+      "Frozen shoulder",
+      "Rotator cuff pain",
+      "Upper shoulder blade pain",
+      "Headache",
+      "Migraine",
+      "Sinus congestion pain",
+      "Jaw tension (TMJ)",
+      "Chest tightness",
+      "Respiratory weakness",
+      "Stress-induced chest tension"
+    ]
   },
   {
     "id": "triangle-pose",
@@ -181,7 +296,7 @@
     "sanskrit_name": "Trikonasana",
     "category": "Pain Relief",
     "subcategory": "Back Pain",
-    "image": "/static/images/triangle-pose.jpg",
+    "image": "/static/images/poses/Triangle_Trikonasana.png",
     "benefits": [
       "Stretches and strengthens legs",
       "Opens hips and chest",
@@ -203,7 +318,18 @@
       "Avoid if you have severe back problems"
     ],
     "difficulty": "Beginner",
-    "conditions": ["Back Pain", "Hip Tightness", "Poor Balance"]
+    "conditions": [
+      "Back Pain",
+      "Hip Tightness",
+      "Poor Balance",
+      "Lower back pain",
+      "Upper back pain",
+      "Middle back stiffness",
+      "Sciatica pain",
+      "Slipped disc-related discomfort",
+      "Spinal stiffness",
+      "Tailbone (coccyx) pain"
+    ]
   },
   {
     "id": "legs-up-wall",
@@ -211,7 +337,7 @@
     "sanskrit_name": "Viparita Karani",
     "category": "Stress Relief",
     "subcategory": "Anxiety",
-    "image": "/static/images/legs-up-wall.jpg",
+    "image": "/static/images/poses/Shoulder_Stand_Salamba_Sarvangasana.png",
     "benefits": [
       "Relieves tired legs and feet",
       "Calms the nervous system",
@@ -232,6 +358,1313 @@
       "Come out slowly"
     ],
     "difficulty": "Beginner",
-    "conditions": ["Anxiety", "Stress", "Leg Fatigue", "Poor Circulation"]
+    "conditions": [
+      "Anxiety",
+      "Stress",
+      "Leg Fatigue",
+      "Poor Circulation",
+      "Headache",
+      "Migraine",
+      "Sinus congestion pain",
+      "Jaw tension (TMJ)",
+      "Knee pain (general)",
+      "Osteoarthritis knee pain",
+      "Hamstring tightness",
+      "Calf muscle strain",
+      "Ankle pain",
+      "Heel pain",
+      "Plantar fasciitis",
+      "Menstrual cramps",
+      "Lower abdominal pain",
+      "PMS discomfort",
+      "Lower back period pain",
+      "Fatigue/muscle soreness",
+      "Stress-induced body pain",
+      "Poor posture pain",
+      "Tension accumulation pain"
+    ]
+  },
+  {
+    "id": "mountain-pose",
+    "name": "Mountain Pose",
+    "sanskrit_name": "Tadasana",
+    "category": "Strength Building",
+    "subcategory": "Alignment",
+    "image": "/static/images/poses/Standing_Forward_Bend_Uttanasana.png",
+    "benefits": [
+      "Improves posture and alignment",
+      "Builds awareness of body mechanics",
+      "Strengthens legs and core",
+      "Enhances balance and stability"
+    ],
+    "instructions": [
+      "Stand with feet hip-width apart, grounding evenly through all corners of the feet",
+      "Lengthen through the spine, lifting the crown of the head toward the sky",
+      "Relax shoulders away from ears and engage the core",
+      "Keep arms active by your sides or reach overhead",
+      "Breathe steadily for 1-2 minutes"
+    ],
+    "duration": "1-2 minutes",
+    "precautions": [
+      "Slightly bend knees if you have lower back sensitivity",
+      "Distribute weight evenly to avoid ankle strain"
+    ],
+    "difficulty": "Beginner",
+    "conditions": [
+      "Poor Posture",
+      "Weakness",
+      "Balance Issues",
+      "Knee pain (general)",
+      "Osteoarthritis knee pain",
+      "Hamstring tightness",
+      "Calf muscle strain",
+      "Ankle pain",
+      "Heel pain",
+      "Plantar fasciitis",
+      "Fatigue/muscle soreness",
+      "Stress-induced body pain",
+      "Poor posture pain",
+      "Tension accumulation pain"
+    ]
+  },
+  {
+    "id": "seated-forward-bend",
+    "name": "Seated Forward Bend",
+    "sanskrit_name": "Paschimottanasana",
+    "category": "Pain Relief",
+    "subcategory": "Hamstring Stretch",
+    "image": "/static/images/poses/Seated_Forward_Bend_Paschimottanasana.png",
+    "benefits": [
+      "Stretches hamstrings, spine, and shoulders",
+      "Soothes the nervous system",
+      "Stimulates abdominal organs",
+      "Helps relieve mild depression and anxiety"
+    ],
+    "instructions": [
+      "Sit with legs extended and feet flexed",
+      "Inhale to lengthen the spine",
+      "Exhale and hinge at the hips, reaching toward the feet",
+      "Keep spine long, resting hands on legs or feet",
+      "Hold for 1-3 minutes with steady breathing"
+    ],
+    "duration": "1-3 minutes",
+    "precautions": [
+      "Use a strap if hamstrings are tight",
+      "Avoid rounding the spine excessively",
+      "Bend knees slightly if needed"
+    ],
+    "difficulty": "Intermediate",
+    "conditions": [
+      "Hamstring Tightness",
+      "Stress",
+      "Digestive Issues",
+      "Gas pain",
+      "Bloating",
+      "Digestive cramps",
+      "Constipation-related abdominal pain"
+    ]
+  },
+  {
+    "id": "boat-pose",
+    "name": "Boat Pose",
+    "sanskrit_name": "Navasana",
+    "category": "Strength Building",
+    "subcategory": "Core",
+    "image": "/static/images/poses/Boat_Navasana.png",
+    "benefits": [
+      "Strengthens core and hip flexors",
+      "Improves balance and focus",
+      "Stimulates the kidneys and thyroid",
+      "Builds stamina"
+    ],
+    "instructions": [
+      "Sit with knees bent and feet on floor",
+      "Lean back slightly while keeping spine long",
+      "Lift feet to shin height or straighten legs",
+      "Reach arms forward parallel to the floor",
+      "Hold for 30-60 seconds breathing steadily"
+    ],
+    "duration": "30-60 seconds",
+    "precautions": [
+      "Keep spine long to avoid rounding",
+      "Avoid if you have serious lower back issues"
+    ],
+    "difficulty": "Intermediate",
+    "conditions": [
+      "Weak Core",
+      "Poor Posture",
+      "Low Energy"
+    ]
+  },
+  {
+    "id": "camel-pose",
+    "name": "Camel Pose",
+    "sanskrit_name": "Ustrasana",
+    "category": "Strength Building",
+    "subcategory": "Backbend",
+    "image": "/static/images/poses/Camel_Ustrasana.png",
+    "benefits": [
+      "Opens the chest and shoulders",
+      "Improves spinal flexibility",
+      "Stimulates the respiratory system",
+      "Boosts mood and energy"
+    ],
+    "instructions": [
+      "Kneel with knees hip-width apart and toes tucked",
+      "Place hands on lower back for support",
+      "Inhale and lift the chest, gently pressing hips forward",
+      "Reach hands to heels or keep on back for support",
+      "Hold for 20-40 seconds while breathing deeply"
+    ],
+    "duration": "20-40 seconds",
+    "precautions": [
+      "Keep neck neutral if you feel strain",
+      "Engage core to protect lower back",
+      "Avoid if you have uncontrolled high blood pressure"
+    ],
+    "difficulty": "Intermediate",
+    "conditions": [
+      "Chest Tightness",
+      "Fatigue",
+      "Poor Posture",
+      "Chest tightness",
+      "Respiratory weakness",
+      "Stress-induced chest tension"
+    ]
+  },
+  {
+    "id": "pigeon-pose",
+    "name": "Pigeon Pose",
+    "sanskrit_name": "Eka Pada Rajakapotasana",
+    "category": "Pain Relief",
+    "subcategory": "Hip Release",
+    "image": "/static/images/poses/Pigeon_Supta_Kapotasana.png",
+    "benefits": [
+      "Opens hips and glutes",
+      "Relieves sciatic discomfort",
+      "Releases stored tension and stress",
+      "Improves lower body mobility"
+    ],
+    "instructions": [
+      "From Downward Dog, bring right knee toward right wrist",
+      "Slide left leg back, keeping hips square",
+      "Keep chest lifted or fold forward over front leg",
+      "Hold for 1-2 minutes, then switch sides"
+    ],
+    "duration": "1-2 minutes per side",
+    "precautions": [
+      "Place blanket under hips for support",
+      "Avoid if you have acute knee injury",
+      "Keep front foot flexed to protect the knee"
+    ],
+    "difficulty": "Intermediate",
+    "conditions": [
+      "Hip Tightness",
+      "Sciatica",
+      "Lower Back Pain",
+      "Hip tightness",
+      "Hip flexor strain",
+      "Piriformis syndrome",
+      "Pelvic floor tension",
+      "Sciatic nerve compression"
+    ]
+  },
+  {
+    "id": "cow-face-pose",
+    "name": "Cow Face Pose",
+    "sanskrit_name": "Gomukhasana",
+    "category": "Pain Relief",
+    "subcategory": "Shoulder Stretch",
+    "image": "/static/images/poses/Forward_Bend_with_Shoulder_Opener_Uttanasana.png",
+    "benefits": [
+      "Opens shoulders and chest",
+      "Stretches outer hips and thighs",
+      "Improves posture",
+      "Relieves tension from long hours of sitting"
+    ],
+    "instructions": [
+      "Sit with knees stacked, right knee over left",
+      "Reach right arm up and bend elbow",
+      "Reach left arm behind and clasp fingers or use a strap",
+      "Lift chest and keep spine tall",
+      "Hold for 45-60 seconds and switch sides"
+    ],
+    "duration": "45-60 seconds per side",
+    "precautions": [
+      "Use a strap if hands do not reach",
+      "Keep hips grounded evenly on the floor"
+    ],
+    "difficulty": "Intermediate",
+    "conditions": [
+      "Shoulder Tension",
+      "Hip Tightness",
+      "Neck Stiffness",
+      "Neck stiffness",
+      "Cervical pain",
+      "Shoulder tightness",
+      "Frozen shoulder",
+      "Rotator cuff pain",
+      "Upper shoulder blade pain",
+      "Chest tightness",
+      "Respiratory weakness",
+      "Stress-induced chest tension"
+    ]
+  },
+  {
+    "id": "locust-pose",
+    "name": "Locust Pose",
+    "sanskrit_name": "Salabhasana",
+    "category": "Strength Building",
+    "subcategory": "Back Body",
+    "image": "/static/images/poses/Bow_Dhanurasana.png",
+    "benefits": [
+      "Strengthens back, glutes, and hamstrings",
+      "Improves spinal flexibility",
+      "Energizes the body",
+      "Stimulates abdominal organs"
+    ],
+    "instructions": [
+      "Lie on belly with arms alongside body",
+      "On inhalation, lift chest, head, arms, and legs off the mat",
+      "Reach through fingers and toes while keeping neck long",
+      "Hold for 30-45 seconds with steady breath"
+    ],
+    "duration": "30-45 seconds",
+    "precautions": [
+      "Avoid compressing lower back",
+      "Keep gaze down to protect neck"
+    ],
+    "difficulty": "Intermediate",
+    "conditions": [
+      "Back Weakness",
+      "Poor Posture",
+      "Low Energy",
+      "Lower back pain",
+      "Upper back pain",
+      "Middle back stiffness",
+      "Sciatica pain",
+      "Slipped disc-related discomfort",
+      "Spinal stiffness",
+      "Tailbone (coccyx) pain"
+    ]
+  },
+  {
+    "id": "supine-spinal-twist",
+    "name": "Supine Spinal Twist",
+    "sanskrit_name": "Supta Matsyendrasana",
+    "category": "Pain Relief",
+    "subcategory": "Spinal Release",
+    "image": "/static/images/poses/Half_Lord_of_the_Fishes_Ardha_Matsyendrasana.png",
+    "benefits": [
+      "Releases lower back tension",
+      "Massages abdominal organs",
+      "Calms the nervous system",
+      "Improves spinal mobility"
+    ],
+    "instructions": [
+      "Lie on back and hug knees into chest",
+      "Drop knees to the right while extending arms out in a T shape",
+      "Keep shoulders grounded and gaze left",
+      "Hold for 1-2 minutes, then switch sides"
+    ],
+    "duration": "1-2 minutes per side",
+    "precautions": [
+      "Stack knees with blanket support if needed",
+      "Avoid forcing the twist"
+    ],
+    "difficulty": "Beginner",
+    "conditions": [
+      "Back Pain",
+      "Digestive Issues",
+      "Stress",
+      "Lower back pain",
+      "Upper back pain",
+      "Middle back stiffness",
+      "Sciatica pain",
+      "Slipped disc-related discomfort",
+      "Spinal stiffness",
+      "Tailbone (coccyx) pain",
+      "Gas pain",
+      "Bloating",
+      "Digestive cramps",
+      "Constipation-related abdominal pain",
+      "Menstrual cramps",
+      "Lower abdominal pain",
+      "PMS discomfort",
+      "Lower back period pain"
+    ]
+  },
+  {
+    "id": "tree-pose",
+    "name": "Tree Pose",
+    "sanskrit_name": "Vrksasana",
+    "category": "Balance",
+    "subcategory": "Standing Balance",
+    "image": "/static/images/poses/Tree_Vrksasana.png",
+    "benefits": [
+      "Improves balance and stability",
+      "Strengthens legs and core",
+      "Opens hips",
+      "Calms the mind"
+    ],
+    "instructions": [
+      "Stand tall in Mountain Pose",
+      "Shift weight to left foot",
+      "Place right foot on left inner thigh or calf (avoid knee)",
+      "Bring hands to prayer position at chest",
+      "Find a focal point and hold for 30-60 seconds"
+    ],
+    "duration": "30-60 seconds per side",
+    "precautions": [
+      "Avoid placing foot directly on knee joint",
+      "Use wall for support if needed",
+      "Keep standing leg strong"
+    ],
+    "difficulty": "Beginner",
+    "conditions": [
+      "Poor Balance",
+      "Stress",
+      "Weak Legs"
+    ]
+  },
+  {
+    "id": "plank-pose",
+    "name": "Plank Pose",
+    "sanskrit_name": "Phalakasana",
+    "category": "Strength Building",
+    "subcategory": "Core",
+    "image": "/static/images/poses/Plank_Phalakasana.png",
+    "benefits": [
+      "Strengthens core, arms, and wrists",
+      "Improves posture",
+      "Tones entire body",
+      "Builds mental focus"
+    ],
+    "instructions": [
+      "Start in tabletop or Downward Dog",
+      "Shift forward until shoulders are over wrists",
+      "Straighten legs and engage core",
+      "Keep body in a straight line from head to heels",
+      "Hold for 30-60 seconds"
+    ],
+    "duration": "30-60 seconds",
+    "precautions": [
+      "Don't let hips sag or lift too high",
+      "Modify with knees on floor if needed",
+      "Avoid if you have wrist pain"
+    ],
+    "difficulty": "Beginner",
+    "conditions": [
+      "Weak Core",
+      "Poor Posture",
+      "Back Pain"
+    ]
+  },
+  {
+    "id": "goddess-pose",
+    "name": "Goddess Pose",
+    "sanskrit_name": "Utkata Konasana",
+    "category": "Strength Building",
+    "subcategory": "Hips",
+    "image": "/static/images/poses/Garland_Pose_Malasana.png",
+    "benefits": [
+      "Strengthens hips, thighs, and calves",
+      "Opens chest and hips",
+      "Stimulates circulation",
+      "Builds heat in the body"
+    ],
+    "instructions": [
+      "Stand with feet wide apart, toes turned out",
+      "Bend knees deeply, tracking over toes",
+      "Raise arms to cactus shape (bent at 90 degrees)",
+      "Keep spine straight and core engaged",
+      "Hold for 30-60 seconds"
+    ],
+    "duration": "30-60 seconds",
+    "precautions": [
+      "Keep knees aligned with toes",
+      "Don't lean forward",
+      "Avoid if you have knee or hip injury"
+    ],
+    "difficulty": "Beginner",
+    "conditions": [
+      "Hip Tightness",
+      "Weak Legs",
+      "Low Energy"
+    ]
+  },
+  {
+    "id": "butterfly-pose",
+    "name": "Butterfly Pose",
+    "sanskrit_name": "Baddha Konasana",
+    "category": "Pain Relief",
+    "subcategory": "Hips & Groin",
+    "image": "/static/images/poses/Butterfly_Baddha_Konasana.png",
+    "benefits": [
+      "Opens hips and groin",
+      "Releases tension in inner thighs",
+      "Supports pelvic health"
+    ],
+    "instructions": [
+      "Sit with spine tall and bring soles of feet together",
+      "Let knees fall out to the sides",
+      "Hold feet or ankles and gently lengthen the spine",
+      "Stay for 1\u20133 minutes with slow breathing"
+    ],
+    "duration": "1-3 minutes",
+    "precautions": [
+      "Sit on a cushion if lower back rounds",
+      "Support knees with blocks if hips are tight"
+    ],
+    "difficulty": "Beginner",
+    "conditions": [
+      "Hip Tightness",
+      "Groin Discomfort",
+      "Lower Back Stiffness",
+      "Hip tightness",
+      "Hip flexor strain",
+      "Piriformis syndrome",
+      "Pelvic floor tension",
+      "Sciatic nerve compression",
+      "Menstrual cramps",
+      "Lower abdominal pain",
+      "PMS discomfort",
+      "Lower back period pain"
+    ]
+  },
+  {
+    "id": "chair-pose",
+    "name": "Chair Pose",
+    "sanskrit_name": "Utkatasana",
+    "category": "Strength Building",
+    "subcategory": "Legs & Knees",
+    "image": "/static/images/poses/Chair_Utkatasana.png",
+    "benefits": [
+      "Strengthens thighs and glutes",
+      "Builds ankle and knee stability",
+      "Engages core and back muscles"
+    ],
+    "instructions": [
+      "Stand with feet hip-width apart and bend knees as if sitting on a chair",
+      "Keep weight in heels and lift chest",
+      "Reach arms overhead beside ears",
+      "Hold for 30\u201345 seconds with steady breath"
+    ],
+    "duration": "30-45 seconds",
+    "precautions": [
+      "Avoid if you have acute knee pain",
+      "Keep knees tracking over toes"
+    ],
+    "difficulty": "Intermediate",
+    "conditions": [
+      "Weak Knees",
+      "Leg Weakness",
+      "Poor Posture",
+      "Knee pain (general)",
+      "Osteoarthritis knee pain",
+      "Hamstring tightness",
+      "Calf muscle strain",
+      "Ankle pain",
+      "Heel pain",
+      "Plantar fasciitis"
+    ]
+  },
+  {
+    "id": "corpse-pose",
+    "name": "Corpse Pose",
+    "sanskrit_name": "Savasana",
+    "category": "Stress Relief",
+    "subcategory": "Relaxation",
+    "image": "/static/images/poses/Corpse_Sivasana.png",
+    "benefits": [
+      "Deeply relaxes the whole body",
+      "Calms the nervous system",
+      "Reduces stress and mental fatigue"
+    ],
+    "instructions": [
+      "Lie flat on your back with legs comfortably apart",
+      "Rest arms by sides with palms facing up",
+      "Soften the face and jaw, close the eyes",
+      "Breathe naturally for 5\u201310 minutes"
+    ],
+    "duration": "5-10 minutes",
+    "precautions": [
+      "Use support under knees if lower back is sensitive",
+      "Cover with a blanket if you feel cold"
+    ],
+    "difficulty": "Beginner",
+    "conditions": [
+      "Stress",
+      "Anxiety",
+      "Fatigue",
+      "Insomnia",
+      "Headache",
+      "Migraine",
+      "Sinus congestion pain",
+      "Jaw tension (TMJ)",
+      "Fatigue/muscle soreness",
+      "Stress-induced body pain",
+      "Poor posture pain",
+      "Tension accumulation pain"
+    ]
+  },
+  {
+    "id": "crescent-lunge",
+    "name": "Crescent Lunge",
+    "sanskrit_name": "Alanasana",
+    "category": "Strength Building",
+    "subcategory": "Hips & Legs",
+    "image": "/static/images/poses/Crescent_Lunge_Alanasana.png",
+    "benefits": [
+      "Stretches hip flexors and psoas",
+      "Strengthens legs and glutes",
+      "Opens chest and improves balance"
+    ],
+    "instructions": [
+      "From standing, step one foot back into a lunge",
+      "Bend front knee over ankle and straighten back leg",
+      "Lift arms overhead and lengthen through spine",
+      "Hold for 30\u201345 seconds, then switch sides"
+    ],
+    "duration": "30-45 seconds per side",
+    "precautions": [
+      "Avoid deep lunge if you have knee issues",
+      "Keep front knee aligned over ankle"
+    ],
+    "difficulty": "Intermediate",
+    "conditions": [
+      "Hip Tightness",
+      "Thigh Weakness",
+      "Low Back Stiffness"
+    ]
+  },
+  {
+    "id": "crescent-moon",
+    "name": "Crescent Moon Pose",
+    "sanskrit_name": "Ashta Chandrasana",
+    "category": "Pain Relief",
+    "subcategory": "Side Body",
+    "image": "/static/images/poses/Crescent_Moon_Ashta_Chandrasana.png",
+    "benefits": [
+      "Stretches side body and ribs",
+      "Relieves tension in waist and lower back",
+      "Improves spinal flexibility"
+    ],
+    "instructions": [
+      "Stand with feet together and reach arms overhead",
+      "Clasp hands and lean gently to one side",
+      "Keep both sides of the torso long",
+      "Hold for 20\u201330 seconds each side"
+    ],
+    "duration": "20-30 seconds per side",
+    "precautions": [
+      "Avoid deep bending if you have acute back pain",
+      "Engage core to support lower back"
+    ],
+    "difficulty": "Beginner",
+    "conditions": [
+      "Side Body Tightness",
+      "Lower Back Stiffness"
+    ]
+  },
+  {
+    "id": "crow-pose",
+    "name": "Crow Pose",
+    "sanskrit_name": "Bakasana",
+    "category": "Strength Building",
+    "subcategory": "Arms & Core",
+    "image": "/static/images/poses/Crow_Bakasana.png",
+    "benefits": [
+      "Strengthens wrists, arms, and core",
+      "Improves balance and focus",
+      "Builds confidence in arm balances"
+    ],
+    "instructions": [
+      "Squat with feet hip-width and place hands on floor shoulder-width apart",
+      "Lift hips and place knees on upper arms",
+      "Shift weight forward and lift feet off the floor",
+      "Hold for 5\u201310 breaths"
+    ],
+    "duration": "5-10 breaths",
+    "precautions": [
+      "Avoid if you have wrist or shoulder injuries",
+      "Use a cushion in front if you feel unstable"
+    ],
+    "difficulty": "Advanced",
+    "conditions": [
+      "Weak Wrists",
+      "Arm Weakness",
+      "Core Weakness"
+    ]
+  },
+  {
+    "id": "dolphin-pose",
+    "name": "Dolphin Pose",
+    "sanskrit_name": "Ardha Pincha Mayurasana",
+    "category": "Strength Building",
+    "subcategory": "Shoulders & Upper Back",
+    "image": "/static/images/poses/Dolphin_Ardha_Pincha_Mayurasana.png",
+    "benefits": [
+      "Strengthens shoulders and upper back",
+      "Stretches hamstrings and calves",
+      "Prepares the body for inversions"
+    ],
+    "instructions": [
+      "Start on hands and knees, then lower forearms to the floor",
+      "Tuck toes and lift hips up like Downward Dog",
+      "Press forearms firmly into the mat",
+      "Hold for 5\u201310 breaths"
+    ],
+    "duration": "5-10 breaths",
+    "precautions": [
+      "Avoid if you have acute shoulder injuries",
+      "Keep neck relaxed and gaze between feet"
+    ],
+    "difficulty": "Intermediate",
+    "conditions": [
+      "Shoulder Weakness",
+      "Upper Back Tension",
+      "Neck stiffness",
+      "Cervical pain",
+      "Shoulder tightness",
+      "Frozen shoulder",
+      "Rotator cuff pain",
+      "Upper shoulder blade pain"
+    ]
+  },
+  {
+    "id": "eagle-pose",
+    "name": "Eagle Pose",
+    "sanskrit_name": "Garudasana",
+    "category": "Balance",
+    "subcategory": "Standing Balance",
+    "image": "/static/images/poses/Eagle_Garudasana.png",
+    "benefits": [
+      "Strengthens legs and ankles",
+      "Opens shoulders and upper back",
+      "Improves focus and balance"
+    ],
+    "instructions": [
+      "Stand on one leg and wrap the other around it",
+      "Cross arms at elbows and wrists in front of chest",
+      "Sit hips down slightly and lift elbows",
+      "Hold for 20\u201330 seconds, then switch sides"
+    ],
+    "duration": "20-30 seconds per side",
+    "precautions": [
+      "Use a wall for support if balance is challenging",
+      "Avoid deep knee bend with knee injury"
+    ],
+    "difficulty": "Intermediate",
+    "conditions": [
+      "Poor Balance",
+      "Shoulder Tension",
+      "Ankle Weakness",
+      "Neck stiffness",
+      "Cervical pain",
+      "Shoulder tightness",
+      "Frozen shoulder",
+      "Rotator cuff pain",
+      "Upper shoulder blade pain"
+    ]
+  },
+  {
+    "id": "extended-hand-to-toe",
+    "name": "Extended Hand to Big Toe Pose",
+    "sanskrit_name": "Utthita Hasta Padangusthasana",
+    "category": "Balance",
+    "subcategory": "Standing Balance",
+    "image": "/static/images/poses/Extended_Hand_to_Toe_Utthita_Hasta_Padangusthasana.png",
+    "benefits": [
+      "Improves balance and coordination",
+      "Stretches hamstrings and calves",
+      "Strengthens standing leg and core"
+    ],
+    "instructions": [
+      "Stand tall and shift weight to one leg",
+      "Lift opposite leg and hold big toe or use a strap",
+      "Extend leg forward or to the side while keeping spine tall",
+      "Hold for 15\u201330 seconds, then switch sides"
+    ],
+    "duration": "15-30 seconds per side",
+    "precautions": [
+      "Practice near a wall if balance is unsteady",
+      "Keep a micro-bend in standing knee"
+    ],
+    "difficulty": "Advanced",
+    "conditions": [
+      "Hamstring Tightness",
+      "Poor Balance",
+      "Leg Weakness"
+    ]
+  },
+  {
+    "id": "extended-side-angle",
+    "name": "Extended Side Angle Pose",
+    "sanskrit_name": "Utthita Parsvakonasana",
+    "category": "Strength Building",
+    "subcategory": "Hips & Side Body",
+    "image": "/static/images/poses/Extended_Side_Angle_Utthita_Parsvakonasana.png",
+    "benefits": [
+      "Opens hips and side body",
+      "Strengthens legs and core",
+      "Relieves stiffness in waist and lower back"
+    ],
+    "instructions": [
+      "From Warrior II, lower front forearm to thigh or hand to the floor",
+      "Extend top arm over ear, creating a long line from foot to fingertips",
+      "Rotate chest open and gaze upward if comfortable",
+      "Hold for 30\u201345 seconds each side"
+    ],
+    "duration": "30-45 seconds per side",
+    "precautions": [
+      "Use a block for support if hand doesn\u2019t reach the floor",
+      "Avoid collapsing into the front shoulder"
+    ],
+    "difficulty": "Intermediate",
+    "conditions": [
+      "Hip Tightness",
+      "Side Body Tightness",
+      "Back Stiffness"
+    ]
+  },
+  {
+    "id": "forearm-stand",
+    "name": "Forearm Stand",
+    "sanskrit_name": "Pincha Mayurasana",
+    "category": "Strength Building",
+    "subcategory": "Inversion",
+    "image": "/static/images/poses/Forearm_Stand_Pincha_Mayurasana.png",
+    "benefits": [
+      "Strengthens shoulders, arms, and core",
+      "Improves balance and body awareness",
+      "Energizes the body and mind"
+    ],
+    "instructions": [
+      "Start in Dolphin Pose with forearms on the floor",
+      "Walk feet closer and gently kick one leg up, then the other",
+      "Stack hips over shoulders and engage core",
+      "Hold for a few breaths, then come down with control"
+    ],
+    "duration": "3-8 breaths",
+    "precautions": [
+      "Practice near a wall if you are a beginner",
+      "Avoid with neck, shoulder, or back injuries"
+    ],
+    "difficulty": "Advanced",
+    "conditions": [
+      "Shoulder Weakness",
+      "Poor Balance",
+      "Upper Back Weakness"
+    ]
+  },
+  {
+    "id": "half-boat-pose",
+    "name": "Half Boat Pose",
+    "sanskrit_name": "Ardha Navasana",
+    "category": "Strength Building",
+    "subcategory": "Core",
+    "image": "/static/images/poses/Half_Boat_Ardha_Navasana.png",
+    "benefits": [
+      "Strengthens deep core muscles",
+      "Supports lower back stability",
+      "Improves posture"
+    ],
+    "instructions": [
+      "Sit with knees bent and feet on the floor",
+      "Lean back slightly and lift feet to knee height",
+      "Extend arms forward parallel to the floor",
+      "Hold for 20\u201340 seconds with steady breath"
+    ],
+    "duration": "20-40 seconds",
+    "precautions": [
+      "Avoid if you have acute lower back pain",
+      "Keep spine long, not rounded"
+    ],
+    "difficulty": "Intermediate",
+    "conditions": [
+      "Weak Core",
+      "Poor Posture",
+      "Low Back Weakness"
+    ]
+  },
+  {
+    "id": "half-moon-pose",
+    "name": "Half Moon Pose",
+    "sanskrit_name": "Ardha Chandrasana",
+    "category": "Balance",
+    "subcategory": "Standing Balance",
+    "image": "/static/images/poses/Half-Moon_Ardha_Chandrasana.png",
+    "benefits": [
+      "Strengthens legs and ankles",
+      "Opens hips and chest",
+      "Improves balance and coordination"
+    ],
+    "instructions": [
+      "From Triangle Pose, bend front knee and place hand in front of foot",
+      "Lift back leg parallel to the floor and open hips to the side",
+      "Extend top arm upward and gaze to the side or up",
+      "Hold for 20\u201330 seconds each side"
+    ],
+    "duration": "20-30 seconds per side",
+    "precautions": [
+      "Use a block under the hand for support",
+      "Practice near a wall if balance is challenging"
+    ],
+    "difficulty": "Intermediate",
+    "conditions": [
+      "Poor Balance",
+      "Ankle Weakness",
+      "Hip Tightness"
+    ]
+  },
+  {
+    "id": "handstand-pose",
+    "name": "Handstand",
+    "sanskrit_name": "Adho Mukha Vrksasana",
+    "category": "Strength Building",
+    "subcategory": "Inversion",
+    "image": "/static/images/poses/Handstand_Adho_Mukha_Vrksasana.png",
+    "benefits": [
+      "Builds upper body and core strength",
+      "Improves balance and concentration",
+      "Energizes the entire body"
+    ],
+    "instructions": [
+      "Face a wall and place hands shoulder-width apart",
+      "Kick one leg up, then the other, coming into an inverted position",
+      "Engage core and press strongly through hands",
+      "Hold for a few breaths, then come down with control"
+    ],
+    "duration": "3-8 breaths",
+    "precautions": [
+      "Practice with a teacher if you are new to inversions",
+      "Avoid with wrist, shoulder, or neck injuries"
+    ],
+    "difficulty": "Advanced",
+    "conditions": [
+      "Shoulder Weakness",
+      "Arm Weakness",
+      "Poor Balance"
+    ]
+  },
+  {
+    "id": "king-pigeon-pose",
+    "name": "King Pigeon Pose",
+    "sanskrit_name": "Eka Pada Rajakapotasana",
+    "category": "Pain Relief",
+    "subcategory": "Hip & Backbend",
+    "image": "/static/images/poses/King_Pigeon_Eka_Pada_Rajakapotasana.png",
+    "benefits": [
+      "Deeply opens hips and hip flexors",
+      "Stretches chest and shoulders",
+      "Improves spinal flexibility"
+    ],
+    "instructions": [
+      "From Pigeon Pose, bend back knee and reach arms to hold the foot",
+      "Lift chest and gently draw foot toward head",
+      "Keep hips square and breathe slowly",
+      "Hold for 5\u20138 breaths, then switch sides"
+    ],
+    "duration": "5-8 breaths per side",
+    "precautions": [
+      "Only practice after warming up thoroughly",
+      "Avoid with knee, hip, or low back injuries"
+    ],
+    "difficulty": "Advanced",
+    "conditions": [
+      "Hip Tightness",
+      "Chest Tightness",
+      "Spinal Stiffness"
+    ]
+  },
+  {
+    "id": "lotus-pose",
+    "name": "Lotus Pose",
+    "sanskrit_name": "Padmasana",
+    "category": "Meditation",
+    "subcategory": "Seated",
+    "image": "/static/images/poses/Lotus_Padmasana.png",
+    "benefits": [
+      "Provides stable base for meditation",
+      "Opens hips and knees",
+      "Calms the mind and nervous system"
+    ],
+    "instructions": [
+      "Sit with legs extended, then place one foot on opposite thigh",
+      "Place the other foot on the opposite thigh if comfortable",
+      "Lengthen spine and rest hands on knees",
+      "Breathe slowly for 3\u20135 minutes"
+    ],
+    "duration": "3-5 minutes",
+    "precautions": [
+      "Avoid if you have knee or hip injuries",
+      "Use easy cross-legged seat as an alternative"
+    ],
+    "difficulty": "Advanced",
+    "conditions": [
+      "Hip Tightness",
+      "Stress",
+      "Anxiety"
+    ]
+  },
+  {
+    "id": "low-lunge",
+    "name": "Low Lunge",
+    "sanskrit_name": "Anjaneyasana",
+    "category": "Pain Relief",
+    "subcategory": "Hip Flexors",
+    "image": "/static/images/poses/Low_Lunge_Anjaneyasana.png",
+    "benefits": [
+      "Stretches hip flexors and quadriceps",
+      "Relieves tension in groin and thighs",
+      "Improves posture from prolonged sitting"
+    ],
+    "instructions": [
+      "From tabletop, step one foot forward between hands",
+      "Lower back knee to the floor and untuck toes",
+      "Lift chest and optionally reach arms overhead",
+      "Hold for 30\u201345 seconds, then switch sides"
+    ],
+    "duration": "30-45 seconds per side",
+    "precautions": [
+      "Place padding under the back knee if sensitive",
+      "Avoid deep lunge if you feel knee or hip pain"
+    ],
+    "difficulty": "Beginner",
+    "conditions": [
+      "Hip Flexor Tightness",
+      "Thigh Tightness",
+      "Low Back Stiffness"
+    ]
+  },
+  {
+    "id": "plow-pose",
+    "name": "Plow Pose",
+    "sanskrit_name": "Halasana",
+    "category": "Pain Relief",
+    "subcategory": "Spine & Neck",
+    "image": "/static/images/poses/Plow_Halasana.png",
+    "benefits": [
+      "Stretches entire back body",
+      "Calms the nervous system",
+      "Improves spinal flexibility"
+    ],
+    "instructions": [
+      "From lying on your back, lift legs overhead into Shoulder Stand",
+      "Lower toes toward the floor behind your head",
+      "Support lower back with hands if needed",
+      "Hold for 5\u20138 breaths, then roll down slowly"
+    ],
+    "duration": "5-8 breaths",
+    "precautions": [
+      "Avoid with neck or spinal injuries",
+      "Do not turn the head while in the pose"
+    ],
+    "difficulty": "Intermediate",
+    "conditions": [
+      "Back Stiffness",
+      "Shoulder Tension",
+      "Hamstring Tightness"
+    ]
+  },
+  {
+    "id": "pyramid-pose",
+    "name": "Pyramid Pose",
+    "sanskrit_name": "Parsvottanasana",
+    "category": "Pain Relief",
+    "subcategory": "Hamstrings & Hips",
+    "image": "/static/images/poses/Pyramid_Parsvottanasana.png",
+    "benefits": [
+      "Stretches hamstrings and calves",
+      "Lengthens spine and side waist",
+      "Improves balance and focus"
+    ],
+    "instructions": [
+      "Step feet into a short stance with hips facing forward",
+      "Square hips and hinge at the hips over front leg",
+      "Place hands on shin, blocks, or floor",
+      "Hold for 30\u201345 seconds each side"
+    ],
+    "duration": "30-45 seconds per side",
+    "precautions": [
+      "Use blocks if hands don\u2019t reach the floor",
+      "Micro-bend front knee if hamstrings are tight"
+    ],
+    "difficulty": "Intermediate",
+    "conditions": [
+      "Hamstring Tightness",
+      "Calf Tightness",
+      "Lower Back Stiffness"
+    ]
+  },
+  {
+    "id": "reverse-warrior",
+    "name": "Reverse Warrior",
+    "sanskrit_name": "Parsva Virabhadrasana",
+    "category": "Strength Building",
+    "subcategory": "Side Body & Legs",
+    "image": "/static/images/poses/Reverse_Warrior_Parsva_Virabhadrasana.png",
+    "benefits": [
+      "Strengthens legs and core",
+      "Opens side body and ribs",
+      "Improves spinal mobility"
+    ],
+    "instructions": [
+      "From Warrior II, keep front knee bent and slide back hand down rear leg",
+      "Reach front arm up and back, lengthening side body",
+      "Keep front knee steady over ankle",
+      "Hold for 20\u201330 seconds each side"
+    ],
+    "duration": "20-30 seconds per side",
+    "precautions": [
+      "Avoid collapsing into lower back",
+      "Engage core for support"
+    ],
+    "difficulty": "Intermediate",
+    "conditions": [
+      "Side Body Tightness",
+      "Hip Tightness",
+      "Back Stiffness"
+    ]
+  },
+  {
+    "id": "side-plank",
+    "name": "Side Plank Pose",
+    "sanskrit_name": "Vasisthasana",
+    "category": "Strength Building",
+    "subcategory": "Arms & Core",
+    "image": "/static/images/poses/Side_Plank_Vasisthasana.png",
+    "benefits": [
+      "Strengthens arms, wrists, and core",
+      "Tones oblique muscles",
+      "Improves balance and shoulder stability"
+    ],
+    "instructions": [
+      "From Plank Pose, shift weight onto one hand and outer edge of same-side foot",
+      "Stack feet and extend top arm to the sky",
+      "Keep hips lifted and body in one line",
+      "Hold for 20\u201330 seconds each side"
+    ],
+    "duration": "20-30 seconds per side",
+    "precautions": [
+      "Practice with bottom knee down if wrists are sensitive",
+      "Avoid with acute wrist or shoulder pain"
+    ],
+    "difficulty": "Intermediate",
+    "conditions": [
+      "Weak Wrists",
+      "Core Weakness",
+      "Side Body Weakness"
+    ]
+  },
+  {
+    "id": "side-splits",
+    "name": "Wide-Legged Seated Forward Bend",
+    "sanskrit_name": "Upavistha Konasana",
+    "category": "Pain Relief",
+    "subcategory": "Inner Thighs & Hips",
+    "image": "/static/images/poses/Side_Splits_Upavistha_Konasana.png",
+    "benefits": [
+      "Stretches inner thighs and hamstrings",
+      "Opens hips and lower back",
+      "Calms the nervous system"
+    ],
+    "instructions": [
+      "Sit with legs wide apart and toes pointing up",
+      "Inhale to lengthen the spine, exhale to fold forward",
+      "Rest hands on floor or a bolster",
+      "Hold for 1\u20133 minutes with relaxed breathing"
+    ],
+    "duration": "1-3 minutes",
+    "precautions": [
+      "Sit on a cushion if lower back rounds",
+      "Avoid forcing the stretch"
+    ],
+    "difficulty": "Intermediate",
+    "conditions": [
+      "Inner Thigh Tightness",
+      "Hip Tightness",
+      "Lower Back Stiffness"
+    ]
+  },
+  {
+    "id": "splits-pose",
+    "name": "Full Splits",
+    "sanskrit_name": "Hanumanasana",
+    "category": "Pain Relief",
+    "subcategory": "Hamstrings & Hip Flexors",
+    "image": "/static/images/poses/Splits_Hanumanasana.png",
+    "benefits": [
+      "Deeply stretches hamstrings and hip flexors",
+      "Improves flexibility in legs and hips",
+      "Builds mental focus and patience"
+    ],
+    "instructions": [
+      "From a low lunge, gradually slide front heel forward and back knee backward",
+      "Support hips with blocks or props as needed",
+      "Keep chest lifted and breathe slowly",
+      "Hold for 5\u20138 breaths on each side"
+    ],
+    "duration": "5-8 breaths per side",
+    "precautions": [
+      "Warm up thoroughly before practicing",
+      "Avoid if you have hamstring or groin injuries"
+    ],
+    "difficulty": "Advanced",
+    "conditions": [
+      "Hamstring Tightness",
+      "Hip Flexor Tightness"
+    ]
+  },
+  {
+    "id": "upward-facing-dog",
+    "name": "Upward-Facing Dog",
+    "sanskrit_name": "Urdhva Mukha Svanasana",
+    "category": "Pain Relief",
+    "subcategory": "Backbend",
+    "image": "/static/images/poses/Upward-Facing_Dog_Urdhva_Mukha_Svsnssana.png",
+    "benefits": [
+      "Opens chest and shoulders",
+      "Strengthens arms and spine",
+      "Improves posture and lung capacity"
+    ],
+    "instructions": [
+      "Lie face down with hands beside ribs",
+      "Press into hands, straighten arms, and lift chest and thighs off the floor",
+      "Roll shoulders back and broaden collarbones",
+      "Hold for 5\u20138 breaths"
+    ],
+    "duration": "5-8 breaths",
+    "precautions": [
+      "Avoid with acute lower back pain",
+      "Keep shoulders away from ears"
+    ],
+    "difficulty": "Intermediate",
+    "conditions": [
+      "Chest Tightness",
+      "Poor Posture",
+      "Upper Back Stiffness"
+    ]
+  },
+  {
+    "id": "warrior-one",
+    "name": "Warrior I",
+    "sanskrit_name": "Virabhadrasana I",
+    "category": "Strength Building",
+    "subcategory": "Legs & Back",
+    "image": "/static/images/poses/Warrior_One_Virabhadrasana_One.png",
+    "benefits": [
+      "Strengthens legs, back, and shoulders",
+      "Stretches hip flexors and chest",
+      "Improves focus and grounding"
+    ],
+    "instructions": [
+      "Step one foot back and turn it slightly out",
+      "Bend front knee over ankle and square hips forward",
+      "Reach arms overhead and lengthen through spine",
+      "Hold for 30\u201345 seconds each side"
+    ],
+    "duration": "30-45 seconds per side",
+    "precautions": [
+      "Shorten the stance if you feel low back compression",
+      "Avoid locking the back knee"
+    ],
+    "difficulty": "Intermediate",
+    "conditions": [
+      "Weak Legs",
+      "Hip Tightness",
+      "Poor Posture"
+    ]
+  },
+  {
+    "id": "warrior-three",
+    "name": "Warrior III",
+    "sanskrit_name": "Virabhadrasana III",
+    "category": "Balance",
+    "subcategory": "Standing Balance",
+    "image": "/static/images/poses/Warrior_Three_Virabhadrasana_Three.png",
+    "benefits": [
+      "Strengthens legs, ankles, and core",
+      "Improves balance and coordination",
+      "Builds focus and stability"
+    ],
+    "instructions": [
+      "From standing, hinge at hips and extend one leg back",
+      "Reach arms forward or back, forming a straight line from fingertips to heel",
+      "Keep hips level and gaze slightly forward",
+      "Hold for 15\u201330 seconds each side"
+    ],
+    "duration": "15-30 seconds per side",
+    "precautions": [
+      "Use a wall or chair for support if needed",
+      "Avoid locking standing knee"
+    ],
+    "difficulty": "Advanced",
+    "conditions": [
+      "Poor Balance",
+      "Leg Weakness",
+      "Core Weakness"
+    ]
+  },
+  {
+    "id": "wheel-pose",
+    "name": "Wheel Pose",
+    "sanskrit_name": "Urdhva Dhanurasana",
+    "category": "Strength Building",
+    "subcategory": "Deep Backbend",
+    "image": "/static/images/poses/Wheel_Urdhva_Dhanurasana.png",
+    "benefits": [
+      "Deeply opens chest and shoulders",
+      "Strengthens arms, legs, and back",
+      "Energizes and uplifts mood"
+    ],
+    "instructions": [
+      "Lie on back with knees bent and feet hip-width",
+      "Place hands beside ears with fingers pointing toward shoulders",
+      "Press into hands and feet to lift hips and chest",
+      "Hold for 3\u20135 breaths, then lower slowly"
+    ],
+    "duration": "3-5 breaths",
+    "precautions": [
+      "Warm up with gentler backbends first",
+      "Avoid with wrist, shoulder, or spine injuries"
+    ],
+    "difficulty": "Advanced",
+    "conditions": [
+      "Chest Tightness",
+      "Spinal Stiffness",
+      "Low Energy"
+    ]
+  },
+  {
+    "id": "wild-thing",
+    "name": "Wild Thing",
+    "sanskrit_name": "Camatkarasana",
+    "category": "Strength Building",
+    "subcategory": "Backbend & Side Body",
+    "image": "/static/images/poses/Wild_Thing_Camatkarasana.png",
+    "benefits": [
+      "Opens chest and shoulders",
+      "Strengthens arms, legs, and core",
+      "Releases tension in front body and hips"
+    ],
+    "instructions": [
+      "From Side Plank, step top foot behind and lift hips",
+      "Arch back and let top arm reach overhead and back",
+      "Keep supporting shoulder strong and stable",
+      "Hold for 3\u20135 breaths each side"
+    ],
+    "duration": "3-5 breaths per side",
+    "precautions": [
+      "Avoid with shoulder or wrist injuries",
+      "Come out slowly to protect lower back"
+    ],
+    "difficulty": "Advanced",
+    "conditions": [
+      "Chest Tightness",
+      "Hip Tightness",
+      "Side Body Stiffness"
+    ]
   }
 ]

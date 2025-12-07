@@ -10,7 +10,7 @@
             <div class="text-6xl mb-4">🫁</div>
             <h2 class="text-4xl font-bold text-gray-800 mb-4">Pranayama & Breathing</h2>
             <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                Master the art of conscious breathing with traditional Pranayama techniques. 
+                Master the art of conscious breathing with traditional Pranayama techniques.
                 These exercises help balance your energy, calm your mind, and improve overall well-being.
             </p>
         </div>
@@ -54,12 +54,8 @@
                 <!-- Search -->
                 <div class="mb-6">
                     <div class="relative max-w-md mx-auto">
-                        <input
-                            type="text"
-                            id="pranayama-search"
-                            placeholder="Search breathing exercises..."
-                            class="w-full px-4 py-3 pr-10 border border-gray-300 rounded-lg focus:border-ayurvedic-green focus:outline-none"
-                        />
+                        <input type="text" id="pranayama-search" placeholder="Search breathing exercises..."
+                            class="w-full px-4 py-3 pr-10 border border-gray-300 rounded-lg focus:border-ayurvedic-green focus:outline-none" />
                         <i class="fas fa-search absolute right-3 top-3.5 text-gray-400"></i>
                     </div>
                 </div>
@@ -71,12 +67,30 @@
                         Health Condition
                     </h3>
                     <div class="flex flex-wrap gap-2">
-                        <button onclick="filterByCondition('All')" class="condition-btn px-3 py-1 rounded-full text-sm border border-gray-300 hover:ayurvedic-green hover:text-white transition-colors">All</button>
-                        <button onclick="filterByCondition('Anxiety')" class="condition-btn px-3 py-1 rounded-full text-sm border border-gray-300 hover:ayurvedic-green hover:text-white transition-colors">Anxiety</button>
-                        <button onclick="filterByCondition('Stress')" class="condition-btn px-3 py-1 rounded-full text-sm border border-gray-300 hover:ayurvedic-green hover:text-white transition-colors">Stress</button>
-                        <button onclick="filterByCondition('Poor Concentration')" class="condition-btn px-3 py-1 rounded-full text-sm border border-gray-300 hover:ayurvedic-green hover:text-white transition-colors">Poor Concentration</button>
-                        <button onclick="filterByCondition('Insomnia')" class="condition-btn px-3 py-1 rounded-full text-sm border border-gray-300 hover:ayurvedic-green hover:text-white transition-colors">Insomnia</button>
-                        <button onclick="filterByCondition('Low Energy')" class="condition-btn px-3 py-1 rounded-full text-sm border border-gray-300 hover:ayurvedic-green hover:text-white transition-colors">Low Energy</button>
+                        <button onclick="filterByCondition('All')"
+                            class="condition-btn px-3 py-1 rounded-full text-sm border border-gray-300 hover:ayurvedic-green hover:text-white transition-colors ayurvedic-green text-white">All</button>
+                        <button onclick="filterByCondition('Anxiety')"
+                            class="condition-btn px-3 py-1 rounded-full text-sm border border-gray-300 hover:ayurvedic-green hover:text-white transition-colors">Anxiety</button>
+                        <button onclick="filterByCondition('Stress')"
+                            class="condition-btn px-3 py-1 rounded-full text-sm border border-gray-300 hover:ayurvedic-green hover:text-white transition-colors">Stress</button>
+                        <button onclick="filterByCondition('Poor Concentration')"
+                            class="condition-btn px-3 py-1 rounded-full text-sm border border-gray-300 hover:ayurvedic-green hover:text-white transition-colors">Poor
+                            Concentration</button>
+                        <button onclick="filterByCondition('Insomnia')"
+                            class="condition-btn px-3 py-1 rounded-full text-sm border border-gray-300 hover:ayurvedic-green hover:text-white transition-colors">Insomnia</button>
+                        <button onclick="filterByCondition('Low Energy')"
+                            class="condition-btn px-3 py-1 rounded-full text-sm border border-gray-300 hover:ayurvedic-green hover:text-white transition-colors">Low
+                            Energy</button>
+                        <button onclick="filterByCondition('Headaches')"
+                            class="condition-btn px-3 py-1 rounded-full text-sm border border-gray-300 hover:ayurvedic-green hover:text-white transition-colors">Headaches</button>
+                        <button onclick="filterByCondition('Anger')"
+                            class="condition-btn px-3 py-1 rounded-full text-sm border border-gray-300 hover:ayurvedic-green hover:text-white transition-colors">Anger</button>
+                        <button onclick="filterByCondition('Respiratory Issues')"
+                            class="condition-btn px-3 py-1 rounded-full text-sm border border-gray-300 hover:ayurvedic-green hover:text-white transition-colors">Respiratory
+                            Issues</button>
+                        <button onclick="filterByCondition('Digestive Issues')"
+                            class="condition-btn px-3 py-1 rounded-full text-sm border border-gray-300 hover:ayurvedic-green hover:text-white transition-colors">Digestive
+                            Issues</button>
                     </div>
                 </div>
             </div>
@@ -85,14 +99,16 @@
         <!-- Results Count -->
         <div class="mb-6">
             <p id="results-count" class="text-gray-600">
-                Showing {{ pranayama_exercises|length }} breathing exercise{{ 's' if pranayama_exercises|length != 1 else '' }}
+                Showing {{ pranayama_exercises|length }} breathing exercise{{ 's' if pranayama_exercises|length != 1
+                else '' }}
             </p>
         </div>
 
         <!-- Exercises Grid -->
         <div id="pranayama-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {% for exercise in pranayama_exercises %}
-            <div class="pranayama-card bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1" data-conditions="{{ exercise.conditions|join(',') }}">
+            <div class="pranayama-card bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+                data-conditions="{{ exercise.conditions|join(',') }}">
                 <div class="p-6">
                     <!-- Header -->
                     <div class="flex items-start justify-between mb-4">
@@ -101,47 +117,45 @@
                             <p class="text-sm text-ayurvedic-sage italic">{{ exercise.sanskrit_name }}</p>
                         </div>
                     </div>
-                    
+
                     <!-- Breathing Circle Animation -->
-                    <div class="flex justify-center mb-4">
+                    <div class="flex flex-col items-center gap-3 mb-4">
                         <div class="relative">
-                            <div id="breathing-circle-{{ exercise.id }}" class="w-32 h-32 rounded-full border-4 border-ayurvedic-green bg-gray-50 transition-all duration-1000">
-                                <div class="absolute inset-0 flex items-center justify-center">
-                                    <i class="fas fa-wind text-gray-400 text-2xl"></i>
-                                </div>
-                            </div>
-                            
-                            <!-- Breathing instruction -->
-                            <div class="absolute -bottom-8 left-1/2 transform -translate-x-1/2">
-                                <span id="breathing-text-{{ exercise.id }}" class="text-sm font-medium text-gray-500">
-                                    Ready
-                                </span>
+                            <div id="breathing-circle-{{ exercise.id }}"
+                                class="w-32 h-32 rounded-full border-4 border-ayurvedic-green bg-gray-50 transition-all duration-1000 flex items-center justify-center">
+                                <i class="fas fa-wind text-gray-400 text-2xl"></i>
                             </div>
                         </div>
+                        <span id="breathing-text-{{ exercise.id }}" class="text-sm font-medium text-gray-500">
+                            Ready
+                        </span>
                     </div>
-                    
+
                     <!-- Timer -->
                     <div class="text-center mb-4">
-                        <div id="timer-{{ exercise.id }}" class="text-2xl font-mono font-bold text-gray-700">
-                            00:00
+                        <div id="timer-{{ exercise.id }}"
+                            class="text-3xl font-mono font-bold text-gray-800 tracking-widest">
+                            01:00
                         </div>
                         <div class="text-sm text-gray-500">
                             {{ exercise.breathing_pattern }}
                         </div>
                     </div>
-                    
+
                     <!-- Controls -->
                     <div class="flex justify-center gap-3 mb-4">
-                        <button onclick="startExercise('{{ exercise.id }}')" id="start-btn-{{ exercise.id }}" class="ayurvedic-green text-white px-4 py-2 rounded-lg hover:bg-ayurvedic-sage transition-colors flex items-center gap-2">
+                        <button onclick="startExercise('{{ exercise.id }}')" id="start-btn-{{ exercise.id }}"
+                            class="ayurvedic-green text-white px-4 py-2 rounded-lg hover:bg-ayurvedic-sage transition-colors flex items-center gap-2">
                             <i class="fas fa-play"></i>
                             Start
                         </button>
-                        <button onclick="resetExercise('{{ exercise.id }}')" class="px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors flex items-center gap-2">
+                        <button onclick="resetExercise('{{ exercise.id }}')"
+                            class="px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors flex items-center gap-2">
                             <i class="fas fa-redo"></i>
                             Reset
                         </button>
                     </div>
-                    
+
                     <!-- Benefits -->
                     <div class="mb-4">
                         <h4 class="font-medium text-gray-700 mb-2 flex items-center gap-2">
@@ -157,16 +171,17 @@
                             {% endfor %}
                         </ul>
                     </div>
-                    
+
                     <!-- Duration -->
                     <div class="flex items-center gap-2 text-sm text-gray-600 mb-4">
                         <i class="fas fa-clock text-blue-500"></i>
                         <span>{{ exercise.duration }}</span>
                     </div>
-                    
+
                     <!-- Actions -->
                     <div class="flex gap-2">
-                        <button onclick="showExerciseDetails('{{ exercise.id }}')" class="flex-1 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors px-4 py-2">
+                        <button onclick="showExerciseDetails('{{ exercise.id }}')"
+                            class="flex-1 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors px-4 py-2">
                             Learn More
                         </button>
                     </div>
@@ -187,12 +202,12 @@
         <!-- Safety Guidelines -->
         <div class="mt-12 bg-blue-50 border border-blue-200 rounded-lg p-6">
             <h3 class="text-lg font-semibold text-blue-800 mb-2">Safety Guidelines</h3>
-            <ul class="text-blue-700 text-sm space-y-2">
-                <li>• Always practice in a comfortable, quiet environment</li>
-                <li>• Start slowly and gradually increase duration</li>
-                <li>• Stop immediately if you feel dizzy or uncomfortable</li>
-                <li>• Avoid practicing on a full stomach</li>
+            <ul class="list-disc list-inside text-blue-700 space-y-1">
                 <li>• Consult a healthcare professional if you have respiratory conditions</li>
+                <li>• Practice on an empty stomach or at least 2-3 hours after a meal</li>
+                <li>• If you feel dizzy or uncomfortable, stop immediately and rest</li>
+                <li>• Pregnant women and individuals with high blood pressure should consult an expert
+                    before practicing</li>
             </ul>
         </div>
     </div>
@@ -200,15 +215,21 @@
 
 <!-- Exercise Details Modal -->
 <div id="exercise-modal" class="fixed inset-0 bg-black bg-opacity-50 hidden z-50 flex items-center justify-center p-4">
-    <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto">
-        <div class="p-6">
-            <div class="flex justify-between items-center mb-4">
-                <h3 id="modal-title" class="text-2xl font-bold text-gray-800"></h3>
-                <button onclick="closeExerciseModal()" class="text-gray-500 hover:text-gray-700">
-                    <i class="fas fa-times text-xl"></i>
-                </button>
-            </div>
-            <div id="modal-content">
+    <!-- Modal Card -->
+    <div class="bg-white rounded-lg shadow-xl w-full max-w-2xl flex flex-col max-h-[85vh]">
+        <!-- Header (Fixed) -->
+        <div
+            class="flex-none px-6 py-4 border-b border-gray-100 flex justify-between items-center bg-white rounded-t-lg">
+            <h3 id="modal-title" class="text-2xl font-bold text-gray-800"></h3>
+            <button onclick="closeExerciseModal()"
+                class="text-gray-500 hover:text-gray-700 transition-colors p-2 rounded-full hover:bg-gray-100">
+                <i class="fas fa-times text-xl"></i>
+            </button>
+        </div>
+
+        <!-- Content (Scrollable) -->
+        <div class="flex-1 overflow-y-auto p-6 min-h-0">
+            <div id="modal-content" class="space-y-4">
                 <!-- Content will be populated by JavaScript -->
             </div>
         </div>
@@ -218,10 +239,11 @@
 
 {% block scripts %}
 <script>
-    const pranayamaExercises = {{ pranayama_exercises|tojson }};
-    let currentCondition = 'All';
+    const pranayamaExercises = {{ pranayama_exercises| tojson }};
+    const DEFAULT_TIMER_SECONDS = 60;
     let exerciseTimers = {};
-    let exerciseStates = {};
+    let currentCondition = 'All';
+    const exerciseStates = {};
 
     function filterByCondition(condition) {
         currentCondition = condition;
@@ -231,12 +253,14 @@
 
     function updateFilters() {
         document.querySelectorAll('.condition-btn').forEach(btn => {
-            btn.classList.remove('ayurvedic-green', 'text-white');
-            btn.classList.add('border-gray-300');
+            if (btn.textContent.trim() === currentCondition) {
+                btn.classList.add('ayurvedic-green', 'text-white');
+                btn.classList.remove('border-gray-300');
+            } else {
+                btn.classList.remove('ayurvedic-green', 'text-white');
+                btn.classList.add('border-gray-300');
+            }
         });
-
-        event.target.classList.add('ayurvedic-green', 'text-white');
-        event.target.classList.remove('border-gray-300');
     }
 
     function filterExercises() {
@@ -249,8 +273,10 @@
             const exerciseName = card.querySelector('h3').textContent.toLowerCase();
             const sanskritName = card.querySelector('p').textContent.toLowerCase();
 
-            const matchesCondition = currentCondition === 'All' || conditions.includes(currentCondition.toLowerCase());
-            const matchesSearch = searchTerm === '' || exerciseName.includes(searchTerm) || sanskritName.includes(searchTerm);
+            const matchesCondition = currentCondition === 'All' ||
+                conditions.includes(currentCondition.toLowerCase());
+            const matchesSearch = searchTerm === '' || exerciseName.includes(searchTerm) ||
+                sanskritName.includes(searchTerm);
 
             if (matchesCondition && matchesSearch) {
                 card.style.display = 'block';
@@ -260,7 +286,7 @@
             }
         });
 
-        document.getElementById('results-count').textContent = 
+        document.getElementById('results-count').textContent =
             `Showing ${visibleCount} breathing exercise${visibleCount !== 1 ? 's' : ''}`;
 
         const noResults = document.getElementById('no-results');
@@ -271,86 +297,147 @@
         }
     }
 
-    function startExercise(exerciseId) {
-        const exercise = pranayamaExercises.find(e => e.id === exerciseId);
-        if (!exercise) return;
+    function getExerciseState(exerciseId) {
+        if (!exerciseStates[exerciseId]) {
+            exerciseStates[exerciseId] = {
+                remaining: DEFAULT_TIMER_SECONDS,
+                isRunning: false,
+                phase: 'inhale',
+                phaseTime: 0
+            };
+        }
+        return exerciseStates[exerciseId];
+    }
 
-        const button = document.getElementById(`start-btn-${exerciseId}`);
+    function formatTime(totalSeconds) {
+        const minutes = Math.floor(totalSeconds / 60);
+        const seconds = totalSeconds % 60;
+        return `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+    }
+
+    function updateTimerDisplay(exerciseId) {
+        const timer = document.getElementById(`timer-${exerciseId}`);
+        const state = getExerciseState(exerciseId);
+        timer.textContent = formatTime(state.remaining);
+    }
+
+    function updateBreathingVisuals(exerciseId) {
         const circle = document.getElementById(`breathing-circle-${exerciseId}`);
         const text = document.getElementById(`breathing-text-${exerciseId}`);
-        const timer = document.getElementById(`timer-${exerciseId}`);
+        const state = getExerciseState(exerciseId);
 
-        if (exerciseStates[exerciseId]) {
-            // Stop exercise
-            clearInterval(exerciseTimers[exerciseId]);
-            exerciseStates[exerciseId] = false;
-            button.innerHTML = '<i class="fas fa-play"></i> Start';
-            circle.classList.remove('breathing-circle');
-            text.textContent = 'Ready';
-            timer.textContent = '00:00';
-        } else {
-            // Start exercise
-            exerciseStates[exerciseId] = true;
-            button.innerHTML = '<i class="fas fa-pause"></i> Pause';
-            
-            let timeLeft = 60; // 1 minute default
-            let phase = 'inhale';
-            let phaseTime = 0;
-            
-            exerciseTimers[exerciseId] = setInterval(() => {
-                timeLeft--;
-                phaseTime++;
-                
-                // Update timer display
-                const minutes = Math.floor(timeLeft / 60);
-                const seconds = timeLeft % 60;
-                timer.textContent = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
-                
-                // Breathing phases
-                if (phase === 'inhale' && phaseTime <= 4) {
-                    circle.style.transform = 'scale(1.2)';
-                    circle.style.backgroundColor = '#90EE90';
-                    text.textContent = 'Inhale';
-                } else if (phase === 'hold' && phaseTime <= 8) {
-                    circle.style.transform = 'scale(1.1)';
-                    circle.style.backgroundColor = '#FFD700';
-                    text.textContent = 'Hold';
-                } else if (phase === 'exhale' && phaseTime <= 12) {
-                    circle.style.transform = 'scale(0.8)';
-                    circle.style.backgroundColor = '#87CEEB';
-                    text.textContent = 'Exhale';
-                } else {
-                    phaseTime = 0;
-                    phase = phase === 'inhale' ? 'hold' : phase === 'hold' ? 'exhale' : 'inhale';
-                }
-                
-                if (timeLeft <= 0) {
-                    clearInterval(exerciseTimers[exerciseId]);
-                    exerciseStates[exerciseId] = false;
-                    button.innerHTML = '<i class="fas fa-play"></i> Start';
-                    circle.style.transform = 'scale(1)';
-                    circle.style.backgroundColor = '#f9fafb';
-                    text.textContent = 'Complete';
-                    timer.textContent = '00:00';
-                }
-            }, 1000);
+        const phaseDurations = { inhale: 4, hold: 4, exhale: 6 };
+        const settings = {
+            inhale: { scale: 1.15, color: '#bbf7d0', label: 'Inhale' },
+            hold: { scale: 1.05, color: '#fde68a', label: 'Hold' },
+            exhale: { scale: 0.9, color: '#bfdbfe', label: 'Exhale' }
+        };
+
+        if (state.phaseTime >= phaseDurations[state.phase]) {
+            state.phaseTime = 0;
+            state.phase = state.phase === 'inhale'
+                ? 'hold'
+                : state.phase === 'hold'
+                    ? 'exhale'
+                    : 'inhale';
+        }
+
+        const phaseSetting = settings[state.phase];
+        circle.style.transform = `scale(${phaseSetting.scale})`;
+        circle.style.backgroundColor = phaseSetting.color;
+        text.textContent = phaseSetting.label;
+    }
+
+    function tickExercise(exerciseId) {
+        const state = getExerciseState(exerciseId);
+        if (!state.isRunning) return;
+
+        state.remaining = Math.max(state.remaining - 1, 0);
+        state.phaseTime += 1;
+
+        updateTimerDisplay(exerciseId);
+        updateBreathingVisuals(exerciseId);
+
+        if (state.remaining === 0) {
+            completeExercise(exerciseId);
         }
     }
 
-    function resetExercise(exerciseId) {
+    function startExercise(exerciseId) {
+        const state = getExerciseState(exerciseId);
+        const button = document.getElementById(`start-btn-${exerciseId}`);
+
+        if (state.isRunning) {
+            pauseExercise(exerciseId);
+            return;
+        }
+
+        state.isRunning = true;
+        button.innerHTML = '<i class="fas fa-pause"></i> Pause';
+        updateBreathingVisuals(exerciseId);
+
+        if (!exerciseTimers[exerciseId]) {
+            exerciseTimers[exerciseId] = setInterval(() => tickExercise(exerciseId), 1000);
+        }
+    }
+
+    function pauseExercise(exerciseId) {
+        const state = getExerciseState(exerciseId);
+        state.isRunning = false;
+
         clearInterval(exerciseTimers[exerciseId]);
-        exerciseStates[exerciseId] = false;
-        
+        exerciseTimers[exerciseId] = null;
+
         const button = document.getElementById(`start-btn-${exerciseId}`);
         const circle = document.getElementById(`breathing-circle-${exerciseId}`);
         const text = document.getElementById(`breathing-text-${exerciseId}`);
-        const timer = document.getElementById(`timer-${exerciseId}`);
-        
+
+        button.innerHTML = '<i class="fas fa-play"></i> Resume';
+        circle.style.transform = 'scale(1)';
+        circle.style.backgroundColor = '#f9fafb';
+        text.textContent = 'Paused';
+    }
+
+    function completeExercise(exerciseId) {
+        const state = getExerciseState(exerciseId);
+        state.isRunning = false;
+        state.remaining = DEFAULT_TIMER_SECONDS;
+        state.phase = 'inhale';
+        state.phaseTime = 0;
+
+        clearInterval(exerciseTimers[exerciseId]);
+        exerciseTimers[exerciseId] = null;
+
+        const button = document.getElementById(`start-btn-${exerciseId}`);
+        const circle = document.getElementById(`breathing-circle-${exerciseId}`);
+        const text = document.getElementById(`breathing-text-${exerciseId}`);
+
+        button.innerHTML = '<i class="fas fa-play"></i> Start';
+        circle.style.transform = 'scale(1)';
+        circle.style.backgroundColor = '#f9fafb';
+        text.textContent = 'Complete';
+        updateTimerDisplay(exerciseId);
+    }
+
+    function resetExercise(exerciseId) {
+        const state = getExerciseState(exerciseId);
+        state.isRunning = false;
+        state.remaining = DEFAULT_TIMER_SECONDS;
+        state.phase = 'inhale';
+        state.phaseTime = 0;
+
+        clearInterval(exerciseTimers[exerciseId]);
+        exerciseTimers[exerciseId] = null;
+
+        const button = document.getElementById(`start-btn-${exerciseId}`);
+        const circle = document.getElementById(`breathing-circle-${exerciseId}`);
+        const text = document.getElementById(`breathing-text-${exerciseId}`);
+
         button.innerHTML = '<i class="fas fa-play"></i> Start';
         circle.style.transform = 'scale(1)';
         circle.style.backgroundColor = '#f9fafb';
         text.textContent = 'Ready';
-        timer.textContent = '00:00';
+        updateTimerDisplay(exerciseId);
     }
 
     function showExerciseDetails(exerciseId) {
@@ -358,67 +445,69 @@
         if (!exercise) return;
 
         document.getElementById('modal-title').textContent = exercise.name;
-        
-        const content = `
-            <div class="space-y-4">
-                <div>
-                    <h4 class="font-semibold text-gray-800 mb-2">Sanskrit Name</h4>
-                    <p class="text-ayurvedic-sage italic">${exercise.sanskrit_name}</p>
-                </div>
-                
-                <div>
-                    <h4 class="font-semibold text-gray-800 mb-2">Description</h4>
-                    <p class="text-gray-600">${exercise.description}</p>
-                </div>
-                
-                <div>
-                    <h4 class="font-semibold text-gray-800 mb-2">Benefits</h4>
-                    <ul class="list-disc list-inside text-gray-600 space-y-1">
-                        ${exercise.benefits.map(benefit => `<li>${benefit}</li>`).join('')}
-                    </ul>
-                </div>
-                
-                <div>
-                    <h4 class="font-semibold text-gray-800 mb-2">Instructions</h4>
-                    <ol class="list-decimal list-inside text-gray-600 space-y-1">
-                        ${exercise.instructions.map(instruction => `<li>${instruction}</li>`).join('')}
-                    </ol>
-                </div>
-                
-                <div>
-                    <h4 class="font-semibold text-gray-800 mb-2">Breathing Pattern</h4>
-                    <p class="text-gray-600">${exercise.breathing_pattern}</p>
-                </div>
-                
-                <div>
-                    <h4 class="font-semibold text-gray-800 mb-2">Duration</h4>
-                    <p class="text-gray-600">${exercise.duration}</p>
-                </div>
-                
-                ${exercise.precautions.length > 0 ? `
-                <div>
-                    <h4 class="font-semibold text-gray-800 mb-2">Precautions</h4>
-                    <ul class="list-disc list-inside text-amber-600 space-y-1">
-                        ${exercise.precautions.map(precaution => `<li>${precaution}</li>`).join('')}
-                    </ul>
-                </div>
-                ` : ''}
-            </div>
-        `;
-        
-        document.getElementById('modal-content').innerHTML = content;
         document.getElementById('exercise-modal').classList.remove('hidden');
+        document.body.style.overflow = 'hidden'; // Prevent background scrolling
+
+        const content = `
+<div class="space-y-4">
+    <div>
+        <h4 class="font-semibold text-gray-800 mb-2">Sanskrit Name</h4>
+        <p class="text-ayurvedic-sage italic">${exercise.sanskrit_name}</p>
+    </div>
+
+    <div>
+        <h4 class="font-semibold text-gray-800 mb-2">Description</h4>
+        <p class="text-gray-600">${exercise.description}</p>
+    </div>
+
+    <div>
+        <h4 class="font-semibold text-gray-800 mb-2">Benefits</h4>
+        <ul class="list-disc list-inside text-gray-600 space-y-1">
+            ${exercise.benefits.map(benefit => `<li>${benefit}</li>`).join('')}
+        </ul>
+    </div>
+
+    <div>
+        <h4 class="font-semibold text-gray-800 mb-2">Instructions</h4>
+        <ol class="list-decimal list-inside text-gray-600 space-y-1">
+            ${exercise.instructions.map(instruction => `<li>${instruction}</li>`).join('')}
+        </ol>
+    </div>
+
+    <div>
+        <h4 class="font-semibold text-gray-800 mb-2">Breathing Pattern</h4>
+        <p class="text-gray-600">${exercise.breathing_pattern}</p>
+    </div>
+
+    <div>
+        <h4 class="font-semibold text-gray-800 mb-2">Duration</h4>
+        <p class="text-gray-600">${exercise.duration}</p>
+    </div>
+
+    ${exercise.precautions.length > 0 ? `
+    <div>
+        <h4 class="font-semibold text-gray-800 mb-2">Precautions</h4>
+        <ul class="list-disc list-inside text-amber-600 space-y-1">
+            ${exercise.precautions.map(precaution => `<li>${precaution}</li>`).join('')}
+        </ul>
+    </div>
+    ` : ''}
+</div>
+`;
+
+        document.getElementById('modal-content').innerHTML = content;
     }
 
     function closeExerciseModal() {
         document.getElementById('exercise-modal').classList.add('hidden');
+        document.body.style.overflow = ''; // Restore background scrolling
     }
 
     // Search functionality
     document.getElementById('pranayama-search').addEventListener('input', filterExercises);
 
     // Close modal when clicking outside
-    document.getElementById('exercise-modal').addEventListener('click', function(e) {
+    document.getElementById('exercise-modal').addEventListener('click', function (e) {
         if (e.target === this) {
             closeExerciseModal();
         }

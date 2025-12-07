@@ -1,99 +1,67 @@
 {% extends "base.html" %}
 
-{% block title %}AyushAstra - Your Holistic Wellness Guide{% endblock %}
-
 {% block content %}
-<section class="relative min-h-screen flex items-center justify-center overflow-hidden">
-    <!-- Background Animation -->
-    <div class="absolute inset-0 lotus-bg">
-        <div class="absolute top-20 left-20 w-20 h-20 text-ayurvedic-lotus opacity-30 floating">
-            🧘‍♀️
+<section class="relative min-h-screen flex flex-col justify-center items-center text-center px-4 pt-16">
+    <h1 class="text-5xl md:text-7xl font-bold text-gray-800 mb-6 font-serif">
+        AyushAstra
+    </h1>
+    <p class="text-xl md:text-2xl text-gray-600 mb-8 font-light">
+        Your Holistic Wellness Guide
+    </p>
+    <p class="text-lg text-gray-500 mb-12 max-w-2xl mx-auto leading-relaxed">
+        Discover the ancient wisdom of Ayurveda and Yoga. Find personalized recommendations
+        for yoga poses, Ayurvedic remedies, and breathing exercises tailored to your wellness needs.
+    </p>
+
+    <!-- Quick Access Cards -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+        <div
+            class="bg-white rounded-2xl p-6 shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-300 hover:scale-105">
+            <i class="fas fa-heart text-red-500 text-4xl mb-4"></i>
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Yoga for Health</h3>
+            <p class="text-gray-600 text-sm mb-4">
+                Discover yoga poses for specific health conditions and body pains
+            </p>
+            <a href="/yoga"
+                class="ayurvedic-green text-white px-4 py-2 rounded-lg hover:bg-ayurvedic-sage transition-colors">
+                Explore Poses
+            </a>
         </div>
-        <div class="absolute top-40 right-32 w-16 h-16 text-ayurvedic-leaf opacity-20 floating" style="animation-delay: 2s;">
-            🌿
+
+        <div
+            class="bg-white rounded-2xl p-6 shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-300 hover:scale-105">
+            <i class="fas fa-leaf text-green-500 text-4xl mb-4"></i>
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Ayurvedic Remedies</h3>
+            <p class="text-gray-600 text-sm mb-4">
+                Natural herbs and treatments for holistic healing
+            </p>
+            <a href="/ayurvedic"
+                class="ayurvedic-green text-white px-4 py-2 rounded-lg hover:bg-ayurvedic-sage transition-colors">
+                Explore Remedies
+            </a>
         </div>
-        <div class="absolute bottom-32 left-40 w-24 h-24 text-ayurvedic-gold opacity-25 floating" style="animation-delay: 4s;">
-            ☸️
+
+        <div
+            class="bg-white rounded-2xl p-6 shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-300 hover:scale-105">
+            <i class="fas fa-wind text-blue-500 text-4xl mb-4"></i>
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Pranayama</h3>
+            <p class="text-gray-600 text-sm mb-4">
+                Breathing exercises for mental clarity and stress relief
+            </p>
+            <a href="/pranayama"
+                class="ayurvedic-green text-white px-4 py-2 rounded-lg hover:bg-ayurvedic-sage transition-colors">
+                Explore Breathing
+            </a>
         </div>
     </div>
 
-    <!-- Content -->
-    <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <div class="fade-in">
-            <div class="text-6xl mb-4 om-symbol">ॐ</div>
-            <h1 class="text-5xl md:text-7xl font-bold text-gray-800 mb-6">
-                AyushAstra
-            </h1>
-            <p class="text-xl md:text-2xl text-gray-600 mb-8 font-light">
-                Your Holistic Wellness Guide
-            </p>
-            <p class="text-lg text-gray-500 mb-12 max-w-2xl mx-auto leading-relaxed">
-                Discover the ancient wisdom of Ayurveda and Yoga. Find personalized recommendations 
-                for yoga poses, Ayurvedic remedies, and breathing exercises tailored to your wellness needs.
-            </p>
-        </div>
-
-        <!-- Search Bar -->
-        <div class="max-w-2xl mx-auto mb-12">
-            <div class="relative">
-                <input
-                    type="text"
-                    id="search-input"
-                    placeholder="Search for yoga poses, remedies, or conditions..."
-                    class="w-full px-6 py-4 pr-12 text-lg border-2 border-gray-200 rounded-full focus:border-ayurvedic-green focus:outline-none transition-colors duration-300 shadow-lg"
-                />
-                <button
-                    onclick="performSearch()"
-                    class="absolute right-2 top-2 ayurvedic-green text-white px-4 py-2 rounded-full hover:bg-ayurvedic-sage transition-colors"
-                >
-                    <i class="fas fa-search"></i>
-                </button>
-            </div>
-        </div>
-
-        <!-- Quick Access Cards -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-            <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-300 hover:scale-105">
-                <i class="fas fa-heart text-red-500 text-4xl mb-4"></i>
-                <h3 class="text-xl font-semibold text-gray-800 mb-2">Yoga for Health</h3>
-                <p class="text-gray-600 text-sm mb-4">
-                    Discover yoga poses for specific health conditions and body pains
-                </p>
-                <a href="/yoga" class="ayurvedic-green text-white px-4 py-2 rounded-lg hover:bg-ayurvedic-sage transition-colors">
-                    Explore Poses
-                </a>
-            </div>
-
-            <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-300 hover:scale-105">
-                <i class="fas fa-leaf text-green-500 text-4xl mb-4"></i>
-                <h3 class="text-xl font-semibold text-gray-800 mb-2">Ayurvedic Remedies</h3>
-                <p class="text-gray-600 text-sm mb-4">
-                    Natural herbs and treatments for holistic healing
-                </p>
-                <a href="/ayurvedic" class="ayurvedic-green text-white px-4 py-2 rounded-lg hover:bg-ayurvedic-sage transition-colors">
-                    Explore Remedies
-                </a>
-            </div>
-
-            <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-300 hover:scale-105">
-                <i class="fas fa-wind text-blue-500 text-4xl mb-4"></i>
-                <h3 class="text-xl font-semibold text-gray-800 mb-2">Pranayama</h3>
-                <p class="text-gray-600 text-sm mb-4">
-                    Breathing exercises for mental clarity and stress relief
-                </p>
-                <a href="/pranayama" class="ayurvedic-green text-white px-4 py-2 rounded-lg hover:bg-ayurvedic-sage transition-colors">
-                    Explore Breathing
-                </a>
-            </div>
-        </div>
-
-        <!-- Call to Action -->
-        <div class="mt-12">
-            <a href="/recommendations" class="ayurvedic-green text-white text-lg px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 inline-flex items-center">
-                <i class="fas fa-sparkles mr-2"></i>
-                Start Your Wellness Journey
-            </a>
-        </div>
+    <!-- Call to Action -->
+    <div class="mt-12">
+        <a href="/recommendations"
+            class="ayurvedic-green text-white text-lg px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 inline-flex items-center">
+            <i class="fas fa-sparkles mr-2"></i>
+            Start Your Wellness Journey
+        </a>
     </div>
 
     <!-- Scroll Indicator -->
@@ -107,19 +75,6 @@
 
 {% block scripts %}
 <script>
-    function performSearch() {
-        const query = document.getElementById('search-input').value;
-        if (query.trim()) {
-            // Redirect to search results or show modal
-            alert('Search functionality will be implemented! Search for: ' + query);
-        }
-    }
-
-    // Add enter key support for search
-    document.getElementById('search-input').addEventListener('keypress', function(e) {
-        if (e.key === 'Enter') {
-            performSearch();
-        }
-    });
+    // Search functionality has been removed
 </script>
 {% endblock %}

@@ -10,7 +10,7 @@
             <div class="text-6xl mb-4">✨</div>
             <h2 class="text-4xl font-bold text-gray-800 mb-4">Personalized Recommendations</h2>
             <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                Tell us about your health concerns and we'll create a personalized wellness plan 
+                Tell us about your health concerns and we'll create a personalized wellness plan
                 with yoga poses, Ayurvedic remedies, and breathing exercises just for you.
             </p>
         </div>
@@ -18,8 +18,9 @@
         <div id="assessment-form">
             <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-gray-200">
                 <h3 class="text-2xl font-bold text-gray-800 text-center mb-6">Wellness Assessment</h3>
-                <p class="text-gray-600 text-center mb-8">Help us understand your needs to provide the best recommendations</p>
-                
+                <p class="text-gray-600 text-center mb-8">Help us understand your needs to provide the best
+                    recommendations</p>
+
                 <form id="recommendation-form" class="space-y-8">
                     <!-- Symptoms -->
                     <div>
@@ -34,6 +35,10 @@
                             <label class="flex items-center space-x-2 cursor-pointer">
                                 <input type="checkbox" name="symptoms" value="Neck Pain" class="rounded">
                                 <span class="text-sm">Neck Pain</span>
+                            </label>
+                            <label class="flex items-center space-x-2 cursor-pointer">
+                                <input type="checkbox" name="symptoms" value="Shoulder Pain" class="rounded">
+                                <span class="text-sm">Shoulder Pain</span>
                             </label>
                             <label class="flex items-center space-x-2 cursor-pointer">
                                 <input type="checkbox" name="symptoms" value="Headache" class="rounded">
@@ -60,8 +65,24 @@
                                 <span class="text-sm">Fatigue</span>
                             </label>
                             <label class="flex items-center space-x-2 cursor-pointer">
+                                <input type="checkbox" name="symptoms" value="Respiratory Issues" class="rounded">
+                                <span class="text-sm">Respiratory Issues</span>
+                            </label>
+                            <label class="flex items-center space-x-2 cursor-pointer">
                                 <input type="checkbox" name="symptoms" value="Joint Pain" class="rounded">
                                 <span class="text-sm">Joint Pain</span>
+                            </label>
+                            <label class="flex items-center space-x-2 cursor-pointer">
+                                <input type="checkbox" name="symptoms" value="Hip Pain" class="rounded">
+                                <span class="text-sm">Hip Pain</span>
+                            </label>
+                            <label class="flex items-center space-x-2 cursor-pointer">
+                                <input type="checkbox" name="symptoms" value="Cold & Cough" class="rounded">
+                                <span class="text-sm">Cold &amp; Cough</span>
+                            </label>
+                            <label class="flex items-center space-x-2 cursor-pointer">
+                                <input type="checkbox" name="symptoms" value="Poor Circulation" class="rounded">
+                                <span class="text-sm">Poor Circulation</span>
                             </label>
                         </div>
                     </div>
@@ -114,20 +135,20 @@
                         </h3>
                         <div class="flex gap-3">
                             <label class="flex-1 cursor-pointer">
-                                <input type="radio" name="experience" value="Beginner" class="sr-only peer">
-                                <div class="p-4 border-2 border-gray-300 rounded-lg text-center peer-checked:border-ayurvedic-green peer-checked:bg-ayurvedic-green peer-checked:text-white transition-colors">
+                                <input type="radio" name="experience" value="Beginner" checked class="sr-only peer">
+                                <div class="experience-option p-4 border-2 rounded-lg text-center transition-colors">
                                     Beginner
                                 </div>
                             </label>
                             <label class="flex-1 cursor-pointer">
                                 <input type="radio" name="experience" value="Intermediate" class="sr-only peer">
-                                <div class="p-4 border-2 border-gray-300 rounded-lg text-center peer-checked:border-ayurvedic-green peer-checked:bg-ayurvedic-green peer-checked:text-white transition-colors">
+                                <div class="experience-option p-4 border-2 rounded-lg text-center transition-colors">
                                     Intermediate
                                 </div>
                             </label>
                             <label class="flex-1 cursor-pointer">
                                 <input type="radio" name="experience" value="Advanced" class="sr-only peer">
-                                <div class="p-4 border-2 border-gray-300 rounded-lg text-center peer-checked:border-ayurvedic-green peer-checked:bg-ayurvedic-green peer-checked:text-white transition-colors">
+                                <div class="experience-option p-4 border-2 rounded-lg text-center transition-colors">
                                     Advanced
                                 </div>
                             </label>
@@ -141,26 +162,26 @@
                         </h3>
                         <div class="flex gap-3">
                             <label class="cursor-pointer">
-                                <input type="radio" name="time_available" value="15" class="sr-only peer">
-                                <div class="px-6 py-3 border-2 border-gray-300 rounded-lg text-center peer-checked:border-ayurvedic-green peer-checked:bg-ayurvedic-green peer-checked:text-white transition-colors">
+                                <input type="radio" name="time_available" value="15" checked class="sr-only peer">
+                                <div class="time-option px-6 py-3 border-2 rounded-lg text-center transition-colors">
                                     15 min
                                 </div>
                             </label>
                             <label class="cursor-pointer">
                                 <input type="radio" name="time_available" value="30" class="sr-only peer">
-                                <div class="px-6 py-3 border-2 border-gray-300 rounded-lg text-center peer-checked:border-ayurvedic-green peer-checked:bg-ayurvedic-green peer-checked:text-white transition-colors">
+                                <div class="time-option px-6 py-3 border-2 rounded-lg text-center transition-colors">
                                     30 min
                                 </div>
                             </label>
                             <label class="cursor-pointer">
                                 <input type="radio" name="time_available" value="45" class="sr-only peer">
-                                <div class="px-6 py-3 border-2 border-gray-300 rounded-lg text-center peer-checked:border-ayurvedic-green peer-checked:bg-ayurvedic-green peer-checked:text-white transition-colors">
+                                <div class="time-option px-6 py-3 border-2 rounded-lg text-center transition-colors">
                                     45 min
                                 </div>
                             </label>
                             <label class="cursor-pointer">
                                 <input type="radio" name="time_available" value="60" class="sr-only peer">
-                                <div class="px-6 py-3 border-2 border-gray-300 rounded-lg text-center peer-checked:border-ayurvedic-green peer-checked:bg-ayurvedic-green peer-checked:text-white transition-colors">
+                                <div class="time-option px-6 py-3 border-2 rounded-lg text-center transition-colors">
                                     60 min
                                 </div>
                             </label>
@@ -169,11 +190,8 @@
 
                     <!-- Submit Button -->
                     <div class="text-center pt-6">
-                        <button
-                            type="submit"
-                            id="submit-btn"
-                            class="ayurvedic-green text-white px-8 py-4 text-lg rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
-                        >
+                        <button type="submit" id="submit-btn"
+                            class="ayurvedic-green text-white px-8 py-4 text-lg rounded-full shadow-lg hover:shadow-xl transition-all duration-300">
                             <i class="fas fa-sparkles mr-2"></i>
                             Get My Personalized Plan
                         </button>
@@ -186,7 +204,8 @@
         <div id="results-section" class="hidden">
             <div class="text-center mb-8">
                 <h3 class="text-3xl font-bold text-gray-800 mb-4">Your Personalized Wellness Plan</h3>
-                <p class="text-gray-600">Based on your responses, here are our recommendations for your wellness journey</p>
+                <p class="text-gray-600">Based on your responses, here are our recommendations for your wellness journey
+                </p>
             </div>
 
             <!-- Model Accuracy Display -->
@@ -209,45 +228,255 @@
             <!-- Recommendations will be populated by JavaScript -->
             <div id="recommendations-content"></div>
 
-            <!-- Start Over Button -->
-            <div class="text-center mt-12">
-                <button
-                    onclick="startOver()"
-                    class="px-8 py-4 border-2 border-gray-300 rounded-full hover:border-ayurvedic-green hover:text-ayurvedic-green transition-colors"
-                >
-                    Start Over
+            <!-- Action Buttons -->
+            <div class="flex justify-center gap-4 mt-12">
+                <button onclick="saveRecommendations()" id="save-plan-btn"
+                    class="px-8 py-4 bg-ayurvedic-green text-white rounded-full shadow-lg hover:shadow-xl hover:bg-opacity-90 transition-all duration-300 flex items-center">
+                    <i class="fas fa-save mr-2"></i>
+                    Save Plan
+                </button>
+                <button onclick="startOver()" Which body parts are affected? (Select all that apply) </h3>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+                        <label class="flex items-center space-x-2 cursor-pointer">
+                            <input type="checkbox" name="body_parts" value="Lower Back" class="rounded">
+                            <span class="text-sm">Lower Back</span>
+                        </label>
+                        <label class="flex items-center space-x-2 cursor-pointer">
+                            <input type="checkbox" name="body_parts" value="Upper Back" class="rounded">
+                            <span class="text-sm">Upper Back</span>
+                        </label>
+                        <label class="flex items-center space-x-2 cursor-pointer">
+                            <input type="checkbox" name="body_parts" value="Neck" class="rounded">
+                            <span class="text-sm">Neck</span>
+                        </label>
+                        <label class="flex items-center space-x-2 cursor-pointer">
+                            <input type="checkbox" name="body_parts" value="Shoulders" class="rounded">
+                            <span class="text-sm">Shoulders</span>
+                        </label>
+                        <label class="flex items-center space-x-2 cursor-pointer">
+                            <input type="checkbox" name="body_parts" value="Hips" class="rounded">
+                            <span class="text-sm">Hips</span>
+                        </label>
+                        <label class="flex items-center space-x-2 cursor-pointer">
+                            <input type="checkbox" name="body_parts" value="Knees" class="rounded">
+                            <span class="text-sm">Knees</span>
+                        </label>
+                        <label class="flex items-center space-x-2 cursor-pointer">
+                            <input type="checkbox" name="body_parts" value="Head" class="rounded">
+                            <span class="text-sm">Head</span>
+                        </label>
+                        <label class="flex items-center space-x-2 cursor-pointer">
+                            <input type="checkbox" name="body_parts" value="Abdomen" class="rounded">
+                            <span class="text-sm">Abdomen</span>
+                        </label>
+                    </div>
+            </div>
+
+            <!-- Experience Level -->
+            <div>
+                <h3 class="text-lg font-semibold text-gray-800 mb-4">
+                    What's your experience level with yoga and wellness practices?
+                </h3>
+                <div class="flex gap-3">
+                    <label class="flex-1 cursor-pointer">
+                        <input type="radio" name="experience" value="Beginner" checked class="sr-only peer">
+                        <div class="experience-option p-4 border-2 rounded-lg text-center transition-colors">
+                            Beginner
+                        </div>
+                    </label>
+                    <label class="flex-1 cursor-pointer">
+                        <input type="radio" name="experience" value="Intermediate" class="sr-only peer">
+                        <div class="experience-option p-4 border-2 rounded-lg text-center transition-colors">
+                            Intermediate
+                        </div>
+                    </label>
+                    <label class="flex-1 cursor-pointer">
+                        <input type="radio" name="experience" value="Advanced" class="sr-only peer">
+                        <div class="experience-option p-4 border-2 rounded-lg text-center transition-colors">
+                            Advanced
+                        </div>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Time Available -->
+            <div>
+                <h3 class="text-lg font-semibold text-gray-800 mb-4">
+                    How much time can you dedicate daily? (in minutes)
+                </h3>
+                <div class="flex gap-3">
+                    <label class="cursor-pointer">
+                        <input type="radio" name="time_available" value="15" checked class="sr-only peer">
+                        <div class="time-option px-6 py-3 border-2 rounded-lg text-center transition-colors">
+                            15 min
+                        </div>
+                    </label>
+                    <label class="cursor-pointer">
+                        <input type="radio" name="time_available" value="30" class="sr-only peer">
+                        <div class="time-option px-6 py-3 border-2 rounded-lg text-center transition-colors">
+                            30 min
+                        </div>
+                    </label>
+                    <label class="cursor-pointer">
+                        <input type="radio" name="time_available" value="45" class="sr-only peer">
+                        <div class="time-option px-6 py-3 border-2 rounded-lg text-center transition-colors">
+                            45 min
+                        </div>
+                    </label>
+                    <label class="cursor-pointer">
+                        <input type="radio" name="time_available" value="60" class="sr-only peer">
+                        <div class="time-option px-6 py-3 border-2 rounded-lg text-center transition-colors">
+                            60 min
+                        </div>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="text-center pt-6">
+                <button type="submit" id="submit-btn"
+                    class="ayurvedic-green text-white px-8 py-4 text-lg rounded-full shadow-lg hover:shadow-xl transition-all duration-300">
+                    <i class="fas fa-sparkles mr-2"></i>
+                    Get My Personalized Plan
                 </button>
             </div>
+            </form>
         </div>
     </div>
+
+    <!-- Results Section -->
+    <div id="results-section" class="hidden">
+        <div class="text-center mb-8">
+            <h3 class="text-3xl font-bold text-gray-800 mb-4">Your Personalized Wellness Plan</h3>
+            <p class="text-gray-600">Based on your responses, here are our recommendations for your wellness journey
+            </p>
+        </div>
+
+        <!-- Model Accuracy Display -->
+        <div class="bg-gradient-to-r from-green-50 to-blue-50 border border-green-200 rounded-lg p-6 mb-8">
+            <div class="flex items-center justify-between">
+                <div>
+                    <h4 class="text-lg font-semibold text-gray-800">AI Model Accuracy</h4>
+                    <p class="text-sm text-gray-600">Based on 10,000+ wellness assessments</p>
+                </div>
+                <div class="text-right">
+                    <div class="text-3xl font-bold text-green-600">94.2%</div>
+                    <div class="text-sm text-gray-600">Accuracy Rate</div>
+                </div>
+            </div>
+            <div class="mt-4 bg-gray-200 rounded-full h-2">
+                <div class="bg-green-500 h-2 rounded-full" style="width: 94.2%"></div>
+            </div>
+        </div>
+
+        <!-- Recommendations will be populated by JavaScript -->
+        <div id="recommendations-content"></div>
+
+        <!-- Action Buttons -->
+        <div class="flex justify-center gap-4 mt-12">
+            <button onclick="saveRecommendations()" id="save-plan-btn"
+                class="px-8 py-4 bg-ayurvedic-green text-white rounded-full shadow-lg hover:shadow-xl hover:bg-opacity-90 transition-all duration-300 flex items-center">
+                <i class="fas fa-save mr-2"></i>
+                Save Plan
+            </button>
+            <button onclick="startOver()"
+                class="px-8 py-4 border-2 border-gray-300 rounded-full hover:border-ayurvedic-green hover:text-ayurvedic-green transition-colors">
+                Start Over
+            </button>
+        </div>
+    </div>
+</div>
 </div>
 {% endblock %}
 
 {% block scripts %}
 <script>
-    document.getElementById('recommendation-form').addEventListener('submit', async function(e) {
+    const selectionClasses = {
+        active: ['border-ayurvedic-green', 'bg-ayurvedic-green', 'text-white'],
+        inactive: ['border-gray-300', 'bg-white', 'text-gray-700']
+    };
+
+    function applySelectionStyles() {
+        document.querySelectorAll('.experience-option').forEach((option, index) => {
+            const input = option.closest('label').querySelector('input');
+            toggleOptionStyles(option, input.checked);
+            option.dataset.index = index;
+        });
+
+        document.querySelectorAll('.time-option').forEach((option, index) => {
+            const input = option.closest('label').querySelector('input');
+            toggleOptionStyles(option, input.checked);
+            option.dataset.index = index;
+        });
+    }
+
+    function toggleOptionStyles(element, isActive) {
+        const { active, inactive } = selectionClasses;
+        if (isActive) {
+            element.classList.remove(...inactive);
+            element.classList.add(...active);
+        } else {
+            element.classList.remove(...active);
+            element.classList.add(...inactive);
+        }
+    }
+
+    function bindSelectionHandlers() {
+        document.querySelectorAll('.experience-option').forEach(option => {
+            const input = option.closest('label').querySelector('input');
+            option.addEventListener('click', () => {
+                input.checked = true;
+                document.querySelectorAll('.experience-option').forEach(opt => toggleOptionStyles(opt, false));
+                toggleOptionStyles(option, true);
+            });
+        });
+
+        document.querySelectorAll('.time-option').forEach(option => {
+            const input = option.closest('label').querySelector('input');
+            option.addEventListener('click', () => {
+                input.checked = true;
+                document.querySelectorAll('.time-option').forEach(opt => toggleOptionStyles(opt, false));
+                toggleOptionStyles(option, true);
+            });
+        });
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        applySelectionStyles();
+        bindSelectionHandlers();
+    });
+
+    document.getElementById('recommendation-form').addEventListener('submit', async function (e) {
         e.preventDefault();
-        
+
         const submitBtn = document.getElementById('submit-btn');
         const originalText = submitBtn.innerHTML;
-        
+
         // Show loading state
         submitBtn.innerHTML = '<div class="animate-spin rounded-full h-5 w-5 border-b-2 border-white mr-2 inline-block"></div>Generating Recommendations...';
         submitBtn.disabled = true;
-        
+
         // Collect form data
         const formData = new FormData(this);
+
+        // Get checked radio button values explicitly
+        const experienceRadio = document.querySelector('input[name="experience"]:checked');
+        const timeRadio = document.querySelector('input[name="time_available"]:checked');
+
         const data = {
             symptoms: Array.from(formData.getAll('symptoms')),
             body_parts: Array.from(formData.getAll('body_parts')),
-            experience: formData.get('experience'),
-            time_available: formData.get('time_available')
+            experience: experienceRadio ? experienceRadio.value : 'Beginner',
+            time_available: timeRadio ? timeRadio.value : '15'
         };
-        
+
+        // Debug log to verify values
+        console.log('Form data being sent:', data);
+
         try {
             // Simulate API call with loading
             await new Promise(resolve => setTimeout(resolve, 2000));
-            
+
             const response = await fetch('/api/recommendations', {
                 method: 'POST',
                 headers: {
@@ -255,16 +484,16 @@
                 },
                 body: JSON.stringify(data)
             });
-            
+
             const recommendations = await response.json();
-            
+
             // Hide form and show results
             document.getElementById('assessment-form').classList.add('hidden');
             document.getElementById('results-section').classList.remove('hidden');
-            
+
             // Display recommendations
             displayRecommendations(recommendations);
-            
+
         } catch (error) {
             console.error('Error:', error);
             alert('Error generating recommendations. Please try again.');
@@ -274,97 +503,146 @@
             submitBtn.disabled = false;
         }
     });
-    
+
+    let currentRecommendations = null;
+
     function displayRecommendations(recommendations) {
+        currentRecommendations = recommendations;
         const content = document.getElementById('recommendations-content');
-        
+
         let html = '';
-        
+
         // Yoga Recommendations
         if (recommendations.yoga && recommendations.yoga.length > 0) {
             html += `
-                <div class="mb-12">
-                    <div class="flex items-center gap-3 mb-6">
-                        <i class="fas fa-heart text-red-500 text-2xl"></i>
-                        <h4 class="text-2xl font-bold text-gray-800">Recommended Yoga Poses</h4>
-                    </div>
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                        ${recommendations.yoga.map(pose => `
-                            <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-all duration-300">
-                                <h5 class="text-lg font-semibold text-gray-800 mb-2">${pose.name}</h5>
-                                <p class="text-sm text-ayurvedic-sage italic mb-3">${pose.sanskrit_name}</p>
-                                <div class="text-sm text-gray-600 mb-3">
-                                    <strong>Benefits:</strong> ${pose.benefits.slice(0, 2).join(', ')}
-                                </div>
-                                <div class="text-sm text-gray-500">
-                                    <strong>Duration:</strong> ${pose.duration}
-                                </div>
-                            </div>
-                        `).join('')}
-                    </div>
+            <div class="mb-12">
+                <div class="flex items-center gap-3 mb-6">
+                    <i class="fas fa-heart text-red-500 text-2xl"></i>
+                    <h4 class="text-2xl font-bold text-gray-800">Recommended Yoga Poses</h4>
                 </div>
-            `;
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    ${recommendations.yoga.map(pose => `
+                        <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-all duration-300">
+                            <h5 class="text-lg font-semibold text-gray-800 mb-2">${pose.name}</h5>
+                            <p class="text-sm text-ayurvedic-sage italic mb-3">${pose.sanskrit_name}</p>
+                            <div class="text-sm text-gray-600 mb-3">
+                                <strong>Benefits:</strong> ${pose.benefits.slice(0, 2).join(', ')}
+                            </div>
+                            <div class="text-sm text-gray-500">
+                                <strong>Duration:</strong> ${pose.duration}
+                            </div>
+                        </div>
+                    `).join('')}
+                </div>
+            </div>
+        `;
         }
-        
+
         // Ayurvedic Recommendations
         if (recommendations.remedies && recommendations.remedies.length > 0) {
             html += `
-                <div class="mb-12">
-                    <div class="flex items-center gap-3 mb-6">
-                        <i class="fas fa-leaf text-green-500 text-2xl"></i>
-                        <h4 class="text-2xl font-bold text-gray-800">Recommended Ayurvedic Remedies</h4>
-                    </div>
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                        ${recommendations.remedies.map(remedy => `
-                            <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-all duration-300">
-                                <h5 class="text-lg font-semibold text-gray-800 mb-2">${remedy.name}</h5>
-                                <p class="text-sm text-ayurvedic-sage italic mb-3">${remedy.herb_name}</p>
-                                <div class="text-sm text-gray-600 mb-3">
-                                    <strong>Benefits:</strong> ${remedy.benefits.slice(0, 2).join(', ')}
-                                </div>
-                                <div class="text-sm text-gray-500">
-                                    <strong>Dosage:</strong> ${remedy.dosage}
-                                </div>
-                            </div>
-                        `).join('')}
-                    </div>
+            <div class="mb-12">
+                <div class="flex items-center gap-3 mb-6">
+                    <i class="fas fa-leaf text-green-500 text-2xl"></i>
+                    <h4 class="text-2xl font-bold text-gray-800">Recommended Ayurvedic Remedies</h4>
                 </div>
-            `;
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    ${recommendations.remedies.map(remedy => `
+                        <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-all duration-300">
+                            <h5 class="text-lg font-semibold text-gray-800 mb-2">${remedy.name}</h5>
+                            <p class="text-sm text-ayurvedic-sage italic mb-3">${remedy.herb_name}</p>
+                            <div class="text-sm text-gray-600 mb-3">
+                                <strong>Benefits:</strong> ${remedy.benefits.slice(0, 2).join(', ')}
+                            </div>
+                            <div class="text-sm text-gray-500">
+                                <strong>Dosage:</strong> ${remedy.dosage}
+                            </div>
+                        </div>
+                    `).join('')}
+                </div>
+            </div>
+        `;
         }
-        
+
         // Pranayama Recommendations
         if (recommendations.pranayama && recommendations.pranayama.length > 0) {
             html += `
-                <div class="mb-12">
-                    <div class="flex items-center gap-3 mb-6">
-                        <i class="fas fa-wind text-blue-500 text-2xl"></i>
-                        <h4 class="text-2xl font-bold text-gray-800">Recommended Breathing Exercises</h4>
-                    </div>
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                        ${recommendations.pranayama.map(exercise => `
-                            <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-all duration-300">
-                                <h5 class="text-lg font-semibold text-gray-800 mb-2">${exercise.name}</h5>
-                                <p class="text-sm text-ayurvedic-sage italic mb-3">${exercise.sanskrit_name}</p>
-                                <div class="text-sm text-gray-600 mb-3">
-                                    <strong>Benefits:</strong> ${exercise.benefits.slice(0, 2).join(', ')}
-                                </div>
-                                <div class="text-sm text-gray-500">
-                                    <strong>Pattern:</strong> ${exercise.breathing_pattern}
-                                </div>
-                            </div>
-                        `).join('')}
-                    </div>
+            <div class="mb-12">
+                <div class="flex items-center gap-3 mb-6">
+                    <i class="fas fa-wind text-blue-500 text-2xl"></i>
+                    <h4 class="text-2xl font-bold text-gray-800">Recommended Breathing Exercises</h4>
                 </div>
-            `;
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    ${recommendations.pranayama.map(exercise => `
+                        <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-all duration-300">
+                            <h5 class="text-lg font-semibold text-gray-800 mb-2">${exercise.name}</h5>
+                            <p class="text-sm text-ayurvedic-sage italic mb-3">${exercise.sanskrit_name}</p>
+                            <div class="text-sm text-gray-600 mb-3">
+                                <strong>Benefits:</strong> ${exercise.benefits.slice(0, 2).join(', ')}
+                            </div>
+                            <div class="text-sm text-gray-500">
+                                <strong>Pattern:</strong> ${exercise.breathing_pattern}
+                            </div>
+                        </div>
+                    `).join('')}
+                </div>
+            </div>
+        `;
         }
-        
+
         content.innerHTML = html;
     }
-    
+
+    async function saveRecommendations() {
+        if (!currentRecommendations) return;
+
+        const saveBtn = document.getElementById('save-plan-btn');
+        const originalText = saveBtn.innerHTML;
+
+        saveBtn.innerHTML = '<div class="animate-spin rounded-full h-5 w-5 border-b-2 border-white mr-2 inline-block"></div>Saving...';
+        saveBtn.disabled = true;
+
+        try {
+            const response = await fetch('/api/save_recommendations', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(currentRecommendations)
+            });
+
+            const result = await response.json();
+
+            if (response.ok) {
+                saveBtn.innerHTML = '<i class="fas fa-check mr-2"></i>Saved!';
+                saveBtn.classList.remove('bg-ayurvedic-green');
+                saveBtn.classList.add('bg-green-600');
+                setTimeout(() => {
+                    window.location.href = '/my-recommendations';
+                }, 1000);
+            } else {
+                if (response.status === 401) {
+                    alert('Please login to save your recommendations.');
+                    window.location.href = '/login';
+                } else {
+                    alert(result.message || 'Error saving recommendations');
+                    saveBtn.innerHTML = originalText;
+                    saveBtn.disabled = false;
+                }
+            }
+        } catch (error) {
+            console.error('Error:', error);
+            alert('Error saving recommendations');
+            saveBtn.innerHTML = originalText;
+            saveBtn.disabled = false;
+        }
+    }
+
     function startOver() {
         document.getElementById('assessment-form').classList.remove('hidden');
         document.getElementById('results-section').classList.add('hidden');
         document.getElementById('recommendation-form').reset();
+        currentRecommendations = null;
     }
 </script>
 {% endblock %}

@@ -28,7 +28,12 @@
       "Don't force the breath",
       "Stop if you feel dizzy"
     ],
-    "conditions": ["Anxiety", "Stress", "Poor Concentration", "Insomnia"]
+    "conditions": [
+      "Anxiety",
+      "Stress",
+      "Poor Concentration",
+      "Insomnia"
+    ]
   },
   {
     "id": "kapalbhati",
@@ -58,7 +63,12 @@
       "Stop if you feel dizzy or nauseous",
       "Avoid if you have high blood pressure"
     ],
-    "conditions": ["Low Energy", "Poor Digestion", "Respiratory Issues", "Obesity"]
+    "conditions": [
+      "Low Energy",
+      "Poor Digestion",
+      "Respiratory Issues",
+      "Obesity"
+    ]
   },
   {
     "id": "bhramari",
@@ -87,7 +97,13 @@
       "Don't force the sound",
       "Stop if you feel uncomfortable"
     ],
-    "conditions": ["Anxiety", "Stress", "Headaches", "Insomnia", "Anger"]
+    "conditions": [
+      "Anxiety",
+      "Stress",
+      "Headaches",
+      "Insomnia",
+      "Anger"
+    ]
   },
   {
     "id": "ujjayi",
@@ -116,7 +132,12 @@
       "Keep breathing smooth and steady",
       "Stop if throat becomes sore"
     ],
-    "conditions": ["Poor Focus", "Stress", "Anxiety", "Yoga Practice"]
+    "conditions": [
+      "Poor Focus",
+      "Stress",
+      "Anxiety",
+      "Yoga Practice"
+    ]
   },
   {
     "id": "sheetali",
@@ -145,7 +166,13 @@
       "Don't practice if you have respiratory issues",
       "Stop if you feel uncomfortable"
     ],
-    "conditions": ["Excess Heat", "Anger", "Stress", "Digestive Issues", "Fever"]
+    "conditions": [
+      "Excess Heat",
+      "Anger",
+      "Stress",
+      "Digestive Issues",
+      "Fever"
+    ]
   },
   {
     "id": "bhastrika",
@@ -175,6 +202,418 @@
       "Stop if you feel dizzy",
       "Avoid if you have high blood pressure"
     ],
-    "conditions": ["Low Energy", "Poor Lung Capacity", "Depression", "Cold"]
+    "conditions": [
+      "Low Energy",
+      "Poor Lung Capacity",
+      "Depression",
+      "Cold"
+    ]
+  },
+  {
+    "id": "nadi-shodhana",
+    "name": "Nadi Shodhana",
+    "sanskrit_name": "Nadi Shodhana Pranayama",
+    "description": "Alternate nostril breathing with breath retention to purify energy channels.",
+    "benefits": [
+      "Purifies subtle energy channels (nadis)",
+      "Balances left and right brain hemispheres",
+      "Reduces stress and anxiety",
+      "Prepares the mind for meditation"
+    ],
+    "instructions": [
+      "Sit in a comfortable meditative pose",
+      "Close right nostril with right thumb",
+      "Inhale through left nostril",
+      "Close left nostril, hold breath (retention)",
+      "Exhale through right nostril",
+      "Inhale through right nostril",
+      "Close right nostril, hold breath",
+      "Exhale through left nostril"
+    ],
+    "duration": "5-10 minutes",
+    "breathing_pattern": "Inhale:Hold:Exhale (1:4:2 ratio recommended for advanced)",
+    "precautions": [
+      "Do not hold breath if you have high blood pressure",
+      "Keep the breath smooth and silent"
+    ],
+    "conditions": [
+      "Stress",
+      "Anxiety",
+      "Imbalanced Energy",
+      "Insomnia"
+    ],
+    "image": "/static/images/pranayama/nadi-shodhana.svg"
+  },
+  {
+    "id": "sheetkari",
+    "name": "Sheetkari Pranayama",
+    "sanskrit_name": "Sheetkari",
+    "description": "The hissing breath technique that cools the body and calms the mind.",
+    "benefits": [
+      "Cools the body and mind",
+      "Reduces high blood pressure",
+      "Relieves thirst and hunger",
+      "Calms anger and anxiety"
+    ],
+    "instructions": [
+      "Sit comfortably, mouth closed",
+      "Clench teeth gently and separate lips",
+      "Inhale deeply through the gaps in teeth with a hissing sound",
+      "Close mouth and exhale slowly through nose",
+      "Repeat 10-15 times"
+    ],
+    "duration": "5-10 minutes",
+    "breathing_pattern": "Inhale through teeth, exhale through nose",
+    "precautions": [
+      "Avoid if you have sensitive teeth",
+      "Avoid in cold weather",
+      "Do not practice if suffering from chronic constipation"
+    ],
+    "conditions": [
+      "Excess Heat",
+      "High Blood Pressure",
+      "Anger",
+      "Stress"
+    ],
+    "image": "/static/images/pranayama/sheetkari.svg"
+  },
+  {
+    "id": "surya-bhedana",
+    "name": "Surya Bhedana",
+    "sanskrit_name": "Surya Bhedana Pranayama",
+    "description": "Right nostril breathing to activate the solar (heating) energy in the body.",
+    "benefits": [
+      "Increases body heat and energy",
+      "Stimulates the sympathetic nervous system",
+      "Improves digestion",
+      "Clears sinuses"
+    ],
+    "instructions": [
+      "Sit comfortably",
+      "Close left nostril with ring finger",
+      "Inhale deeply through right nostril",
+      "Close right nostril and exhale through left nostril",
+      "Always inhale right, exhale left"
+    ],
+    "duration": "5-10 minutes",
+    "breathing_pattern": "Inhale Right, Exhale Left",
+    "precautions": [
+      "Avoid if you have high blood pressure or heart issues",
+      "Avoid in summer or hot weather",
+      "Do not practice if you have acidity"
+    ],
+    "conditions": [
+      "Low Energy",
+      "Cold",
+      "Depression",
+      "Slow Digestion"
+    ],
+    "image": "/static/images/pranayama/surya-bhedana.svg"
+  },
+  {
+    "id": "chandra-bhedana",
+    "name": "Chandra Bhedana",
+    "sanskrit_name": "Chandra Bhedana Pranayama",
+    "description": "Left nostril breathing to activate the lunar (cooling) energy in the body.",
+    "benefits": [
+      "Cools the body and mind",
+      "Reduces stress and hypertension",
+      "Relieves heartburn",
+      "Promotes sleep"
+    ],
+    "instructions": [
+      "Sit comfortably",
+      "Close right nostril with thumb",
+      "Inhale deeply through left nostril",
+      "Close left nostril and exhale through right nostril",
+      "Always inhale left, exhale right"
+    ],
+    "duration": "5-10 minutes",
+    "breathing_pattern": "Inhale Left, Exhale Right",
+    "precautions": [
+      "Avoid in winter or if you have a cold",
+      "Avoid if you have low blood pressure",
+      "Do not practice if you are lethargic"
+    ],
+    "conditions": [
+      "Excess Heat",
+      "High Blood Pressure",
+      "Anxiety",
+      "Insomnia"
+    ],
+    "image": "/static/images/pranayama/chandra-bhedana.svg"
+  },
+  {
+    "id": "murccha",
+    "name": "Murccha Pranayama",
+    "sanskrit_name": "Murccha",
+    "description": "The fainting or swooning breath that induces a state of deep tranquility.",
+    "benefits": [
+      "Induces deep mental silence",
+      "Reduces anxiety and mental chatter",
+      "Connects to the subconscious mind",
+      "Prepares for deep meditation"
+    ],
+    "instructions": [
+      "Sit in a stable pose",
+      "Inhale deeply and slowly",
+      "Perform Jalandhara Bandha (Chin Lock)",
+      "Retain breath as long as comfortable",
+      "Exhale very slowly while releasing the lock"
+    ],
+    "duration": "Advanced practice - start with few rounds",
+    "breathing_pattern": "Prolonged retention with chin lock",
+    "precautions": [
+      "Only for advanced practitioners",
+      "Do not practice if you have high blood pressure or heart problems",
+      "Stop immediately if you feel dizzy"
+    ],
+    "conditions": [
+      "Anxiety",
+      "Mental Agitation",
+      "Stress"
+    ],
+    "image": "/static/images/pranayama/murccha.svg"
+  },
+  {
+    "id": "plavini",
+    "name": "Plavini Pranayama",
+    "sanskrit_name": "Plavini",
+    "description": "The floating breath technique where one gulps air into the stomach.",
+    "benefits": [
+      "Allows one to float on water (traditional belief)",
+      "Removes impurities from the stomach",
+      "Improves digestion",
+      "Increases vital capacity"
+    ],
+    "instructions": [
+      "Sit comfortably",
+      "Gulp air into the stomach like swallowing water",
+      "Retain the air inside for some time",
+      "Burp it out voluntarily"
+    ],
+    "duration": "As per comfort",
+    "breathing_pattern": "Swallowing air",
+    "precautions": [
+      "Do not practice if you have hernia or abdominal surgery",
+      "Requires expert guidance",
+      "Avoid if you have severe gastric issues"
+    ],
+    "conditions": [
+      "Digestive Issues",
+      "Toxins"
+    ],
+    "image": "/static/images/pranayama/plavini.svg"
+  },
+  {
+    "id": "dirgha-pranayama",
+    "name": "Three Part Breath",
+    "sanskrit_name": "Dirgha Pranayama",
+    "description": "A foundational breathing technique that utilizes the full capacity of the lungs.",
+    "benefits": [
+      "Increases oxygen supply",
+      "Calms the mind",
+      "Reduces stress",
+      "Improves lung capacity"
+    ],
+    "instructions": [
+      "Lie down or sit comfortably",
+      "Inhale filling the belly",
+      "Continue inhaling into the rib cage",
+      "Finish inhaling into the upper chest",
+      "Exhale in reverse order: chest, ribs, belly"
+    ],
+    "duration": "5-10 minutes",
+    "breathing_pattern": "Continuous inhalation and exhalation in 3 parts",
+    "precautions": [
+      "Do not strain",
+      "Keep breath smooth"
+    ],
+    "conditions": [
+      "Stress",
+      "Anxiety",
+      "Shallow Breathing"
+    ],
+    "image": "/static/images/pranayama/dirgha.svg"
+  },
+  {
+    "id": "simhasana",
+    "name": "Lion's Breath",
+    "sanskrit_name": "Simhasana",
+    "description": "A powerful breathing technique to release tension from the face and chest.",
+    "benefits": [
+      "Relieves tension in face and chest",
+      "Improves voice",
+      "Stimulates platysma",
+      "Releases anger"
+    ],
+    "instructions": [
+      "Sit in kneeling position",
+      "Place hands on knees, fingers spread",
+      "Inhale deeply through nose",
+      "Exhale forcefully through mouth with 'ha' sound",
+      "Stick tongue out and gaze at third eye"
+    ],
+    "duration": "3-5 rounds",
+    "breathing_pattern": "Forceful exhalation through mouth",
+    "precautions": [
+      "Avoid if you have knee injury"
+    ],
+    "conditions": [
+      "Stress",
+      "Anger",
+      "Throat tension"
+    ],
+    "image": "/static/images/pranayama/simhasana.svg"
+  },
+  {
+    "id": "sama-vritti",
+    "name": "Box Breathing",
+    "sanskrit_name": "Sama Vritti",
+    "description": "Equal breathing technique for focus and stress reduction.",
+    "benefits": [
+      "Calms the nervous system",
+      "Increases focus",
+      "Reduces stress",
+      "Balances energy"
+    ],
+    "instructions": [
+      "Sit comfortably",
+      "Inhale for 4 counts",
+      "Hold for 4 counts",
+      "Exhale for 4 counts",
+      "Hold for 4 counts"
+    ],
+    "duration": "5-10 minutes",
+    "breathing_pattern": "4:4:4:4 (Inhale:Hold:Exhale:Hold)",
+    "precautions": [
+      "Do not strain breath retention",
+      "Avoid if pregnant (skip retention)"
+    ],
+    "conditions": [
+      "Anxiety",
+      "Stress",
+      "Lack of Focus"
+    ],
+    "image": "/static/images/pranayama/sama-vritti.svg"
+  },
+  {
+    "id": "udgeeth",
+    "name": "Udgeeth Pranayama",
+    "sanskrit_name": "Udgeeth",
+    "description": "A meditative breathing practice involving the chanting of the sacred sound 'Om'.",
+    "benefits": [
+      "Calms the mind",
+      "Relieves tension",
+      "Improves focus",
+      "Promotes deep sleep"
+    ],
+    "instructions": [
+      "Sit comfortably",
+      "Inhale deeply",
+      "Exhale while chanting 'Om'",
+      "Feel the vibration"
+    ],
+    "duration": "5-10 minutes",
+    "breathing_pattern": "Deep inhalation, prolonged exhalation with sound",
+    "precautions": [
+      "None"
+    ],
+    "conditions": [
+      "Stress",
+      "Anxiety",
+      "Insomnia",
+      "Depression"
+    ]
+  },
+  {
+    "id": "agni-sar",
+    "name": "Agni Sar",
+    "sanskrit_name": "Agni Sara",
+    "description": "A technique to stimulate the digestive fire and massage abdominal organs.",
+    "benefits": [
+      "Stimulates digestion",
+      "Strengthens abdominal muscles",
+      "Boosts metabolism",
+      "Relieves constipation"
+    ],
+    "instructions": [
+      "Stand or sit",
+      "Exhale completely",
+      "Pump the abdomen in and out",
+      "Inhale when needed"
+    ],
+    "duration": "3-5 rounds",
+    "breathing_pattern": "External retention with abdominal pumping",
+    "precautions": [
+      "Avoid if pregnant",
+      "Avoid if high blood pressure",
+      "Avoid after surgery"
+    ],
+    "conditions": [
+      "Digestive Issues",
+      "Constipation",
+      "Low Energy",
+      "Obesity"
+    ]
+  },
+  {
+    "id": "viloma",
+    "name": "Viloma Pranayama",
+    "sanskrit_name": "Viloma",
+    "description": "Interrupted breathing technique where inhalation or exhalation is paused in stages.",
+    "benefits": [
+      "Increases lung capacity",
+      "Improves breath control",
+      "Calms the mind",
+      "Prepares for deep pranayama"
+    ],
+    "instructions": [
+      "Lie down or sit comfortably",
+      "Inhale for 2 seconds, pause for 2 seconds",
+      "Continue until lungs are full",
+      "Exhale slowly and smoothly"
+    ],
+    "duration": "5-10 minutes",
+    "breathing_pattern": "Staged inhalation, smooth exhalation (or vice versa)",
+    "precautions": [
+      "Do not strain",
+      "Avoid if feeling suffocated"
+    ],
+    "conditions": [
+      "Stress",
+      "Anxiety",
+      "Low Lung Capacity"
+    ]
+  },
+  {
+    "id": "bahya",
+    "name": "Bahya Pranayama",
+    "sanskrit_name": "Bahya",
+    "description": "External breath retention with the three locks (Bandhas).",
+    "benefits": [
+      "Cures stomach ailments",
+      "Increases concentration",
+      "Strengthens abdominal organs",
+      "Awakens Kundalini energy"
+    ],
+    "instructions": [
+      "Inhale deeply, then exhale completely",
+      "Hold breath outside (external retention)",
+      "Apply Jalandhara, Uddiyana, and Mula Bandha",
+      "Release locks and inhale"
+    ],
+    "duration": "3-5 rounds",
+    "breathing_pattern": "External retention with Bandhas",
+    "precautions": [
+      "Avoid if pregnant",
+      "Avoid if high blood pressure or heart issues",
+      "Learn under guidance"
+    ],
+    "conditions": [
+      "Digestive Issues",
+      "Hernia (Avoid)",
+      "Lack of Focus"
+    ]
   }
 ]

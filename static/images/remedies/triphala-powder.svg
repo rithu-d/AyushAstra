@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="480" viewBox="0 0 640 480">
+  <defs>
+    <linearGradient id="bg-triphala" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef3c7"/>
+      <stop offset="100%" stop-color="#fde68a"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="480" fill="url(#bg-triphala)"/>
+  <ellipse cx="320" cy="340" rx="200" ry="60" fill="#d97706" opacity="0.3"/>
+  <path d="M170 260 q150 80 300 0 l-20 -80 q-120 40 -260 0z" fill="#b45309" stroke="#78350f" stroke-width="5"/>
+  <circle cx="180" cy="190" r="35" fill="#65a30d"/>
+  <circle cx="250" cy="150" r="35" fill="#a3e635"/>
+  <circle cx="430" cy="150" r="35" fill="#a16207"/>
+  <circle cx="480" cy="200" r="32" fill="#15803d"/>
+  <text x="150" y="80" font-size="56" font-family="Georgia, serif" fill="#92400e" font-weight="bold">Triphala Powder</text>
+  <text x="150" y="130" font-size="26" font-family="Arial, sans-serif" fill="#78350f">Amalaki • Bibhitaki • Haritaki</text>
+</svg>
+

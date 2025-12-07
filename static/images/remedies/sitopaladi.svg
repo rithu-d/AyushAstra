@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <rect width="200" height="200" fill="#D2B48C"/>
+  <rect x="70" y="60" width="60" height="60" rx="5" fill="#B8860B"/>
+  <circle cx="100" cy="90" r="8" fill="#8FBC8F"/>
+  <path d="M 85 110 L 115 110" stroke="#B8860B" stroke-width="4" stroke-linecap="round"/>
+  <text x="100" y="160" font-family="Arial" font-size="12" fill="#8B6914" text-anchor="middle" font-weight="bold">Sitopaladi</text>
+</svg>
+

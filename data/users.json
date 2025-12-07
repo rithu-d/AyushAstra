@@ -1,0 +1,14 @@
+{
+  "Rithud": {
+    "username": "Rithud",
+    "email": "rithudevanand@gmail.com",
+    "password": "pbkdf2:sha256:600000$xBbCFr9mB8HyP9Mu$5ae30d612c9947fab42e93e92af05c936f647e8192ddeb22f1a6f34a97c2837a",
+    "created_at": "2025-11-20T10:20:48.694838"
+  },
+  "SUJAN ": {
+    "username": "SUJAN ",
+    "email": "saisujandatta17@gmail.com",
+    "password": "scrypt:32768:8:1$S5w8DNoq5azd5thu$f6a6fc5e960b2e7766a7f5378c8d6958daca4f8542f4d4a14d5abbc6630467ec1d21feb35c0833795fedde11254e762f304550efb998b3baf05176c5a60fdddd",
+    "created_at": "2025-11-20T16:43:34.611443"
+  }
+}

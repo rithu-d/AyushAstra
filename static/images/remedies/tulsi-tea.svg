@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="480" viewBox="0 0 640 480">
+  <defs>
+    <linearGradient id="bg-tulsi" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ecfccb"/>
+      <stop offset="100%" stop-color="#d9f99d"/>
+    </linearGradient>
+    <linearGradient id="tea" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fcd34d"/>
+      <stop offset="100%" stop-color="#f97316"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="480" fill="url(#bg-tulsi)"/>
+  <ellipse cx="320" cy="360" rx="200" ry="40" fill="#bef264"/>
+  <path d="M170 180 h300 v120 q0 80 -150 80 q-150 0 -150 -80z" fill="url(#tea)" stroke="#854d0e" stroke-width="6"/>
+  <path d="M470 190 q80 -40 80 60 q0 70 -80 60" fill="none" stroke="#854d0e" stroke-width="12" stroke-linecap="round"/>
+  <g fill="#15803d">
+    <path d="M180 140 q20 -60 60 -20 l-40 60z"/>
+    <path d="M230 120 q40 -20 60 30 l-70 20z"/>
+  </g>
+  <text x="320" y="90" font-size="60" font-family="Georgia, serif" font-weight="bold" fill="#166534" text-anchor="middle">Tulsi Tea</text>
+  <text x="320" y="140" font-size="26" font-family="Arial, sans-serif" fill="#166534" text-anchor="middle">Holy basil immune tonic</text>
+</svg>
+

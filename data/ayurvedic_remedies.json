@@ -4,7 +4,7 @@
     "name": "Golden Milk",
     "herb_name": "Turmeric (Curcuma longa)",
     "category": "Anti-inflammatory",
-    "image": "/static/images/turmeric.jpg",
+    "image": "/static/images/remedies/golden-milk.png",
     "description": "A traditional Ayurvedic drink combining turmeric with warm milk and spices for healing and wellness.",
     "preparation": [
       "Heat 1 cup of milk (dairy or plant-based)",
@@ -26,15 +26,23 @@
       "Consult doctor if on blood thinners",
       "May cause stomach upset in excess"
     ],
-    "related_yoga": ["Child's Pose", "Legs Up the Wall"],
-    "conditions": ["Arthritis", "Digestive Issues", "Insomnia", "Inflammation"]
+    "related_yoga": [
+      "Child's Pose",
+      "Legs Up the Wall"
+    ],
+    "conditions": [
+      "Arthritis",
+      "Digestive Issues",
+      "Insomnia",
+      "Inflammation"
+    ]
   },
   {
     "id": "ashwagandha-tea",
     "name": "Ashwagandha Tea",
     "herb_name": "Ashwagandha (Withania somnifera)",
     "category": "Adaptogen",
-    "image": "/static/images/ashwagandha.jpg",
+    "image": "/static/images/remedies/ashwagandha-tea.png",
     "description": "A powerful adaptogenic herb known as \"Indian ginseng\" for its stress-relieving and energy-boosting properties.",
     "preparation": [
       "Boil 1 cup water",
@@ -56,15 +64,25 @@
       "May interact with thyroid medications",
       "Start with small doses"
     ],
-    "related_yoga": ["Child's Pose", "Corpse Pose", "Meditation"],
-    "conditions": ["Anxiety", "Stress", "Insomnia", "Fatigue", "Depression"]
+    "related_yoga": [
+      "Child's Pose",
+      "Corpse Pose",
+      "Meditation"
+    ],
+    "conditions": [
+      "Anxiety",
+      "Stress",
+      "Insomnia",
+      "Fatigue",
+      "Depression"
+    ]
   },
   {
     "id": "triphala-churna",
     "name": "Triphala Powder",
     "herb_name": "Triphala (Three Fruits)",
     "category": "Digestive",
-    "image": "/static/images/triphala.jpg",
+    "image": "/static/images/remedies/triphala-powder.svg",
     "description": "A traditional Ayurvedic formula combining three fruits: Amalaki, Bibhitaki, and Haritaki for digestive health.",
     "preparation": [
       "Mix 1/2 teaspoon triphala powder with warm water",
@@ -85,15 +103,23 @@
       "May cause loose stools initially",
       "Avoid if you have severe diarrhea"
     ],
-    "related_yoga": ["Cat-Cow Pose", "Seated Forward Bend"],
-    "conditions": ["Digestive Issues", "Constipation", "Poor Immunity", "Toxins"]
+    "related_yoga": [
+      "Cat-Cow Pose",
+      "Seated Forward Bend"
+    ],
+    "conditions": [
+      "Digestive Issues",
+      "Constipation",
+      "Poor Immunity",
+      "Toxins"
+    ]
   },
   {
     "id": "ginger-honey-tea",
     "name": "Ginger Honey Tea",
     "herb_name": "Ginger (Zingiber officinale)",
     "category": "Digestive",
-    "image": "/static/images/ginger.jpg",
+    "image": "/static/images/remedies/ginger-honey.svg",
     "description": "A warming and soothing tea that aids digestion and provides natural relief from various ailments.",
     "preparation": [
       "Boil 1 cup water",
@@ -115,15 +141,24 @@
       "May interact with blood thinners",
       "Can cause heartburn in some people"
     ],
-    "related_yoga": ["Cat-Cow Pose", "Seated Twist"],
-    "conditions": ["Digestive Issues", "Nausea", "Cold", "Cough", "Inflammation"]
+    "related_yoga": [
+      "Cat-Cow Pose",
+      "Seated Twist"
+    ],
+    "conditions": [
+      "Digestive Issues",
+      "Nausea",
+      "Cold",
+      "Cough",
+      "Inflammation"
+    ]
   },
   {
     "id": "brahmi-oil",
     "name": "Brahmi Oil",
     "herb_name": "Brahmi (Bacopa monnieri)",
     "category": "Nervine",
-    "image": "/static/images/brahmi.jpg",
+    "image": "/static/images/remedies/brahmi-oil.svg",
     "description": "A traditional Ayurvedic oil used for head massage to improve memory, reduce stress, and promote mental clarity.",
     "preparation": [
       "Warm 2-3 tablespoons brahmi oil",
@@ -144,15 +179,25 @@
       "Avoid contact with eyes",
       "Discontinue if irritation occurs"
     ],
-    "related_yoga": ["Meditation", "Child's Pose", "Corpse Pose"],
-    "conditions": ["Memory Issues", "Stress", "Anxiety", "Headaches", "Hair Loss"]
+    "related_yoga": [
+      "Meditation",
+      "Child's Pose",
+      "Corpse Pose"
+    ],
+    "conditions": [
+      "Memory Issues",
+      "Stress",
+      "Anxiety",
+      "Headaches",
+      "Hair Loss"
+    ]
   },
   {
     "id": "tulsi-tea",
     "name": "Tulsi Tea",
     "herb_name": "Tulsi (Ocimum sanctum)",
     "category": "Immunomodulator",
-    "image": "/static/images/tulsi.jpg",
+    "image": "/static/images/remedies/tulsi-tea.svg",
     "description": "Holy basil tea known as the \"Queen of Herbs\" for its powerful immune-boosting and stress-relieving properties.",
     "preparation": [
       "Boil 1 cup water",
@@ -174,7 +219,983 @@
       "May lower blood sugar",
       "Consult doctor if diabetic"
     ],
-    "related_yoga": ["Breathing Exercises", "Meditation"],
-    "conditions": ["Cold", "Cough", "Respiratory Issues", "Stress", "Poor Immunity"]
+    "related_yoga": [
+      "Breathing Exercises",
+      "Meditation"
+    ],
+    "conditions": [
+      "Cold",
+      "Cough",
+      "Respiratory Issues",
+      "Stress",
+      "Poor Immunity"
+    ]
+  },
+  {
+    "id": "amla-juice",
+    "name": "Amla Juice",
+    "herb_name": "Indian Gooseberry (Emblica officinalis)",
+    "category": "Digestive",
+    "image": "/static/images/remedies/amla-juice.png",
+    "description": "Rich in Vitamin C, Amla balances stomach acid and supports liver function.",
+    "preparation": [
+      "Mix 20-30ml Amla juice with warm water",
+      "Drink on an empty stomach in the morning"
+    ],
+    "dosage": "20-30ml daily",
+    "benefits": [
+      "Reduces acidity and heartburn",
+      "Improves vision and hair health",
+      "Natural anti-aging properties",
+      "Supports liver detoxification"
+    ],
+    "precautions": [
+      "Avoid if you have low blood sugar",
+      "May cause dryness in excess"
+    ],
+    "related_yoga": [
+      "Vajrasana",
+      "Kapalbhati"
+    ],
+    "conditions": [
+      "Acidity",
+      "Acid reflux",
+      "Amlapitta",
+      "Gastritis",
+      "Fatty Liver",
+      "Jaundice",
+      "Premature greying",
+      "Hair fall"
+    ]
+  },
+  {
+    "id": "kutajarishta",
+    "name": "Kutajarishta",
+    "herb_name": "Kutaja (Holarrhena antidysenterica)",
+    "category": "Digestive",
+    "image": "/static/images/remedies/kutajarishta.png",
+    "description": "A fermented herbal tonic effective for intestinal disorders.",
+    "preparation": [
+      "Mix 15-30ml with equal amount of water",
+      "Take after meals"
+    ],
+    "dosage": "15-30ml twice daily",
+    "benefits": [
+      "Controls diarrhea and dysentery",
+      "Relieves IBS symptoms",
+      "Reduces intestinal inflammation",
+      "Improves gut health"
+    ],
+    "precautions": [
+      "Consult doctor for dosage",
+      "Avoid in constipation"
+    ],
+    "related_yoga": [
+      "Pawanmuktasana"
+    ],
+    "conditions": [
+      "Diarrhea",
+      "Atisara",
+      "IBS",
+      "Irritable Bowel Syndrome",
+      "Ulcerative Colitis",
+      "Worm infection"
+    ]
+  },
+  {
+    "id": "aloe-vera-juice",
+    "name": "Aloe Vera Juice",
+    "herb_name": "Aloe Barbadensis",
+    "category": "Detox",
+    "image": "/static/images/remedies/aloe-vera.png",
+    "description": "Cooling and soothing juice for digestive and skin health.",
+    "preparation": [
+      "Take 20-30ml fresh pulp or juice",
+      "Mix with water if needed"
+    ],
+    "dosage": "20-30ml morning empty stomach",
+    "benefits": [
+      "Relieves constipation",
+      "Sooths skin conditions",
+      "Supports liver function",
+      "Detoxifies the body"
+    ],
+    "precautions": [
+      "Avoid during pregnancy",
+      "Do not take if having diarrhea"
+    ],
+    "related_yoga": [
+      "Twisting Poses"
+    ],
+    "conditions": [
+      "Constipation",
+      "Piles",
+      "Arsha",
+      "Fissure",
+      "Liver enlargement",
+      "Skin diseases",
+      "Detoxification"
+    ]
+  },
+  {
+    "id": "neem-tablets",
+    "name": "Neem",
+    "herb_name": "Azadirachta indica",
+    "category": "Skin Care",
+    "image": "/static/images/remedies/neem.png",
+    "description": "The ultimate blood purifier and skin healer in Ayurveda.",
+    "preparation": [
+      "Take 1-2 tablets or capsules",
+      "Or apply neem oil topically"
+    ],
+    "dosage": "Twice daily with water",
+    "benefits": [
+      "Treats acne and eczema",
+      "Purifies blood",
+      "Fights fungal infections",
+      "Controls blood sugar"
+    ],
+    "precautions": [
+      "Avoid if trying to conceive",
+      "Lowers blood sugar"
+    ],
+    "related_yoga": [
+      "Surya Namaskar"
+    ],
+    "conditions": [
+      "Psoriasis",
+      "Eczema",
+      "Acne",
+      "Dermatitis",
+      "Vitiligo",
+      "Urticaria",
+      "Fungal infections",
+      "Dandruff"
+    ]
+  },
+  {
+    "id": "bhringraj-oil",
+    "name": "Bhringraj Oil",
+    "herb_name": "Eclipta alba",
+    "category": "Hair Care",
+    "image": "/static/images/remedies/bhringraj.png",
+    "description": "Known as the 'King of Hair', promotes growth and prevents greying.",
+    "preparation": [
+      "Warm the oil slightly",
+      "Massage into scalp for 15 mins",
+      "Leave overnight"
+    ],
+    "dosage": "Apply 2-3 times a week",
+    "benefits": [
+      "Reduces hair fall",
+      "Prevents premature greying",
+      "Calms the mind",
+      "Treats dandruff"
+    ],
+    "precautions": [
+      "For external use only"
+    ],
+    "related_yoga": [
+      "Adho Mukha Svanasana"
+    ],
+    "conditions": [
+      "Hair fall",
+      "Khalitya",
+      "Premature greying",
+      "Alopecia",
+      "Dandruff"
+    ]
+  },
+  {
+    "id": "karela-jamun",
+    "name": "Karela Jamun Juice",
+    "herb_name": "Bitter Gourd & Indian Blackberry",
+    "category": "Metabolic",
+    "image": "/static/images/remedies/karela-jamun.png",
+    "description": "Potent combination for regulating blood sugar levels.",
+    "preparation": [
+      "Mix 30ml juice with water",
+      "Drink before meals"
+    ],
+    "dosage": "30ml twice daily",
+    "benefits": [
+      "Regulates blood sugar",
+      "Improves insulin sensitivity",
+      "Purifies blood",
+      "Aids digestion"
+    ],
+    "precautions": [
+      "Monitor blood sugar levels",
+      "Can be very bitter"
+    ],
+    "related_yoga": [
+      "Mandukasana"
+    ],
+    "conditions": [
+      "Diabetes",
+      "Madhumeha",
+      "Insulin resistance",
+      "Metabolic syndrome"
+    ]
+  },
+  {
+    "id": "arjuna-bark",
+    "name": "Arjuna Bark",
+    "herb_name": "Terminalia arjuna",
+    "category": "Cardiovascular",
+    "image": "/static/images/remedies/arjuna.png",
+    "description": "The best Ayurvedic tonic for heart health.",
+    "preparation": [
+      "Boil 1 tsp bark powder in milk (Arjuna Ksheera Pak)",
+      "Drink warm"
+    ],
+    "dosage": "1 cup daily",
+    "benefits": [
+      "Strengthens heart muscles",
+      "Regulates blood pressure",
+      "Lowers cholesterol",
+      "Improves circulation"
+    ],
+    "precautions": [
+      "Consult cardiologist if on medication"
+    ],
+    "related_yoga": [
+      "Shavasana",
+      "Anulom Vilom"
+    ],
+    "conditions": [
+      "Hypertension",
+      "High blood pressure",
+      "High cholesterol",
+      "Blocked arteries",
+      "Poor blood circulation",
+      "Heart disorders"
+    ]
+  },
+  {
+    "id": "guggul",
+    "name": "Guggul",
+    "herb_name": "Commiphora mukul",
+    "category": "Metabolic",
+    "image": "/static/images/remedies/guggul.png",
+    "description": "Powerful resin for weight management and cholesterol control.",
+    "preparation": [
+      "Take as tablet or powder",
+      "Usually with warm water"
+    ],
+    "dosage": "As prescribed by practitioner",
+    "benefits": [
+      "Lowers cholesterol and triglycerides",
+      "Promotes weight loss",
+      "Supports thyroid function",
+      "Reduces joint inflammation"
+    ],
+    "precautions": [
+      "Avoid in pregnancy",
+      "May cause stomach upset"
+    ],
+    "related_yoga": [
+      "Surya Namaskar",
+      "Warrior Poses"
+    ],
+    "conditions": [
+      "Obesity",
+      "High cholesterol",
+      "High triglycerides",
+      "Thyroid problems",
+      "Hypothyroid",
+      "PCOS"
+    ]
+  },
+  {
+    "id": "mahanarayan-oil",
+    "name": "Mahanarayan Oil",
+    "herb_name": "Polyherbal Oil",
+    "category": "Pain Relief",
+    "image": "/static/images/remedies/mahanarayan_oil.png",
+    "description": "Ancient oil blend for joint and muscle pain relief.",
+    "preparation": [
+      "Warm the oil",
+      "Massage affected joints gently",
+      "Fomentation (steam) after massage helps"
+    ],
+    "dosage": "Apply twice daily",
+    "benefits": [
+      "Relieves joint pain and stiffness",
+      "Strengthens muscles",
+      "Reduces inflammation",
+      "Improves mobility"
+    ],
+    "precautions": [
+      "External use only"
+    ],
+    "related_yoga": [
+      "Gentle Joint Movements"
+    ],
+    "conditions": [
+      "Arthritis",
+      "Rheumatoid Arthritis",
+      "Osteoarthritis",
+      "Gout",
+      "Vatarakta",
+      "Sciatica",
+      "Frozen shoulder",
+      "Spondylitis",
+      "Back pain",
+      "Joint stiffness"
+    ]
+  },
+  {
+    "id": "shankhpushpi",
+    "name": "Shankhpushpi",
+    "herb_name": "Convolvulus pluricaulis",
+    "category": "Nervine",
+    "image": "/static/images/remedies/shankhpushpi.png",
+    "description": "Brain tonic that improves memory and cognitive function.",
+    "preparation": [
+      "Take 1 tsp syrup or powder",
+      "Mix with milk"
+    ],
+    "dosage": "Twice daily",
+    "benefits": [
+      "Enhances memory and concentration",
+      "Reduces mental fatigue",
+      "Calms the mind",
+      "Supports sleep"
+    ],
+    "precautions": [
+      "None known"
+    ],
+    "related_yoga": [
+      "Meditation",
+      "Trataka"
+    ],
+    "conditions": [
+      "ADHD-like symptoms",
+      "Memory disorders",
+      "Insomnia",
+      "Epilepsy",
+      "Apasmara",
+      "Vertigo",
+      "Mental Health"
+    ]
+  },
+  {
+    "id": "shatavari",
+    "name": "Shatavari",
+    "herb_name": "Asparagus racemosus",
+    "category": "Reproductive",
+    "image": "/static/images/remedies/shatavari.png",
+    "description": "Primary rejuvenating tonic for female reproductive health.",
+    "preparation": [
+      "Mix 1 tsp powder in warm milk",
+      "Add honey if desired"
+    ],
+    "dosage": "Once or twice daily",
+    "benefits": [
+      "Balances hormones",
+      "Supports reproductive health",
+      "Relieves menopausal symptoms",
+      "Boosts lactation"
+    ],
+    "precautions": [
+      "Avoid if having estrogen-sensitive conditions"
+    ],
+    "related_yoga": [
+      "Butterfly Pose"
+    ],
+    "conditions": [
+      "PCOS",
+      "Irregular periods",
+      "Painful periods",
+      "Menopause symptoms",
+      "Infertility",
+      "Hormonal imbalance"
+    ]
+  },
+  {
+    "id": "shilajit",
+    "name": "Shilajit",
+    "herb_name": "Mineral Pitch",
+    "category": "Rejuvenative",
+    "image": "/static/images/remedies/shilajit.png",
+    "description": "Potent mineral substance for strength, stamina, and vitality.",
+    "preparation": [
+      "Dissolve pea-sized resin in warm milk/water",
+      "Drink immediately"
+    ],
+    "dosage": "Once daily",
+    "benefits": [
+      "Boosts testosterone and fertility",
+      "Increases energy and stamina",
+      "Supports healthy aging",
+      "Improves memory"
+    ],
+    "precautions": [
+      "Use purified form only",
+      "Avoid in high uric acid"
+    ],
+    "related_yoga": [
+      "Surya Namaskar"
+    ],
+    "conditions": [
+      "Low sperm count",
+      "Erectile dysfunction",
+      "Premature ejaculation",
+      "Weakness",
+      "Fatigue",
+      "Geriatric Care"
+    ]
+  },
+  {
+    "id": "punarnava",
+    "name": "Punarnava",
+    "herb_name": "Boerhavia diffusa",
+    "category": "Diuretic",
+    "image": "/static/images/remedies/punarnava.png",
+    "description": "Excellent herb for kidney and urinary health.",
+    "preparation": [
+      "Take as decoction or powder",
+      "Mix with warm water"
+    ],
+    "dosage": "Twice daily",
+    "benefits": [
+      "Supports kidney function",
+      "Reduces water retention",
+      "Helps in urinary tract infections",
+      "Anti-inflammatory"
+    ],
+    "precautions": [
+      "Diuretic effect - drink plenty of water"
+    ],
+    "related_yoga": [
+      "Sphinx Pose"
+    ],
+    "conditions": [
+      "Kidney stones",
+      "Urinary tract infections",
+      "UTI",
+      "Chronic Kidney Disease",
+      "Prostate enlargement",
+      "Water retention"
+    ]
+  },
+  {
+    "id": "sitopaladi",
+    "name": "Sitopaladi Churna",
+    "herb_name": "Polyherbal Powder",
+    "category": "Respiratory",
+    "image": "/static/images/remedies/sitopaladi.png",
+    "description": "Traditional powder for respiratory immunity and cough relief.",
+    "preparation": [
+      "Mix 1/2 tsp with honey",
+      "Lick slowly"
+    ],
+    "dosage": "3-4 times a day",
+    "benefits": [
+      "Relieves cough and cold",
+      "Soothes sore throat",
+      "Helps in bronchitis",
+      "Boosts respiratory immunity"
+    ],
+    "precautions": [
+      "Monitor sugar intake if diabetic"
+    ],
+    "related_yoga": [
+      "Pranayama"
+    ],
+    "conditions": [
+      "Cough",
+      "Kasa",
+      "Common cold",
+      "Bronchitis",
+      "Tonsillitis",
+      "Asthma",
+      "Tamak Shwas",
+      "Allergic Rhinitis"
+    ]
+  },
+  {
+    "id": "nasya-oil",
+    "name": "Anu Taila (Nasya)",
+    "herb_name": "Medicated Oil",
+    "category": "Respiratory",
+    "image": "/static/images/remedies/anu-taila.png",
+    "description": "Nasal drops for clearing sinuses and improving head health.",
+    "preparation": [
+      "Lie down with head tilted back",
+      "Instill 2-3 drops in each nostril",
+      "Sniff gently"
+    ],
+    "dosage": "Once daily in morning",
+    "benefits": [
+      "Clears sinus congestion",
+      "Relieves headaches and migraine",
+      "Improves sense of smell",
+      "Reduces stress"
+    ],
+    "precautions": [
+      "Do not use if having fever or cold"
+    ],
+    "related_yoga": [
+      "Nadi Shodhana"
+    ],
+    "conditions": [
+      "Sinusitis",
+      "Pratishyaya",
+      "Migraine",
+      "Headache",
+      "Allergic Rhinitis"
+    ]
+  },
+  {
+    "id": "chyawanprash",
+    "name": "Chyawanprash",
+    "herb_name": "Polyherbal Jam",
+    "category": "Rasayana",
+    "image": "/static/images/remedies/chyawanprash.png",
+    "description": "Ancient immunity booster and anti-aging tonic.",
+    "preparation": [
+      "Eat 1 tsp directly",
+      "Follow with warm milk"
+    ],
+    "dosage": "Once or twice daily",
+    "benefits": [
+      "Boosts overall immunity",
+      "Anti-aging properties",
+      "Improves digestion",
+      "Strengthens respiratory system"
+    ],
+    "precautions": [
+      "Contains sugar"
+    ],
+    "related_yoga": [
+      "Sun Salutation"
+    ],
+    "conditions": [
+      "Low immunity",
+      "Child Health",
+      "Geriatric Care",
+      "Weakness",
+      "Anti-aging",
+      "Growth issues"
+    ]
+  },
+  {
+    "id": "trikatu-churna",
+    "name": "Trikatu Churna",
+    "herb_name": "Three Pungents (Ginger, Black Pepper, Long Pepper)",
+    "category": "Metabolic",
+    "image": "/static/images/remedies/trikatu.png",
+    "description": "A classic Ayurvedic blend for stimulating digestion and metabolism.",
+    "preparation": [
+      "Mix 1/2 tsp with honey",
+      "Take before meals"
+    ],
+    "dosage": "1-3 grams twice daily",
+    "benefits": [
+      "Improves digestion",
+      "Boosts metabolism",
+      "Clears congestion",
+      "Burns toxins (Ama)"
+    ],
+    "precautions": [
+      "Avoid in hyperacidity",
+      "Avoid in pregnancy"
+    ],
+    "related_yoga": [
+      "Surya Namaskar",
+      "Kapalbhati"
+    ],
+    "conditions": [
+      "Indigestion",
+      "Obesity",
+      "Cold",
+      "Hypothyroidism"
+    ]
+  },
+  {
+    "id": "haridra-khanda",
+    "name": "Haridra Khanda",
+    "herb_name": "Turmeric Granules",
+    "category": "Skin Care",
+    "image": "/static/images/remedies/haridra-khanda.png",
+    "description": "A famous formulation for skin allergies and hives.",
+    "preparation": [
+      "Mix 1 tsp with warm milk",
+      "Take twice daily"
+    ],
+    "dosage": "3-6 grams",
+    "benefits": [
+      "Treats urticaria and hives",
+      "Improves skin complexion",
+      "Boosts immunity",
+      "Anti-allergic"
+    ],
+    "precautions": [
+      "Monitor blood sugar (contains sugar)"
+    ],
+    "related_yoga": [
+      "Sheetali Pranayama"
+    ],
+    "conditions": [
+      "Urticaria",
+      "Skin allergies",
+      "Itching",
+      "Fungal infections"
+    ]
+  },
+  {
+    "id": "kumkumadi-tailam",
+    "name": "Kumkumadi Tailam",
+    "herb_name": "Saffron Oil",
+    "category": "Beauty",
+    "image": "/static/images/remedies/kumkumadi.png",
+    "description": "Luxurious oil for glowing skin and complexion.",
+    "preparation": [
+      "Apply 3-4 drops on face",
+      "Massage gently",
+      "Leave overnight"
+    ],
+    "dosage": "External application",
+    "benefits": [
+      "Improves skin texture",
+      "Reduces dark circles",
+      "Treats acne scars",
+      "Anti-aging"
+    ],
+    "precautions": [
+      "Oily skin types use sparingly"
+    ],
+    "related_yoga": [
+      "Face Yoga"
+    ],
+    "conditions": [
+      "Dull skin",
+      "Water retention"
+    ]
+  },
+  {
+    "id": "sitopaladi",
+    "name": "Sitopaladi Churna",
+    "herb_name": "Polyherbal Powder",
+    "category": "Respiratory",
+    "image": "/static/images/remedies/sitopaladi.png",
+    "description": "Traditional powder for respiratory immunity and cough relief.",
+    "preparation": [
+      "Mix 1/2 tsp with honey",
+      "Lick slowly"
+    ],
+    "dosage": "3-4 times a day",
+    "benefits": [
+      "Relieves cough and cold",
+      "Soothes sore throat",
+      "Helps in bronchitis",
+      "Boosts respiratory immunity"
+    ],
+    "precautions": [
+      "Monitor sugar intake if diabetic"
+    ],
+    "related_yoga": [
+      "Pranayama"
+    ],
+    "conditions": [
+      "Cough",
+      "Kasa",
+      "Common cold",
+      "Bronchitis",
+      "Tonsillitis",
+      "Asthma",
+      "Tamak Shwas",
+      "Allergic Rhinitis"
+    ]
+  },
+  {
+    "id": "nasya-oil",
+    "name": "Anu Taila (Nasya)",
+    "herb_name": "Medicated Oil",
+    "category": "Respiratory",
+    "image": "/static/images/remedies/anu-taila.png",
+    "description": "Nasal drops for clearing sinuses and improving head health.",
+    "preparation": [
+      "Lie down with head tilted back",
+      "Instill 2-3 drops in each nostril",
+      "Sniff gently"
+    ],
+    "dosage": "Once daily in morning",
+    "benefits": [
+      "Clears sinus congestion",
+      "Relieves headaches and migraine",
+      "Improves sense of smell",
+      "Reduces stress"
+    ],
+    "precautions": [
+      "Do not use if having fever or cold"
+    ],
+    "related_yoga": [
+      "Nadi Shodhana"
+    ],
+    "conditions": [
+      "Sinusitis",
+      "Pratishyaya",
+      "Migraine",
+      "Headache",
+      "Allergic Rhinitis"
+    ]
+  },
+  {
+    "id": "chyawanprash",
+    "name": "Chyawanprash",
+    "herb_name": "Polyherbal Jam",
+    "category": "Rasayana",
+    "image": "/static/images/remedies/chyawanprash.png",
+    "description": "Ancient immunity booster and anti-aging tonic.",
+    "preparation": [
+      "Eat 1 tsp directly",
+      "Follow with warm milk"
+    ],
+    "dosage": "Once or twice daily",
+    "benefits": [
+      "Boosts overall immunity",
+      "Anti-aging properties",
+      "Improves digestion",
+      "Strengthens respiratory system"
+    ],
+    "precautions": [
+      "Contains sugar"
+    ],
+    "related_yoga": [
+      "Sun Salutation"
+    ],
+    "conditions": [
+      "Low immunity",
+      "Child Health",
+      "Geriatric Care",
+      "Weakness",
+      "Anti-aging",
+      "Growth issues"
+    ]
+  },
+  {
+    "id": "trikatu-churna",
+    "name": "Trikatu Churna",
+    "herb_name": "Three Pungents (Ginger, Black Pepper, Long Pepper)",
+    "category": "Metabolic",
+    "image": "/static/images/remedies/trikatu.png",
+    "description": "A classic Ayurvedic blend for stimulating digestion and metabolism.",
+    "preparation": [
+      "Mix 1/2 tsp with honey",
+      "Take before meals"
+    ],
+    "dosage": "1-3 grams twice daily",
+    "benefits": [
+      "Improves digestion",
+      "Boosts metabolism",
+      "Clears congestion",
+      "Burns toxins (Ama)"
+    ],
+    "precautions": [
+      "Avoid in hyperacidity",
+      "Avoid in pregnancy"
+    ],
+    "related_yoga": [
+      "Surya Namaskar",
+      "Kapalbhati"
+    ],
+    "conditions": [
+      "Indigestion",
+      "Obesity",
+      "Cold",
+      "Hypothyroidism"
+    ]
+  },
+  {
+    "id": "haridra-khanda",
+    "name": "Haridra Khanda",
+    "herb_name": "Turmeric Granules",
+    "category": "Skin Care",
+    "image": "/static/images/remedies/haridra-khanda.png",
+    "description": "A famous formulation for skin allergies and hives.",
+    "preparation": [
+      "Mix 1 tsp with warm milk",
+      "Take twice daily"
+    ],
+    "dosage": "3-6 grams",
+    "benefits": [
+      "Treats urticaria and hives",
+      "Improves skin complexion",
+      "Boosts immunity",
+      "Anti-allergic"
+    ],
+    "precautions": [
+      "Monitor blood sugar (contains sugar)"
+    ],
+    "related_yoga": [
+      "Sheetali Pranayama"
+    ],
+    "conditions": [
+      "Urticaria",
+      "Skin allergies",
+      "Itching",
+      "Fungal infections"
+    ]
+  },
+  {
+    "id": "kumkumadi-tailam",
+    "name": "Kumkumadi Tailam",
+    "herb_name": "Saffron Oil",
+    "category": "Beauty",
+    "image": "/static/images/remedies/kumkumadi.png",
+    "description": "Luxurious oil for glowing skin and complexion.",
+    "preparation": [
+      "Apply 3-4 drops on face",
+      "Massage gently",
+      "Leave overnight"
+    ],
+    "dosage": "External application",
+    "benefits": [
+      "Improves skin texture",
+      "Reduces dark circles",
+      "Treats acne scars",
+      "Anti-aging"
+    ],
+    "precautions": [
+      "Oily skin types use sparingly"
+    ],
+    "related_yoga": [
+      "Face Yoga"
+    ],
+    "conditions": [
+      "Dull skin",
+      "Pigmentation",
+      "Acne scars",
+      "Dark circles"
+    ]
+  },
+  {
+    "id": "dashamularishta",
+    "name": "Dashamularishta",
+    "herb_name": "Ten Roots Tonic",
+    "category": "Rejuvenative",
+    "image": "/static/images/remedies/dashamularishta.png",
+    "description": "A potent tonic for strength, vitality, and post-partum recovery.",
+    "preparation": [
+      "Mix 15-30ml with water",
+      "Take after meals"
+    ],
+    "dosage": "15-30ml twice daily",
+    "benefits": [
+      "Restores strength",
+      "Relieves body pain",
+      "Supports post-partum recovery",
+      "Improves digestion",
+      "Boosts immunity"
+    ],
+    "precautions": [
+      "Consult doctor during pregnancy"
+    ],
+    "related_yoga": [
+      "Restorative Yoga"
+    ],
+    "conditions": [
+      "Weakness",
+      "Post-delivery care",
+      "Body pain",
+      "Fatigue"
+    ]
+  },
+  {
+    "id": "manjistha",
+    "name": "Manjistha",
+    "herb_name": "Rubia cordifolia",
+    "category": "Detox",
+    "image": "",
+    "description": "A quintessential blood purifier in Ayurveda, known for its lymphatic support.",
+    "preparation": [
+      "Mix powder with warm water",
+      "Take after meals"
+    ],
+    "dosage": "1/2 tsp twice daily",
+    "benefits": [
+      "Purifies blood",
+      "Supports skin health",
+      "Cleanses lymphatic system",
+      "Anti-inflammatory"
+    ],
+    "precautions": [
+      "Consult if pregnant"
+    ],
+    "related_yoga": [
+      "Twisting poses"
+    ],
+    "conditions": [
+      "Skin diseases",
+      "Acne",
+      "Inflammation",
+      "Toxins"
+    ]
+  },
+  {
+    "id": "licorice",
+    "name": "Licorice",
+    "herb_name": "Glycyrrhiza glabra",
+    "category": "Digestive",
+    "image": "",
+    "description": "Sweet soothing herb for respiratory and digestive tracts.",
+    "preparation": [
+      "Boil root in water",
+      "Drink as tea"
+    ],
+    "dosage": "1 cup daily",
+    "benefits": [
+      "Soothes sore throat",
+      "Relieves acidity",
+      "Supports adrenal function",
+      "Expectorant"
+    ],
+    "precautions": [
+      "Avoid in high blood pressure",
+      "Avoid in pregnancy"
+    ],
+    "related_yoga": [
+      "Lion's Breath"
+    ],
+    "conditions": [
+      "Acidity",
+      "Sore throat",
+      "Cough",
+      "Ulcers"
+    ]
+  },
+  {
+    "id": "guduchi",
+    "name": "Guduchi",
+    "herb_name": "Tinospora cordifolia",
+    "category": "Immunomodulator",
+    "image": "",
+    "description": "Known as 'Amrita' or nectar of immortality, a top immunity booster.",
+    "preparation": [
+      "Boil stems in water",
+      "Drink decoction"
+    ],
+    "dosage": "30ml decoction daily",
+    "benefits": [
+      "Boosts immunity",
+      "Reduces fever",
+      "Anti-inflammatory",
+      "Detoxifying"
+    ],
+    "precautions": [
+      "Monitor blood sugar"
+    ],
+    "related_yoga": [
+      "Kapalbhati"
+    ],
+    "conditions": [
+      "Fever",
+      "Low immunity",
+      "Gout",
+      "Arthritis"
+    ]
   }
 ]

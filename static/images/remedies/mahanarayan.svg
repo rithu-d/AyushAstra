@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <rect width="200" height="200" fill="#D2B48C"/>
+  <circle cx="100" cy="70" r="25" fill="#B8860B"/>
+  <path d="M 100 95 L 100 140" stroke="#B8860B" stroke-width="6" stroke-linecap="round"/>
+  <path d="M 80 120 L 120 120" stroke="#B8860B" stroke-width="6" stroke-linecap="round"/>
+  <text x="100" y="170" font-family="Arial" font-size="14" fill="#8B6914" text-anchor="middle" font-weight="bold">Mahanarayan</text>
+</svg>
+

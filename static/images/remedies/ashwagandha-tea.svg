@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="480" viewBox="0 0 640 480">
+  <defs>
+    <linearGradient id="bg-ashwa" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ecfccb"/>
+      <stop offset="100%" stop-color="#bbf7d0"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="480" fill="url(#bg-ashwa)"/>
+  <path d="M160 180 q-30 -80 40 -110 q70 -30 110 50" fill="none" stroke="#166534" stroke-width="16" stroke-linecap="round"/>
+  <path d="M120 230 h200 v80 q0 70 -100 70 q-100 0 -100 -70z" fill="#f1f5f9" stroke="#0f172a" stroke-width="6"/>
+  <path d="M320 240 q60 -40 120 0 q60 40 0 80 q-60 40 -120 0" fill="none" stroke="#0f172a" stroke-width="10" stroke-linecap="round"/>
+  <text x="60" y="360" font-size="48" font-family="Georgia, serif" fill="#0f172a" font-weight="bold">Ashwagandha Tea</text>
+  <text x="60" y="410" font-size="28" font-family="Arial, sans-serif" fill="#166534">Calming adaptogen infusion</text>
+</svg>
+

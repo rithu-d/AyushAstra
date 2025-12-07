@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="480" viewBox="0 0 640 480">
+  <defs>
+    <linearGradient id="bg-brahmi" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e0f2fe"/>
+      <stop offset="100%" stop-color="#bae6fd"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#c4b5fd"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="480" fill="url(#bg-brahmi)"/>
+  <rect x="250" y="80" width="140" height="60" rx="20" fill="#e0e7ff"/>
+  <rect x="220" y="130" width="200" height="250" rx="40" fill="url(#glass)" opacity="0.85" stroke="#4c1d95" stroke-width="8"/>
+  <text x="320" y="240" font-size="60" font-family="Georgia, serif" fill="#fdf4ff" text-anchor="middle" font-weight="bold">Brahmi</text>
+  <text x="320" y="300" font-size="54" font-family="Georgia, serif" fill="#fdf4ff" text-anchor="middle" font-weight="bold">Oil</text>
+  <circle cx="150" cy="340" r="40" fill="#4ade80" opacity="0.6"/>
+  <circle cx="490" cy="340" r="35" fill="#22c55e" opacity="0.6"/>
+  <text x="320" y="370" font-size="26" font-family="Arial, sans-serif" fill="#e0f2fe">Cooling scalp therapy</text>
+</svg>
+

@@ -21,6 +21,39 @@ pip install Flask
 python app.py
 ```
 
+### 🔍 **AI-Powered Search**
+
+The home page search bar now asks the ChatGPT API for smarter recommendations.  
+Set these environment variables (PowerShell example shown, adjust for your shell):
+
+```powershell
+$env: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="sk-your-secret-key"
+# optional override
+$env:OPENAI_MODEL="gpt-4o-mini"
+```
+
+If the key is missing, the modal will still open but show a friendly error.
+
+## 🖼️ **Yoga Pose Images**
+
+The yoga cards now show real photos sourced from the Kaggle dataset [`niharika41298/yoga-poses-dataset`](https://www.kaggle.com/datasets/niharika41298/yoga-poses-dataset).  
+When the Flask app starts, it will:
+
+1. Ensure `static/images/` exists.
+2. Download the dataset via `kagglehub` (only the first time, or whenever an image is missing).
+3. Copy representative samples for each pose (e.g., Downward Dog, Warrior II, etc.) so the UI always has visuals.
+
+If you prefer to fetch them manually, you can run:
+
+```python
+import kagglehub
+
+path = kagglehub.dataset_download("niharika41298/yoga-poses-dataset")
+print("Path to dataset files:", path)
+```
+
+> Make sure `kagglehub` is installed (`pip install kagglehub`) before running the snippet above.
+
 ## 🌟 **Features**
 
 - 🏠 **Home Page** - Beautiful animated landing page

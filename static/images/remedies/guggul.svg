@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <rect width="200" height="200" fill="#8FBC8F"/>
+  <circle cx="100" cy="80" r="30" fill="#6B8E6B"/>
+  <path d="M 70 110 Q 100 130 130 110" stroke="#6B8E6B" stroke-width="8" fill="none" stroke-linecap="round"/>
+  <text x="100" y="160" font-family="Arial" font-size="16" fill="#4A5D4A" text-anchor="middle" font-weight="bold">Guggul</text>
+</svg>
+

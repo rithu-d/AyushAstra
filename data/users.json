@@ -10,5 +10,23 @@
     "email": "saisujandatta17@gmail.com",
     "password": "scrypt:32768:8:1$S5w8DNoq5azd5thu$f6a6fc5e960b2e7766a7f5378c8d6958daca4f8542f4d4a14d5abbc6630467ec1d21feb35c0833795fedde11254e762f304550efb998b3baf05176c5a60fdddd",
     "created_at": "2025-11-20T16:43:34.611443"
+  },
+  "rithud": {
+    "username": "rithud",
+    "email": "rithud@gmail.com",
+    "password": "pbkdf2:sha256:600000$u1W2iZfNhVeHSYIj$f0a5d76a6326668843cf93af9b23313645ca9931a111377c87b20c443f447098",
+    "created_at": "2026-01-07T17:47:07.482065"
+  },
+  "sujan": {
+    "username": "sujan",
+    "email": "saujan@gmail",
+    "password": "pbkdf2:sha256:600000$lUjDIjNawFZRVA5h$89d91e4901fd0b336090af15658f02d92945a69981cc020c51be182e7576fa69",
+    "created_at": "2026-01-07T17:58:11.214059"
+  },
+  "sujan datta g ": {
+    "username": "sujan datta g ",
+    "email": "sujandatta17@gmail.com",
+    "password": "pbkdf2:sha256:600000$OkjtHQhvxU2yFU9S$486474f913ebb42b58228fcc3c529205dbb78c6b859624a7e746264672bf3f92",
+    "created_at": "2026-01-07T18:27:24.508630"
   }
 }

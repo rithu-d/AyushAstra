@@ -487,6 +487,9 @@
 
             const recommendations = await response.json();
 
+            // Store user profile for saving later
+            currentUserProfile = data;
+
             // Hide form and show results
             document.getElementById('assessment-form').classList.add('hidden');
             document.getElementById('results-section').classList.remove('hidden');
@@ -505,6 +508,7 @@
     });
 
     let currentRecommendations = null;
+    let currentUserProfile = null;
 
     function displayRecommendations(recommendations) {
         currentRecommendations = recommendations;
@@ -603,12 +607,18 @@
         saveBtn.disabled = true;
 
         try {
+            // Combine recommendations with user profile data
+            const dataToSave = {
+                ...currentRecommendations,
+                ...currentUserProfile
+            };
+
             const response = await fetch('/api/save_recommendations', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify(currentRecommendations)
+                body: JSON.stringify(dataToSave)
             });
 
             const result = await response.json();

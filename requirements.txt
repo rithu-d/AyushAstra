@@ -10,3 +10,5 @@ scikit-learn==1.3.0
 pandas==2.0.3
 kagglehub==0.3.13
 python-dotenv
+flask
+gunicorn

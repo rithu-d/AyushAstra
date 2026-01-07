@@ -581,12 +581,20 @@ def my_recommendations():
         return redirect(url_for('login'))
     
     username = session.get('username')
+    print(f"DEBUG: Logged in user: '{username}'")
+    print(f"DEBUG: Session data: {dict(session)}")
+    
     all_recommendations = load_user_recommendations()
+    print(f"DEBUG: All recommendation keys: {list(all_recommendations.keys())}")
+    print(f"DEBUG: Looking for username: '{username}'")
+    
     user_recommendations = all_recommendations.get(username, [])
+    print(f"DEBUG: Found {len(user_recommendations)} recommendations for user '{username}'")
     
     # Sort by date (newest first)
     user_recommendations.sort(key=lambda x: x.get('saved_at', ''), reverse=True)
     
+    print(f"DEBUG: Passing {len(user_recommendations)} recommendations to template")
     return render_template('my_recommendations.html', recommendations=user_recommendations)
 
 @app.route('/api/model-metrics')
